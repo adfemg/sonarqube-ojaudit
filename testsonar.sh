@@ -1,13 +1,15 @@
-#! /bin/sh
+#! /bin/bash -u
+
+# be sure to set SONAR_HOME before executing this script, for example:
+# export SONAR_HOME=/Users/wilfred/sonar-3.7.3
 
 SONAR_PROJ=`dirname $0`
-SONAR_HOME=/Users/wilfred/sonar-3.7.3
-
-cd $SONAR_PROJ
 
 echo
 echo Stopping SonarQube...
 $SONAR_HOME/bin/macosx-universal-64/sonar.sh stop
+
+cd $SONAR_PROJ
 
 echo
 echo Removing $SONAR_PROJ/target...
