@@ -21,7 +21,7 @@ mvn license:format install
 
 echo
 echo Copying generated JAR to SonarQube...
-cp -a target/sonar-*-SNAPSHOT.jar "$SONAR_HOME/extensions/plugins"
+cp -a target/sonar-*.jar "$SONAR_HOME/extensions/plugins"
 
 echo
 echo Deleting H2 database for a clean start
