@@ -12,7 +12,7 @@
 
   <groupId>org.adf.emg.sonar.ojaudit</groupId>
   <artifactId>sonar-ojaudit-plugin</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>sonar-plugin</packaging>
 
   <name>ADF EMG ojaudit</name>
