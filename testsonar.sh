@@ -1,8 +1,7 @@
 #! /bin/sh
 
-export AUDIT_PROJ=/Users/wilfred/jdeveloper/Test12c
-export SONAR_PROJ=/Users/wilfred/jdeveloper/SonarPlugin
-export SONAR_HOME=/Users/wilfred/sonar-3.7.3
+SONAR_PROJ=`dirname $0`
+SONAR_HOME=/Users/wilfred/sonar-3.7.3
 
 cd $SONAR_PROJ
 
