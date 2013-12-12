@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://xmlns.oracle.com/jdeveloper/1013/audit"
+           xmlns:aud="http://xmlns.oracle.com/jdeveloper/1013/audit"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="rule-param">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:param-name"/>
+                <xs:element ref="aud:param-type"/>
+                <xs:element ref="aud:param-required"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="profile">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:default"/>
+                <xs:element ref="aud:name"/>
+                <xs:element ref="aud:key"/>
+                <xs:element ref="aud:url"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="transform">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:name"/>
+                <xs:element ref="aud:description"/>
+                <xs:element ref="aud:condition" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="enabled" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="profile-report">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:title"/>
+                <xs:element ref="aud:profile"/>
+                <xs:element ref="aud:rules"/>
+                <xs:element ref="aud:assists"/>
+                <xs:element ref="aud:metrics"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="style" type="xs:string"/>
+    <xs:element name="metrics">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:metric" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="defaultTransform">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:transform"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rule">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:name"/>
+                <xs:element ref="aud:description"/>
+                <xs:element ref="aud:tip"/>
+                <xs:element ref="aud:severity"/>
+                <xs:element ref="aud:style"/>
+                <xs:element ref="aud:defaultTransform" minOccurs="0"/>
+                <xs:element ref="aud:rule-params" minOccurs="0"/>
+                <xs:element ref="aud:category"/>
+                <xs:element ref="aud:transforms" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="enabled" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="assist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:name"/>
+                <xs:element ref="aud:description"/>
+                <xs:element ref="aud:tip"/>
+                <xs:element ref="aud:severity"/>
+                <xs:element ref="aud:style"/>
+                <xs:element ref="aud:category"/>
+                <xs:element ref="aud:transforms" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="enabled" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rules">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:rule" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="transforms">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:transform" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="url" type="xs:string"/>
+    <xs:element name="rule-params">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:rule-param" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="assists">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:assist" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="metric">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aud:name"/>
+                <xs:element ref="aud:description"/>
+                <xs:element ref="aud:tip"/>
+                <xs:element ref="aud:threshhold"/>
+                <xs:element ref="aud:type"/>
+                <xs:element ref="aud:category"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="severity" type="xs:string"/>
+    <xs:element name="type" type="xs:string"/>
+    <xs:element name="param-name" type="xs:string"/>
+    <xs:element name="tip" type="xs:string"/>
+    <xs:element name="key" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="param-type" type="xs:string"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="condition" type="xs:string"/>
+    <xs:element name="threshhold" type="xs:string"/>
+    <xs:element name="category" type="xs:string"/>
+    <xs:element name="param-required" type="xs:string"/>
+    <xs:element name="default" type="xs:string"/>
+
+</xs:schema>

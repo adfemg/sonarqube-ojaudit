@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/jdeveloper/1013/audit"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://xmlns.oracle.com/jdeveloper/1013/audit"
+           xmlns="http://xmlns.oracle.com/jdeveloper/1013/audit"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:element name="audit-pretty-print">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element ref="tns:profile"/>
+              <xs:element ref="tns:rules"/>
+              <!--xs:element ref="tns:metrics"/>
+              <xs:element ref="tns:assists"/-->
+          </xs:sequence>
+
+      </xs:complexType>
+
+  </xs:element>
+
+  <xs:element name="audit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:title"/>
+        <xs:element ref="tns:model-count"/>
+        <xs:element ref="tns:violation-count"/>
+        <xs:element ref="tns:exception-count"/>
+        <xs:element ref="tns:error-count"/>
+        <xs:element ref="tns:warning-count"/>
+        <xs:element ref="tns:advisory-count"/>
+        <xs:element ref="tns:incomplete-count"/>
+        <xs:element ref="tns:locations"/>
+        <xs:element ref="tns:profile"/>
+        <xs:element ref="tns:columns"/>
+        <xs:element ref="tns:models"/>
+        <xs:element ref="tns:categories"/>
+        <xs:element ref="tns:rules"/>
+        <xs:element ref="tns:transforms"/>
+        <xs:element ref="tns:construct"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="advisory-count" type="xs:string"/>
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:category" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:description"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="children">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="tns:construct"/>
+        <xs:element ref="tns:violation"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="column">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:description"/>
+        <xs:element ref="tns:type"/>
+        <xs:element ref="tns:threshold"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="column-offset" type="xs:string"/>
+  <xs:element name="columns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:column" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="construct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:location"/>
+        <xs:element ref="tns:type"/>
+        <xs:element ref="tns:kind"/>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:values"/>
+        <xs:element ref="tns:children"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="parent" type="xs:IDREF" use="required"/>
+      <xs:attribute name="root" default="false">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="true"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="error-count" type="xs:string"/>
+  <xs:element name="exception-count" type="xs:string"/>
+  <xs:element name="file">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:url"/>
+        <xs:element ref="tns:path"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="incomplete-count" type="xs:string"/>
+  <xs:element name="kind" type="xs:string"/>
+  <xs:element name="label" type="xs:string"/>
+  <xs:element name="length" type="xs:string"/>
+  <xs:element name="line-number" type="xs:string"/>
+  <xs:element name="location">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:offset"/>
+        <xs:element ref="tns:length"/>
+        <xs:element ref="tns:line-number"/>
+        <xs:element ref="tns:column-offset"/>
+      </xs:sequence>
+      <xs:attribute name="model" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="locations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:location" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="message" type="xs:string"/>
+  <xs:element name="model">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:file" minOccurs="0"/>
+        <xs:element ref="tns:package" minOccurs="0"/>
+        <xs:element ref="tns:project" minOccurs="0"/>
+        <xs:element ref="tns:workspace" minOccurs="0"/>
+        <xs:element ref="tns:label"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="model-count" type="xs:string"/>
+  <xs:element name="models">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:model" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="offset" type="xs:string"/>
+  <xs:element name="package" type="xs:string"/>
+  <xs:element name="path" type="xs:string"/>
+  <xs:element name="profile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:file"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="project">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:file"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:description"/>
+        <xs:element ref="tns:severity"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="category" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:rule" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="severity" type="xs:string"/>
+  <xs:element name="threshold" type="xs:string"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="transform">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:name"/>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:description"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transforms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:transform" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transform-applied">
+    <xs:complexType>
+      <xs:attribute name="transform" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transforms-applied">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:transform-applied" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="type" type="xs:string"/>
+  <xs:element name="url" type="xs:string"/>
+  <xs:element name="value">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="column" type="xs:IDREF" use="required"/>
+          <xs:attribute name="over-threshold" default="false">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="true"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="values">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:value" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="violation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:location"/>
+        <xs:element ref="tns:message"/>
+        <xs:element ref="tns:values"/>
+        <xs:element ref="tns:transforms-applied"/>
+      </xs:sequence>
+      <xs:attribute name="rule" type="xs:IDREF" use="required"/>
+      <xs:attribute name="parent" type="xs:IDREF" use="required"/>
+      <xs:attribute name="over-threshold" default="false">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="true"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="violation-count" type="xs:string"/>
+  <xs:element name="warning-count" type="xs:string"/>
+  <xs:element name="workspace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:label"/>
+        <xs:element ref="tns:file"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
