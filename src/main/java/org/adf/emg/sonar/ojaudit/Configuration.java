@@ -145,10 +145,19 @@ public class Configuration implements ServerExtension, BatchExtension {
     public File getRuleHelp() {
         String ruleHelp = settings.getString(OJAuditPlugin.OJAUDIT_RULEHELP_KEY);
         File file;
-        if (ruleHelp == null || ruleHelp.trim().isEmpty() || serverFileSystem != null) {
+        if (ruleHelp == null || ruleHelp.trim().isEmpty()) {
+            // use default location of rulehelp
             file = new File(new File(serverFileSystem.getHomeDir(), "conf"), "rulehelp.txt");
+            LOG.debug("{} not set, using default location of rulehelp at {}", OJAuditPlugin.OJAUDIT_RULEHELP_KEY, file);
         } else {
             file = new File(ruleHelp);
+            if (!file.isAbsolute()) {
+                LOG.debug("{} set to {}, relative to {}", new Object[] {
+                          OJAuditPlugin.OJAUDIT_RULEHELP_KEY, ruleHelp, serverFileSystem.getHomeDir() });
+                file = new File(serverFileSystem.getHomeDir(), file.toString());
+            } else {
+                LOG.debug("{} set to absolute path {}", OJAuditPlugin.OJAUDIT_RULEHELP_KEY, ruleHelp);
+            }
         }
         checkCanRead(file, "rulehelp output");
         return file;
