@@ -109,8 +109,7 @@ public class Configuration implements ServerExtension, BatchExtension {
     public File getExecutable() {
         String exec = settings.getString(OJAuditPlugin.OJAUDIT_EXEC_KEY);
         if (exec == null || exec.trim().isEmpty()) {
-            LOG.debug("determining default ojaudit logging based on pathSeparator {}", File.pathSeparator);
-            exec = "\\".equals(File.pathSeparator) ? "ojaudit.exe" : "ojaudit";
+            exec = "\\".equals(File.separator) ? "ojaudit.exe" : "ojaudit";
         }
         File file = new File(new File(getJDevHome(), "jdev/bin"), exec);
         checkCanRead(file, "ojaudit executable");
