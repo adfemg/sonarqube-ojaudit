@@ -135,21 +135,22 @@ public class ResultsParser {
         Model model = (Model) loc.getModel();
         File f = new File(model.getFile().getPath());
         if (!f.canRead()) {
-            LOG.warn("file {} no longer exists, ignoring violation", f);
+            LOG.warn("file {} no longer exists, ignoring violation '{}'", f, violation.getMessage());
             return;
         }
         // lookup sonar Resource for the violating file
         Resource resource = project.getFileSystem().toResource(f);
         if (resource == null) {
-            LOG.warn("could not find resource {} in sonar project sources", f);
+            LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
+                     violation.getMessage());
             return;
         }
         // find ActiveRule for violation
         String ruleKey = ((Rule) violation.getRule()).getName();
         ActiveRule activeRule = getActiveRule(profile, ruleKey);
         if (activeRule == null) {
-            LOG.warn("no active sonar Rule with key {} found in language {}, profile {}", new Object[] {
-                     ruleKey, profile.getLanguage(), profile.getName()
+            LOG.warn("no active sonar Rule with key {} found in language {}, profile {}. Ignoring violation for {}", new Object[] {
+                     ruleKey, profile.getLanguage(), profile.getName(), f
             });
             return;
         }
