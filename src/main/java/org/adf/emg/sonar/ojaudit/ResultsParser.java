@@ -154,7 +154,7 @@ public class ResultsParser {
             return;
         }
         // reporting sonar violation
-        LOG.debug("creating violation for rule {} in {}", new Object[] { activeRule.getRuleKey(), resource });
+        LOG.info("creating violation for rule {} in {}", new Object[] { activeRule.getRuleKey(), resource });
         Violation v = Violation.create(activeRule, resource);
         v = v.setMessage(violation.getMessage());
         if (violation.getLocation() != null && violation.getLocation().getLineNumber() != null) {
