@@ -81,7 +81,7 @@ public class Analyzer implements Sensor {
     public void analyse(Project project, SensorContext context) {
         File output = new File(project.getFileSystem().getSonarWorkingDirectory(), "ojaudit.xml");
         LOG.info("ojaudit output will be written to {}", output.getAbsolutePath());
-        executeAudit(output);
+        executeAudit(project, output);
         collectMeasures(output, project, context);
     }
 
@@ -89,7 +89,7 @@ public class Analyzer implements Sensor {
      * Runs ojaudit and saves the output to the given file.
      * @param output Location of the output (XML) file to generate
      */
-    protected void executeAudit(File output) {
+    protected void executeAudit(Project project, File output) {
         String cmd = null;
         try {
             long start = System.currentTimeMillis();
@@ -98,6 +98,7 @@ public class Analyzer implements Sensor {
             command = command.addArgument("-output").addArgument(output.getCanonicalPath());
             command = command.addArgument("-encoding").addArgument("UTF-8");
             command = command.addArgument(config.getTargetFile().getCanonicalPath());
+            command = command.setDirectory(project.getFileSystem().getBasedir());
             cmd = command.toCommandLine();
             LOG.info("executing {}", cmd);
             CommandExecutor executor = CommandExecutor.create();

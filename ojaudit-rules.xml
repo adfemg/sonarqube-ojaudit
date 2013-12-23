@@ -1,0 +1,3881 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <audit-profile version="12.1.2" build="12.1.2.0.40.66.68">
+    <id/>
+    <name>All Rules</name>
+    <sealed>false</sealed>
+    <bean id="oracle.adf.dvt.acc-compreqshortdesc">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-compreqsummary">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-dataSelection-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-drillingEnabled-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-facets-bodyContextMenu-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-facets-contextMenu-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-facets-multiSelectContextMenu-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-hideAndShowBehavior-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-pie-interactive-slice-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-scatter-markerColorAttribute-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-scatter-markerShapeAttribute-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-seriesSet-showPopupBehavior-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graph-shapeAttributes-noadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graphreferencelinenoadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graphscrollbarnoadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graphseriesrollovernoadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graphtimeselectornoadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graphtypenoadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.acc-graphzoomdirectionnoadasupport">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.convert-visible-to-rendered">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.gauge-otherProperties-deprecated-attribute">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-advancedpropertiesxml-deprecated-attribute">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-deprecated-tag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-imageFormat-deprecated-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-invalid-attr-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-invalid-child-tag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-not-an-EL-type-attribute">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-numberFormat-deprecated-invalid-tag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-numberFormat-deprecated-tag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-simplegraph-deprecated-tag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-style-deprecated-attribute">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.graph-stylePath-deprecated-attribute">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.hv-compmustbeinsidehv">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.hv-compnotvalidhvchild">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.hv-compnotvalidsearchresultschild">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.hv-invalidTruncateAtInsideOutputText">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.hv-notvalidhvattr">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.map-rule-opacity">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.set-imageformat-auto">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.tmap-invalid-attr-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.treemap-color-undefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.dvt.visibletorendered">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.actionInCmdToolbarBtn">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.addid-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.adfjs-function-or-name-conflict">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.afattrtofattr">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.afattrtofattr-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.aflongidsonnc">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.afvalidatortofvalidator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.afvalidatortofvalidator-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.bindingWithoutRequestOrBackingBeanScope">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.calendarCustomFacetName">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.calendarFacetNameConflict">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.choosecolornotreferred">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.choosedatenotreferred">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.chooseidcolorpointsnowhere">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.chooseiddatepointsnowhere">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.commandbtnusage">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compid-custidtoid-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compid-customization-id-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compid-removecustid-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compid-removetestid-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compid-test-id-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compid-testidtoid-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compnotlabelled">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqleadingheader">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqnoncolheadertext">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqshortdesc">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqsummary">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqtext">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqtextorshortdesc">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqtitle">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.compreqtrailingheader">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.convert-deprecated-button-link">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.dc-uses-jsf12-component-var">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.deprecatedscopedid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.deprecatedscopedid-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.duplicate-id-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.enable-user-customization-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.endswithpercentagestyles">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.facetrefusage1">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.facetrefusage2">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.facetwidthheightstyles">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.forpointsnowhere">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.heighttopbottomstyles">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.imgshortdesc">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.invalidscopedid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.jspScriptletUsage">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.navigationPaneRemovalRule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.no-id-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.notscopedadffacescomponent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.onlyOneFormAllowedPerPage">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.outputTextEscapeSecurityRule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.outputTextReferredAsPPRTargetInAjaxTag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.panelTabbedRemovalRule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.percentageheightrule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.percentagewidth-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.percentagewidthrule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.persist-changes-with-session-manager-enabled">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pglendswithpercentagestyles">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.popupInCmdToolbarBtn">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.positionstyles">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.private-adfjs-method-access">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.private-adfjsfunction-usage">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.protected-adfjs-method-access">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-attr-required-default">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-display-spaces">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-facet">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-facet-references">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-missing-model">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-missing-model-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-multiple-root">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-multiple-root-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-nested-forms">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.pt-type-not-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.region.shared-datacontrol">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.region.single-root-in-fragment">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.region.single-root-in-fragment-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.removefacetref-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.setUsesUpload-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.singleImmediateChildSubPopupCompAllowed">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.skins.icon-content-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.skins.space-after-element-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.style-bad-selecter">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.style-no-auto-heights">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.style-no-auto-widths">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.style-visual-root-present">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tablecolneedsheaders">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tableneedsrowheader">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tablerowheader-badcomponent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tablerowheader-badinputcomponent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tablerowheader-footerneedscontent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tablerowheader-linkmissingvalue">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.tablerowheader-outputmissingvalue">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.targetdoesnotsendclientcomponent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.targetdoesnotsendclientcomponent-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.targetnotcollectioncomponent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.targetnotpopup">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.usesuploadwithinputfile">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.varusage">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.verbatimScript">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.verbatimUsage">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.webxml-partial-state-saving">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.faces.widthleftrightstyles">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.fix-old-collections-api">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.java.adfjavaaudit-internal-package-import">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.adf.model.bound-to-placeholder">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-am-configuration">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-iterator-binds-for-root">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-iterator-for-tree-or-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-methodaction-instancename-for-root">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-page-definition-datacontrols">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-page-definition-extension">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-page-duplicate-cpxnames">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-page-duplicate-dcxnames">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-page-iterator-faces-refresh-condition">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.check-skipvalidation">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.structure-definition-primary-key-check">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.model.transform-iterator-binds-for-root">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.model.transform-methodaction-instancename-for-root">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.model.transform-skipvalidation">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adf.old-collections-api">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adf.share.webapp-filter-servlet">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.adf.share.webapp-redundant-filters">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.bindings.audit.BadPageFragmentSemanticsInBinding">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.bindings.audit.InputParameterNotSerializable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.bindings.audit.RequiredParametersNotSpecified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.bindings.audit.TaskFlowBindingFactoryNotRegistered">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.bindings.audit.UnreferencedTaskFlowBinding">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.config.source.audit.AdfScopeHaSupportNotSet">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.AddAllCustomizationIds">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.AddCustomizationId">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.AdditionalBoundedTaskFlow">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.AdditionalUnboundedTaskFlowArtifact">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.BadPageFragmentSemanticsInDialog">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.CustomizationIdNotDefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.DefaultActivityNotDefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.DuplicateId">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.DuplicateRegion">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ELBeanModificationWithoutDirty">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ELExpressionBuilder">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ELExpressionNotExpected">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ELSyntaxError">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ELUnknownToken">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.FixIdAttribute">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ManagedBeanNotSerializable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.OutcomeNotFoundInActivity">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageDoesNotExist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageFragmentReferenceNotExpected">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch1">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch2">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch2b">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch3">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch4">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageReferenceNotExpected">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.PageTypesNotHomogeneous">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ReferenceBindingsInManagedProperty">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.RequiredElementEmpty">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.RequiredParametersNotSpecified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.ScopeModifiedWithoutDirty">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.TaskFlowCallPageTypesNotHomogeneous">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.TaskFlowReturnActivitiesNotDefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.TrainNotDefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.extra.DataControlScopeIsolatedTransform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.extra.DataControlScopeNotDefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.adfc.source.audit.extra.DataControlScopeSharedTransform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.web.audit.RemoveADFPhaseListenerFromFacesConfig">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfdt.controller.web.audit.UseADFCConfigWhenPossible">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfm.ide.mbean-class-as-dc">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfm.ide.undesired-bindings-el">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfmf.feature-duplicate-content-order-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfmf.feature-duplicate-feature-id-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.adfmf.feature-empty-feature-id-found">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.audit.disabled-metrics">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.audit.disabled-rules">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.audit.disabled-suppression-schemes">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.audit.issues">
+      <count>ISSUES</count>
+      <enabled>false</enabled>
+      <threshold><null/></threshold>
+    </bean>
+    <bean id="oracle.ide.audit.severity">
+      <enabled>false</enabled>
+      <threshold><null/></threshold>
+    </bean>
+    <bean id="oracle.ide.audit.traversal-exception">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.audit.unauditable-file">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.audit.visible-issues">
+      <count>VISIBLE_ISSUES</count>
+      <enabled>false</enabled>
+      <threshold><null/></threshold>
+    </bean>
+    <bean id="oracle.ide.audit.visitor-exception">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.database.plsql-name-conflict">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.database.plsql-type-conflict">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.database.primary-key-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.ide.database.refactor-name-change">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.database.revert-name-change">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.database.revert-type-change">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.database.source-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.database.source-incomplete">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>incomplete</severity>
+      <style>incomplete</style>
+    </bean>
+    <bean id="oracle.ide.database.unresolved-refs">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.database.validation-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.html.add-closing-tag">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.html.base">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.deprecated">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.embed">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.height-width">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.map">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.non-default-size">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.oracle-webapp-create-property">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.html.reset-to-default">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.html.span">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.html.textarea">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.deprecated-bom-property">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.deprecated-property">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.duplicate-switch-case-label">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.empty-block">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.empty-body">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.escape-html-endtag-in-string-literal">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.fix-unexpected-bitwise-operators">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.add-code-block">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.confusing-pluses-minuses">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.duplicate-definition">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.expression-statement">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.fix-unexpected-assignment-expression">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.forbidden-block">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.nested-definition">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.new-expression-case-mismatch">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.regexp-usage">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.required-block">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.strict-equality-comparison">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.switch-fall-thru">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-assignment-expression">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-eval">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-inc-dec">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-label">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-new-expression-construct">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-void">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unexpected-with-statement">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.unreachable-code">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.jslint.usage-of-commas">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.line-too-long">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.missing-switch-default">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.remove-continue-statement">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.remove-debugger-statement">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.remove-identifier">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.switch-default-not-last">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.syntax-error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.unescaped-html-endtag-in-string-literal">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.unexpected-bitwise-operator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.unexpected-continue-statement">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.unexpected-debugger-statement">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.unsupported-bom-property">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.javascript.unused-identifier">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.maven.validation-errors">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.maven.validation-warnings">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.resourcebundle.translatable-attribute">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.ide.status.file-outside-project">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.status.file-outside-workspace">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.status.internal-exception">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.add-attribute">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.xml.add-attribute-value">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.xml.attribute-duplicated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.attribute-missing-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.attribute-missing-incomplete">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>incomplete</severity>
+      <style>incomplete</style>
+    </bean>
+    <bean id="oracle.ide.xml.attribute-missing-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.xml.attribute-value-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.brokenref-advisory">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.ide.xml.brokenref-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.brokenref-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.xml.duplicate-type-assign-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.duplicatename-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.load-remoteref-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.xml.mismatched-end-tag">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.other-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.other-suggestion">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.ide.xml.other-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.xml.remoteref-reload-warning">
+      <defaultTransformName>oracle.ide.xml.load-remoteref-transform</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.xml.remoteref-warning">
+      <defaultTransformName>oracle.ide.xml.load-remoteref-transform</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.xml.remove-attribute">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.xml.remove-attribute-duplicates">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.xml.remove-attribute-duplicates-except">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.ide.xml.validation-advisory">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.ide.xml.validation-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.validation-incomplete">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>incomplete</severity>
+      <style>incomplete</style>
+    </bean>
+    <bean id="oracle.ide.xml.validation-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.ide.xml.wellformedness-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.ide.xml.wellformedness-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jbo.am.java-passivate">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.am.sdo-hideall-oper">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.association-composition-transient-attr">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.attribute-enumeration-classes-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.attribute-enumeration-classes-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.attribute-order-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.attribute-order-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.audit.view.compoper-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.bind-variable-type-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.bind-variable-type-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.change-indicator-rule">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.class-exists-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.class-exists-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.class-not-managed-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.class-not-managed-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.composition-batch-threshold-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.composition-batch-threshold-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.composition-batch-threshold-transform2">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-adjustpoolsize">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-change-datasource">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-datasource">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-lazyloading">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-limitpoolsize">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-packagexml">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-poolsize">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.config-setlazyloading">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.customization.fromcustomization-attribute-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.customization.fromcustomization-attribute-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.entity.entity-validate-names">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.entity.extended-eo-domain-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.entity.key-type-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-static-definition-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-static-definition-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-usage-association-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-usage-association-rule2">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-usage-definition-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-usage-primary-definition-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-usage-recursion-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.eo-usage-updateable-key-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.getviewdef-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.notify-row-updated-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.notify-row-updated-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.object.package">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.sql92.bindingstyle">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.sql92.refresh">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.sql92.reset-bindingstyle">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.sql92.reset-refresh">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.sql92.rowid">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.sqlbuilder.sqlbuilder-base-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.transient-expression-literal-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.transient-expression-literal-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.uihints-control-type-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.valid-association-accessor-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.valid-association-accessor-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.valid-viewlink-accessor-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.valid-viewlink-accessor-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-attribute-discriminator-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-attribute-discriminator-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-attributes-pkdiscr-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-attributes-pkdiscr-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-effective-date-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-quoted-vcitem-string-literal">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-strip-quoted-vcitem-string-literal">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.view-validate-names">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.auto-refresh-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.compoper">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.entityattr-sqlderived">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.lov-displaycriteria">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.lov-finder">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.lov-rangesize">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.lov-readonly">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.lov-recursive">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.lov-switcher">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.query">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.variable-defaultvalue">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.variable-expression">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.view.viewaccessor-bindvalue">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.viewlink-accessor-retained-rule">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jbo.viewlink-accessor-retained-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jbo.viewlink-same-accessor-names">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.audit.cloud.error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.audit.cloud.sdk-unavailable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.audit.cloud.warning">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.cdi.ambiguous-dependency">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.cdi.config-project">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.cdi.not-proxyable-bean">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.cdi.uncofig-project">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.cdi.unsatisfied-dependency">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.css.extended-color">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.css.semantic-error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.css.syntax-error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.css.unregistered-font-family">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.all-orphan-fields">
+      <defaultTransformName>oracle.jdeveloper.ejb.create-all-synchronize-entity-fields</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.duplicate-named-query">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.jpql-syntax-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.orphan-column">
+      <defaultTransformName>oracle.jdeveloper.ejb.create-synchronize-columns</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.orphan-entity">
+      <defaultTransformName>oracle.jdeveloper.ejb.create-entity-table</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.orphan-field">
+      <defaultTransformName>oracle.jdeveloper.ejb.create-synchronize-entity-fields</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.ejb.sb-lifecycle-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.add-hsa-property">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.class-assist">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.bundleversion_warning">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.classpaths-deprecated">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.dependencies-deprecated">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.nonexistent-bundle">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.nosuch-package">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.required-bundles-deprecated">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.split-package">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.extension.osgi.symbolicname_warning">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.abstract-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>abstract-class</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-annotation">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-argument-casts">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-cast">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-comment-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-default-serialization-uid">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-generated-serialization-uid">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-keyword-new">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-tag-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-terminator-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-throws">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-throws-to">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-try-catch">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.add-type-parameters">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.ambiguous-doc-method-reference-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.annotation">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>annotation</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.annotation-assist">
+      <defaultTransformName>oracle.jdeveloper.java.remove-annotation</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.annotation-callback">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.annotation-callback-transform">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.annotation-element">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>annotation-element</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.annotation-element-not-found">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.anonymous-extends-final">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.array-field-access">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <maximumVisibility>protected</maximumVisibility>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.at-override-violation">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.boolean-constructor">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.boolean-expression-assist">
+      <defaultTransformName>oracle.jdeveloper.java.negate-boolean-expression</defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.cast-incompatible">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.catch-unreachable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>class</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.classic-forname">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.comment-html-is-unterminated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.comment-period-missing">
+      <defaultTransformName>oracle.jdeveloper.java.add-terminator-fix</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.commute-equals-method-call">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.console-write">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.constant-expression-assist">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>constant</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.constant-unassignable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.constructor">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>constructor</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.constructor-deprecated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>deprecated</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.constructor-method-name">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.constructor-not-found">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.convert-for">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-annotation-element">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-annotation-type">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-class">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-constant-field">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-constructor">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-instance-field">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-instance-inner-class">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-interface">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-method">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-static-field">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-static-inner-class">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-suppress-warnings-annotation">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.create-variable">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.description-is-empty">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.dit">
+      <enabled>false</enabled>
+      <threshold>6</threshold>
+    </bean>
+    <bean id="oracle.jdeveloper.java.enum-constructor-access">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.equals-without-hashcode">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.exceptions-unhandled">
+      <catchBlockBody><null/></catchBlockBody>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.extract-initializer">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.field-deprecated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>deprecated</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.field-not-serializable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.field-transient-in-non-serializable-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.finalizer">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.for-assist">
+      <defaultTransformName>oracle.jdeveloper.java.convert-for</defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.hashcode-without-equals">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.if-assist">
+      <defaultTransformName>oracle.jdeveloper.java.invert-if</defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.implement-methods">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.import-assist">
+      <defaultTransformName>oracle.jdeveloper.java.organize-imports</defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.inner-class-serializable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.instance-field">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>instance-field</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.instance-method">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>instance-method</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.insufficient-catch-block">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.interface">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>interface</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.interface-conflicted">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.interface-duplicated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.invalid-modifier">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.invert-if">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.java-lang-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.javadoc">
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.junit.ignore-test">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.junit.ignore-test-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.junit.set-expected-exception">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.junit.set-expected-exception-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.junit.set-timeout">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.junit.set-timeout-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.local-variable-assist">
+      <defaultTransformName>oracle.jdeveloper.java.extract-initializer</defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.lowercase-long-literal">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.mark-change-compatible">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.mark-change-incompatible">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.member-not-found">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.method-deprecated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>deprecated</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.method-not-found">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.methods-unimplemented">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.missing-comment">
+      <defaultTransformName>oracle.jdeveloper.java.add-comment-fix</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.move-file">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.move-type-into-type">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.move-type-to-file">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.multiple-assignment">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.name-not-found">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.negate-boolean-expression">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.nested-assignment">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.new-class-expression-assist">
+      <defaultTransformName>oracle.jdeveloper.java.remove-unnecessary-box-constructor</defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.no-tostring">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.nos">
+      <enabled>false</enabled>
+      <threshold><null/></threshold>
+    </bean>
+    <bean id="oracle.jdeveloper.java.null-array-return">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.null-collection-return">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.null-map-return">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.organize-imports">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.override-incompatible-return">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.override-incompatible-throw">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.override-weaker-access">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.package-name-conflict">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.parameter">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>parameter</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.public-type-name-conflict">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.readobject-or-writeobject-in-externalizable-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.readobject-or-writeobject-in-nonserializable-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.readobject-or-writeobject-not-declared-private">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.readresolve-or-writereplace-in-nonexternalizable-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.readresolve-or-writereplace-not-declared-private">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.register-out-parameter">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-annotation">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-field-transient-modifier">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-method-call">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-tag-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-throws-from">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unnecessary-boxing">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unnecessary-cast">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-class">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-constructor">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-field">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-import">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-interface">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-method">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-parameter">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.remove-unused-variable">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.rename-mismatched-type">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.rename-package">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.return-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.return-value-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.secondary-type">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.semantic-advisory">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.semantic-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.semantic-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialization-uid-must-be-constant">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialpersistentfields-field-with-nonstandard-modifiers">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialversionuid-field-in-enum-or-interface">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialversionuid-field-in-nonserializable-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialversionuid-field-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialversionuid-field-with-nonstandard-modifiers">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.serialversionuid-stale">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <suppressReadResolveWriteReplace>false</suppressReadResolveWriteReplace>
+      <suppressReadWriteObject>false</suppressReadWriteObject>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-class-abstract">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-class-visibility-default">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-class-visibility-private">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-class-visibility-protected">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-class-visibility-public">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-constructor-visibility-default">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-constructor-visibility-private">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-constructor-visibility-protected">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-constructor-visibility-public">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-field-transient">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-field-visibility-default">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-field-visibility-private">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-field-visibility-protected">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-field-visibility-public">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-method-visibility-default">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-method-visibility-private">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-method-visibility-protected">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-method-visibility-public">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-return-type">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.set-return-type-void">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.sort-tags-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.static-field">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>static-field</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.static-method">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>static-method</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.string-constructor">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.suppress-warnings">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.swap-equals-arguments">
+      <defaultTransformName>oracle.jdeveloper.java.commute-equals-method-call</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.syntax-advisory">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.syntax-error">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.syntax-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-ambiguous-doc-method-reference">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>assist</severity>
+      <style>assist</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-correct-spelling">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-description-missing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-is-duplicate">
+      <defaultTransformName>oracle.jdeveloper.java.remove-tag-fix</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-is-misplaced">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-is-missing">
+      <defaultTransformName>oracle.jdeveloper.java.add-tag-fix</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tag-misspelled">
+      <defaultTransformName>oracle.jdeveloper.java.tag-correct-spelling</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.tags-incorrectly-sorted">
+      <defaultTransformName>oracle.jdeveloper.java.sort-tags-fix</defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>warning</style>
+      <visibility>protected</visibility>
+    </bean>
+    <bean id="oracle.jdeveloper.java.trivial-assignment">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.type-deprecated">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>deprecated</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.type-incompatible">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.type-not-found">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.type-unassignable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unchecked-cast">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unchecked-conversion">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-class-modifier-order">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-class-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Ll}].*</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-constant-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Ll}]+</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-field-modifier-order">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-field-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Lu}].*</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-interface-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Ll}].*</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-method-modifier-order">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-method-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Lu}].*</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-parameter-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Lu}].*</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unconventional-variable-name">
+      <convention>standard</convention>
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <pattern>[^\p{Lu}].*</pattern>
+      <severity>advisory</severity>
+      <style>advisory</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unnecessary-boxing">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unnecessary-cast">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unrestricted-field-access">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <maximumVisibility>protected</maximumVisibility>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-class">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-constructor">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-field">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-import">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-interface">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-method">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-parameter">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.unused-variable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>unused</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.update-annotation-to-suppress-warning">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.uppercase-long-literal">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.java.variable">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>false</enabled>
+      <severity>assist</severity>
+      <style>variable</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.vg">
+      <enabled>false</enabled>
+      <threshold>10</threshold>
+    </bean>
+    <bean id="oracle.jdeveloper.java.wide-integer-literal">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.wide-long-literal">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.java.wildcard-invalid">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.add-method-binding-method">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.check-facelets-configuration">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.check-faces-config-ordering-config">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.check-unused-facelets-ajax-tag">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.check-valid-parent">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.duplicate-facet">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.duplicate-id">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.duplicate-jsf-id">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.el-syntax">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.empty-subview">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.empty-verbatim">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.generate-unique-id">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.generate-unique-uid">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.high-available-app">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.install-jsp-tag-library">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.invoke-el-builder">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.missing-jsf-form-tag">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.multiple-facet-components">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.mutually-exclusive-atributes">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.mutually-required-atributes">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.namespace-defined-but-not-installed">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.nested-form-tags">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.no-method-binding-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.no-naming-container-include">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.prefix-declared-in-taglib-but-not-used">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.prefix-declared-in-xmlns-but-not-used">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-attribute">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-duplicate-facet">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-empty-subview">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-empty-verbatim">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-extra-facet-component">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-grouping-element">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-mutex-attributes">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-nested-form">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-undefined-facet">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-unused-taglib">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.remove-unused-xmlns-attribute">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.surround-with">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.translator-errors">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.translator-warnings">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.undefined-facet">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.unnecessary-component-group">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.unreferenced-jar">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.validate-children">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.validate-forbidden-ancestor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.jsp.validate-forbidden-descendant">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.properties.duplicate-key-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.properties.missing-continuation">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.properties.missing-value-warning">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.properties.newlines-are-bad">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="oracle.jdeveloper.todo.task">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>assist</severity>
+      <style>todo</style>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.action-with-addressing-check">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.annotation-error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.annotation-warning">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.binding-missing-operations">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.binding-missing-operations-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.broken-webxml">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.broken-webxml-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.definition-no-namespace">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.definition-set-namespace">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.document-encoded">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.handler-chain-synchronization">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.handlerchain-impl-synchronization_handler-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.handlerchain-impl-synchronization_src-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.implement-message-provider-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.implement-provider">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.implement-source-provider-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.jrf-security-policy-property-crosschecker">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.make-use-literal">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.method-annotation">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.method-annotation-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.mismatch-annotation">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.mixed-up-policy-annotation-resolver">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.mixedup-policy-annotation-resolver_delete_all-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.mixedup-policy-annotation-resolver_delete_owsm-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.mixedup-policy-annotation-resolver_delete_wls-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.move-schema-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.move-schema-import-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.oneway-outbound-conflict-resolver">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.oneway-outbound-conflict-resolver_oneway-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.oneway-outbound-conflict-resolver_policy-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.oneway-outbound-conflict-resolver_update-policy-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.overloaded-methods-resolver">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.overloaded-methods-resolver-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.owsm-policy-validator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.parameter-style-checker">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.parameter-style-checker_change_to_wrapped-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.qualified-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.rest.broken-resource-error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.rest.broken-resource-warning">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.rest.broken-webxml">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.rest.broken-webxml-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.secured-provider-without-wsdl-check">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.secured-provider-without-wsdl-check-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.sei-webservice-annotation-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.soap-jms-validator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.stateful-conflict-resolver">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.stateful-conflict-resolver_annotation-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.stateful-conflict-resolver_interface-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.swap-element-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.swap-element-type-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.transactional-conflict-resolver">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.webserviceref-unique-name-check-for-owsm-security-policy">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wls-policy-in-wsdl-and-service-resolver">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wls-policy-in-wsdl-and-service-resolver_source-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wls-policy-in-wsdl-and-service-resolver_wsdl-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wls-policy-validator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wlspolicy-descriptor-synchronization">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wlspolicy-descriptor-synchronization-auto-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wsdl-illegal">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wsdl-impl-synchronization">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wsdl-impl-synchronization_src-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wsdl-impl-synchronization_wsdl-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wsdl-unreachable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wsdl-unreachable-fix">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.wssconfig-consistency-check">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.xsd-import-under-types">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.xsd-import-with-wsdl-import">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.xsd-schema-not-element-qualified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdeveloper.webservice.xsd-schema-not-under-types">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.jdevimpl.json.syntax-error">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.mdsdt.cust.role.audit.FixAllTipCustValidationIssues">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.mdsdt.cust.role.audit.MDSTipCustValidationError">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>error</severity>
+      <style>error</style>
+    </bean>
+    <bean id="oracle.placeholder.view.join-attr-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.column-pair-reference-column-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.column-pair-reference-column-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.duplicate">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.duplicate-inverse">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.duplicate-pk">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.reference-column-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.source-column-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.source-column-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.column-pair.source-column-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.conversion-value.data-type-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.conversion-value.object-type-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.converter-class.converter-class-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.converter-class.converter-class-name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.converter-class.converter-class-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.converter-class.missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.conversion-values-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.duplicate-data-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.duplicate-object-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-big-decimal">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-big-integer">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-boolean">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-byte-array">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-char-array">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-character">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-float">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-generic">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-number">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-sql-date">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-sql-time">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-sql-timestamp">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-string">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-util-calendar">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.invalid-util-date">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.object-type.name-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.converter.type.type-name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.embeddable.embeddable-is-interface">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.embeddable.is-abstract">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.caching.deprecated-shared-cache-setting">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.caching.isolated-cache-with-settings">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.caching.multiple-expiry-types-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.copy-policy.copy-policy-method-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.copy-policy.copy-policy-method-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.copy-policy.copy-policy-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.copy-policy.copy-policy-working-copy-method-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.copy-policy.not-resolvable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.copy-policy.not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.entity-create-primary-table">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.entity-select-primary-table">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.access-type-field-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.access-type-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.access-type-method-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.has-equals-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.has-hash-code-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.id-class-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.implements-serializable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.incorrect-access-get-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.incorrect-access-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.incorrect-access-set-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-class.incorrect-field-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.id-mapping-unkown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.declaration-policy-no-discriminator-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.declaration-policy-non-null-discriminator-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.declaration-policy-non-null-discriminator-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.inheritance-reference-column-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.inheritance-source-column-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.inheritance-source-column-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.involvement-policy-discriminator-type-mismatch">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.involvement-policy-no-root">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.involvement-policy-pk-columns-specified-for-single-table-strategy">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.involvement-policy-pk-columns-specified-for-table-per-class-strategy">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.inheritance.reference-column-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.invalid-secondary-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.locking.cascade-with-non-version-column-locking">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.locking.selected-columns-column-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.locking.selected-columns-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.locking.selected-columns-type-columns-pk">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.locking.selected-columns-type-no-columns-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.mixed-id-class-embedded-id-mappings">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.mixed-id-embedded-id-mappings">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.primary-table-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.entity.read-only-not-root">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.class-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.class-not-instantiable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.method-is-final">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.method-is-non-void">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.method-is-static">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.method-name-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.method-parameter-count-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.method-parameter-type-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.event-listener.no-public-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.allocation-size">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.duplicate-names">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.generator-unique-constraint-invalid-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.initial-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.invalid-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.pk-column-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generator.value-column-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generic.generic-class.bad-hierarchy">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generic.generic-class.class-not-on-classpath">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generic.generic-class.parent-class-not-on-classpath">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.generic.generic-class.wrong-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-class.mapped-class-generic.customizer.customizer-class-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-class.mapped-class-generic.customizer.customizer-class-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-class.mapped-class-generic.customizer.customizer-class-null">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.mapped-superclass-is-interface">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.multitenant-inheritance-root">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.table-discriminator-without-multitenant">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.table-discriminator-without-table-per-tenant">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.tenant-discriminator-column-column-not-on-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.tenant-discriminator-column-no-multitenant">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.tenant-discriminator-column-table-invalid-for-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.tenant-discriminator-column-with-table-per-tenant">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.tenant-discriminator-column-with-tenant-table-discriminator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapped-superclass.multitenancy.tenant-discriminator-column-writable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.column.database-field-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.column.multiple-mapping">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.element-collection.no-collection-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.element-collection.no-value-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.element-collection.order-by-clause-and-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.element-collection.table-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.element-collection.target-class-not-basic-or-embeddable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.element-collection.wrong-jpa-version">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded-id.embedded-id-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded-id.incorrect-access-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded-id.missing-equals">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded-id.missing-hash-code">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded-id.not-public">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded-id.not-serializable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded.not-embeddable-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.embedded.unknown-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.many-to-many.m-m-unique-constraint-invalid-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.many-to-many.map-key-is-not-map">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.many-to-many.missing-order-by-clause">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.many-to-many.unneeded-order-by-clause">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.many-to-one.m-o-unique-constraint-invalid-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.many-to-one.many-to-one-join-specification-collision">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mappable.mapped-by-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mappable.mapped-by-type-mismatch">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mappable.mapped-by-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.column-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.generator-name-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.generator-specified-for-auto">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.generator-specified-for-identity">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.mapping-create-column">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.mapping-mark-transient">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.mapping-select-column">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.multiple-conversions">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.no-generator-specified-for-sequence">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.no-generator-specified-for-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.sequence-generator-specified-for-table">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.table-generator-specified-for-sequence">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.mapping-generic.temporal-type-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.one-to-many.o-m-unique-constraint-invalid-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.one-to-many.one-to-many-join-specification-collision">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.one-to-one.join-mapping-specification-collision">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.one-to-one.join-pk-specification-collision">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.one-to-one.o-o-unique-constraint-invalid-column">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.one-to-one.one-to-one-join-specification-collision">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.property.missing-temporal">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relational-id.id-maps-id">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relational-id.maps-id-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relational-id.maps-id-not-id">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relationship.cascade-type-all-specified-in-array">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relationship.join-table-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relationship.no-join-table-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relationship.target-entity-multitenancy-type-mismatch">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relationship.target-entity-orm-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.relationship.target-entity-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.invalid-read-transformer-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.invalid-read-transformer-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.invalid-write-transformer-defined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.no-write-transformer-defined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.read-transformer-both-method-and-class-undefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.read-transformer-class-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.read-transformer-method-does-not-exist">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.both-transformer-method-and-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.both-transformer-method-and-class-undefined">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.class-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.column-transient">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.invalid-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.method-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.no-column-write-transformer">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.no-transformer-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformation.write-transformer.write-transformer-invalid-method">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.transformer.duplicate-writable-columns">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.discriminator-class-does-not-match-interface-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.discriminator-classes">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.discriminator-column-exists">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.discriminator-column-null">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.discriminator-value">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.duplicate-classes">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.duplicate-discriminators">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.mapping-property-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.no-discriminator-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.target-interface-not-assignable">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.variable-one-to-one.target-interface-not-interface">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.version.column-type-not-temporal">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.mapping.version.property-and-column-types-incompatible">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.duplicate-entity-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.invalid-default-package-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.mapped-class-is-abstract">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.mapped-class-is-an-interface">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.orm-development-database-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.orm-invalid-default-catalog-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.orm-invalid-default-schema-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.pu-defaults.pu-defaults-invalid-default-catalog-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.pu-defaults.pu-defaults-invalid-default-schema-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.tenant-discriminator.column-not-resolved">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.orm.tenant-discriminator.column-unamed">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.duplicate-pu-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.caching-configuration.unknown-source">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.caching-policy.caching-policy-duplicate">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.connection.non-jta-datasource-specified-with-jta">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.duplicate-converter">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.duplicate-jar-file">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.duplicate-mapping-file">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.duplicate-pk-generator">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.duplicate-property">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.duplicate-query-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.entity-wrong-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.included-class-wrong-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jar-file-invalid-extension">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jar-file-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.read-connection-maximum-negative">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.read-connection-maximum-smaller-than-minimum">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.read-connection-minimum-large-than-maximum">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.read-connection-minimum-negative">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.statement-cache-size-negative">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.write-connection-maximum-negative">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.write-connection-maximum-smaller-than-minimum">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.write-connection-minimum-larger-than-maximum">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.jdbc-login.write-connection-minimum-negative">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.logging.logger-wrong-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.mapped-class-with-multiple-types">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.mapping-file-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.metadata.session-name-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.metadata.sessions-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.overlapping-mapped-classes">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.overlapping-mapping-file-with-pu-defaults">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.provider-wrong-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.pu-development-database-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.schema-generation.invalid-create-ddl-file-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.schema-generation.invalid-drop-ddl-file-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.schema-generation.invalid-generation-location">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.schema-generation.relative-generation-location">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.entity-customizer-duplicate">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.entity-customizer-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.entity-customizer-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.entity-customizer-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.entity-name-not-specified">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.entity-name-unknown">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.entity-customizer.wrong-type">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.exception-handler.exception-handler-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.exception-handler.exception-handler-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.session-customizer.session-customizer-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.session-customizer.session-customizer-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.session-listener.session-listener-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.session-listener.session-listener-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.session-profiler.session-profile-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.session.session-profiler.session-profiler-no-default-constructor">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.persistence.unit.unknown-mapping-file">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.jpql-query-invalid">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.jpql-query-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.jpql.duplicate-query-hint-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.jpql.query-hint-name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.native-query-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.query-name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.stored-procedure.duplicate-parameter-name">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.stored-procedure.incorrect-return-class">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.stored-procedure.missing-return-result-set">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.stored-procedure.parameter-name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="oracle.toplink.jpa.query.stored-procedure.procedure-name-missing">
+      <enabled>true</enabled>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.animation-enabled">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.avoid-include-tag">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.avoid-inline-frame">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.avoid-verbatim-tag">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.bean-scope-prefix">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.client-component-true">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.data-expr-reference">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.expert-mode-vo">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.height-perc">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.place-holder-dc">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.read-only-vo">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.select-star-vo">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.system-exit-usage">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.system-out-usage">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.test-all-role">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.tf-dc-scope">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.visible-false">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.visible-false-2">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.analyzer.width-100">
+      <defaultTransformName><null/></defaultTransformName>
+      <enabled>true</enabled>
+      <severity>warning</severity>
+      <style>warning</style>
+    </bean>
+    <bean id="org.adf.emg.audits.suppress.create-suppress-xml-warnings-comment">
+      <enabled>false</enabled>
+    </bean>
+    <bean id="org.adf.emg.audits.suppress.suppress-xml-warnings">
+      <enabled>true</enabled>
+    </bean>
+  </audit-profile>
