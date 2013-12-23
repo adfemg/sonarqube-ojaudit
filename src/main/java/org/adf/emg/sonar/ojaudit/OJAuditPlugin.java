@@ -51,7 +51,7 @@ import org.sonar.api.profiles.RulesProfile;
                       global = true, type = PropertyType.INTEGER),
             @Property(key = OJAuditPlugin.OJAUDIT_RULEHELP_KEY, defaultValue = "", name = "ojaudit -rulehelp output",
                       description =
-                      "Full path to the output of 'ojaudit -rulehelp'. If not specified SONAR_HOME/conf/rulehelp.txt will be used.",
+                      "Full path to the output of 'ojaudit -rulehelp'. If not specified SONAR_HOME/conf/ojaudit-rulehelp.txt will be used.",
                       project = false, global = true)
     })
 /**
