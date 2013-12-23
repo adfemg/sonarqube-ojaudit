@@ -83,7 +83,7 @@ public class RulesRepository extends RuleRepository {
      * Parses the rulehelp.txt output file and converts it to sonar Rules
      * @param file
      * @return list of Rules
-     * @see ParsedRule
+     * @see ParsedRule12
      */
     private List<Rule> parseRuleHelp(File file) {
         if (file == null || !file.canRead()) {
@@ -114,14 +114,14 @@ public class RulesRepository extends RuleRepository {
     /**
      * Parses the rulehelp.txt output file and converts it to sonar Rules
      * @param reader BufferedReader to read rulehelp.txt. This reader is not closed by this
-     *        method and should be closed by the caller.
+     * method and should be closed by the caller.
      * @return list of Rules
-     * @see ParsedRule
+     * @see ParsedRule12
      */
     private List<Rule> parseRuleHelpLines(BufferedReader reader) throws IOException {
         // read file line-by-line and use ParsedRule to build rules
         List<Rule> retval = new ArrayList<Rule>();
-        ParsedRule rule = null;
+        ParsedRule12 rule = null;
         while (true) {
             String line = reader.readLine();
             if (line == null) {
@@ -133,7 +133,7 @@ public class RulesRepository extends RuleRepository {
                 rule = null;
             } else if (line.startsWith("Rule:")) {
                 // start new rule
-                rule = new ParsedRule();
+                rule = new ParsedRule12();
             }
             if (rule != null) {
                 rule.digest(line);
