@@ -55,14 +55,12 @@ public class ParsedRule11 implements ParsedRule {
      *         was ignored
      */
     public boolean digest(String line) {
-        LOG.info("Digesting '" + line + "'");
         return digestRule(line) || digestId(line);
     }
 
     private boolean digestRule(String line) {
         Matcher matcher = PATTERN_RULE.matcher(line);
         if (matcher.matches()) {
-            LOG.info("found name");
             this.name = matcher.group(GROUP_RULE_NAME);
             return true;
         } else {
@@ -73,7 +71,6 @@ public class ParsedRule11 implements ParsedRule {
     private boolean digestId(String line) {
         Matcher matcher = PATTERN_ID.matcher(line);
         if (matcher.matches()) {
-            LOG.info("found id/key");
             this.key = matcher.group(GROUP_ID_KEY);
             return true;
         } else {
