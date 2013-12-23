@@ -73,16 +73,16 @@ public class Configuration implements ServerExtension, BatchExtension {
     }
 
     /**
-     * Gets the workspace (.jws) file for the current project.
-     * @return File object pointing to the jws file.
+     * Gets the workspace (.jws) or project (.jpr) file for the current project.
+     * @return File object pointing to the jws or jpr file.
      * @throws IllegalArgumentException if sonar plugin property not set
-     * @see OJAuditPlugin#WORKSPACE_FILE_KEY
+     * @see OJAuditPlugin#TARGET_FILE_KEY
      */
-    public File getWorkspaceFile() {
-        checkKeyExists(OJAuditPlugin.WORKSPACE_FILE_KEY);
-        File file = project.getFileSystem().resolvePath(settings.getString(OJAuditPlugin.WORKSPACE_FILE_KEY));
+    public File getTargetFile() {
+        checkKeyExists(OJAuditPlugin.TARGET_FILE_KEY);
+        File file = project.getFileSystem().resolvePath(settings.getString(OJAuditPlugin.TARGET_FILE_KEY));
 
-        checkCanRead(file, "workspace file");
+        checkCanRead(file, "workspace or project file");
         return file;
     }
 
@@ -109,6 +109,7 @@ public class Configuration implements ServerExtension, BatchExtension {
     public File getExecutable() {
         String exec = settings.getString(OJAuditPlugin.OJAUDIT_EXEC_KEY);
         if (exec == null || exec.trim().isEmpty()) {
+            LOG.debug("determining default ojaudit logging based on pathSeparator {}", File.pathSeparator);
             exec = "\\".equals(File.pathSeparator) ? "ojaudit.exe" : "ojaudit";
         }
         File file = new File(new File(getJDevHome(), "jdev/bin"), exec);
@@ -160,7 +161,7 @@ public class Configuration implements ServerExtension, BatchExtension {
         }
     }
 
-    private boolean  checkCanRead(File file, String fileType) {
+    private boolean checkCanRead(File file, String fileType) {
         if (!file.canRead()) {
             LOG.warn("unable to read " + fileType + " " + file);
             return false;

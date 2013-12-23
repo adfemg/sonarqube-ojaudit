@@ -31,9 +31,9 @@ import org.sonar.api.SonarPlugin;
 import org.sonar.api.profiles.RulesProfile;
 
 @Properties({
-            @Property(key = OJAuditPlugin.WORKSPACE_FILE_KEY,
-                      name = "Relative path to .jws file from sonar project home",
-                      description = "Relative path to .jws file from sonar project home", project = true,
+            @Property(key = OJAuditPlugin.TARGET_FILE_KEY,
+                      name = "Relative path to .jws or .jpr file from sonar project home",
+                      description = "Relative path to .jws or .jpr file from sonar project home", project = true,
                       global = false),
             @Property(key = OJAuditPlugin.JDEV_HOME_KEY, name = "JDeveloper home directory",
                       description = "JDeveloper home directory (that has jdev/bin as subdirectory)", project = true,
@@ -70,7 +70,7 @@ public final class OJAuditPlugin extends SonarPlugin {
     public static final String SONAR_REPOS_NAME = "ojaudit";
 
     // plugin settings keys
-    public static final String WORKSPACE_FILE_KEY = "sonar.ojaudit.jws";
+    public static final String TARGET_FILE_KEY = "sonar.ojaudit.target";
     public static final String JDEV_HOME_KEY = "sonar.ojaudit.jdevhome";
     public static final String OJAUDIT_EXEC_KEY = "sonar.ojaudit.executable";
     public static final String OJAUDIT_PROFILE_KEY = "sonar.ojaudit.profile";

@@ -97,7 +97,7 @@ public class Analyzer implements Sensor {
             command = command.addArgument("-profile").addArgument(config.getProfile());
             command = command.addArgument("-output").addArgument(output.getCanonicalPath());
             command = command.addArgument("-encoding").addArgument("UTF-8");
-            command = command.addArgument(config.getWorkspaceFile().getCanonicalPath());
+            command = command.addArgument(config.getTargetFile().getCanonicalPath());
             cmd = command.toCommandLine();
             LOG.info("executing {}", cmd);
             CommandExecutor executor = CommandExecutor.create();
