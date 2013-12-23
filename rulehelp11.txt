@@ -1,0 +1,1228 @@
+Defined rules:
+Rule: Illegal internal package import. Please use public API.
+Id:   adfjavaaudit-internal-package-import
+----
+Rule: Add library and deployment project to project
+Id:   ejb.broken-annotation
+     Checks that the project is correctly configured in the presence of a @Entity / @Stateless annotations
+----
+Rule: Check for 'visible' attributes
+Id:   dvt-category.dvt-rule-visibletorendered
+     'visible' attributes on ADF Data Visualization tags should be replaced with 'rendered'.
+----
+Rule: Page Does Not Exist
+Id:   oracle.adfdt.controller.adfc.source.audit.PageDoesNotExist
+----
+Rule: Page Fragment Reference Not Expected
+Id:   oracle.adfdt.controller.adfc.source.audit.PageFragmentReferenceNotExpected
+----
+Rule: Page Reference Not Expected
+Id:   oracle.adfdt.controller.adfc.source.audit.PageReferenceNotExpected
+----
+Rule: Additional Bounded Task Flow
+Id:   oracle.adfdt.controller.adfc.source.audit.AdditionalBoundedTaskFlow
+----
+Rule: Additional Unbounded Task Flow Artifact
+Id:   oracle.adfdt.controller.adfc.source.audit.AdditionalUnboundedTaskFlowArtifact
+----
+Rule: Unrestricted Field Access
+Id:   oracle.jdeveloper.java.access.unrestricted-field-access
+----
+Rule: Array Field Access
+Id:   oracle.jdeveloper.java.access.array-field-access
+----
+Rule: Enum Constructor Access
+Id:   oracle.jdeveloper.java.access.enum-constructor-access
+----
+Rule: No Data Control Scope is Defined
+Id:   oracle.adfdt.controller.adfc.source.audit.extra.DataControlScopeNotDefined
+----
+Rule: Customization ID Not Defined
+Id:   oracle.adfdt.controller.adfc.source.audit.CustomizationIdNotDefined
+----
+Rule: Required Parameter(s) Not Specified
+Id:   oracle.adfdt.controller.adfc.source.audit.RequiredParametersNotSpecified
+----
+Rule: Bad Page Fragment Semantics in Dialog
+Id:   oracle.adfdt.controller.adfc.source.audit.BadPageFragmentSemanticsInDialog
+----
+Rule: Page Fragment Semantics Do Not Match (1)
+Id:   oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch1
+----
+Rule: Page Fragment Semantics Do Not Match (2)
+Id:   oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch2
+----
+Rule: Page Fragment Semantics Do Not Match (2b)
+Id:   oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch2b
+----
+Rule: Wellformedness Error
+Id:   oracle.ide.javascript.syntax-error
+----
+Rule: Check for url usage for taskflow that shares datacontrol frames.
+Id:   shared-datacontrol
+----
+Rule: Unused Import
+Id:   unused.unused-import
+     Import '{name}' unused
+----
+Rule: Unused Class
+Id:   unused.unused-class
+     Class '{name}' unused
+----
+Rule: Unused Interface
+Id:   unused.unused-interface
+     Interface '{name}' unused
+----
+Rule: Unused Method
+Id:   unused.unused-method
+     Method '{name}' unused
+----
+Rule: Unused Constructor
+Id:   unused.unused-constructor
+     Constructor unused
+----
+Rule: Unused Field
+Id:   unused.unused-field
+     Field unused
+----
+Rule: Unused Variable
+Id:   unused.unused-variable
+     Local variable '{name}' unused
+----
+Rule: Unused Parameter
+Id:   unused.unused-parameter
+     Parameter '{name}' unused
+----
+Rule: Deprecated Type
+Id:   unused.type-deprecated
+     Type deprecated
+----
+Rule: Deprecated Constructor
+Id:   unused.constructor-deprecated
+     Constructor deprecated
+----
+Rule: Deprecated Method
+Id:   unused.method-deprecated
+     Method deprecated
+----
+Rule: Deprecated Field
+Id:   unused.field-deprecated
+     Field deprecated
+----
+Rule: Interface Highlighting
+Id:   highlighting.interface
+     Interface name highlighting
+----
+Rule: Abstract Class Highlighting
+Id:   highlighting.abstract-class
+     Abstract class name highlighting
+----
+Rule: Class Highlighting
+Id:   highlighting.class
+     Concrete class name highlighting
+----
+Rule: Annotation Highlighting
+Id:   highlighting.annotation
+     Annotation class name highlighting
+----
+Rule: Annotation Element Highlighting
+Id:   highlighting.annotation-element
+     Annotation element name highlighting
+----
+Rule: Instance Method Highlighting
+Id:   highlighting.instance-method
+     Instance method name highlighting
+----
+Rule: Static Method Highlighting
+Id:   highlighting.static-method
+     Static method name highlighting
+----
+Rule: Instance Field Highlighting
+Id:   highlighting.instance-field
+     Instance field name highlighting
+----
+Rule: Static Field Highlighting
+Id:   highlighting.static-field
+     Static field name highlighting
+----
+Rule: Constructor Highlighting
+Id:   highlighting.constructor
+     Constructor name highlighting
+----
+Rule: Parameter Highlighting
+Id:   highlighting.parameter
+     Parameter name highlighting
+----
+Rule: Variable Highlighting
+Id:   highlighting.variable
+     Variable name highlighting
+----
+Rule: Check for AFVisualRoot Style
+Id:   style-visual-root-present
+----
+Rule: Check for Style Classes That Should Not Be Used
+Id:   style-bad-selecter
+----
+Rule: Check for Automatic Heights on PanelStretchLayout
+Id:   style-no-auto-heights
+----
+Rule: Check for Automatic Widths on PanelStretchLayout
+Id:   style-no-auto-widths
+----
+Rule: Well-formedness Error
+Id:   oracle.ide.xml.wellformedness-error
+----
+Rule: Well-formedness Warning
+Id:   oracle.ide.xml.wellformedness-warning
+----
+Rule: Validation Error
+Id:   oracle.ide.xml.validation-error
+----
+Rule: Validation Warning
+Id:   oracle.ide.xml.validation-warning
+----
+Rule: Validation Advisory
+Id:   oracle.ide.xml.validation-advisory
+----
+Rule: Other Error
+Id:   oracle.ide.xml.other-error
+----
+Rule: Other Warning
+Id:   oracle.ide.xml.other-warning
+----
+Rule: Other Advisory
+Id:   oracle.ide.xml.other-suggestion
+----
+Rule: Required Attribute Missing
+Id:   oracle.ide.xml.attribute-missing-error
+----
+Rule: Recommended Attribute Missing
+Id:   oracle.ide.xml.attribute-missing-warning
+----
+Rule: Attribute Duplicated
+Id:   oracle.ide.xml.attribute-duplicated
+----
+Rule: Attribute Value Missing
+Id:   oracle.ide.xml.attribute-value-missing
+----
+Rule: Mismatched End Tag
+Id:   oracle.ide.xml.mismatched-end-tag
+----
+Rule: Check for fragment containing more than one root component.
+Id:   single-root-in-fragment
+----
+Rule: Required Element Empty
+Id:   oracle.adfdt.controller.adfc.source.audit.RequiredElementEmpty
+----
+Rule: Check for translatable resource in attributes.
+Id:   xmlef-translation-validation.translation-rule-translatableattr
+     Attribute is not from a translatable resource.
+----
+Rule: Unreferenced JAR in the WEB-INF\lib folder
+Id:   jsp-category.unreferenced-jar
+     Tip for Unreferenced JAR in the WEB-INF\lib folder
+----
+Rule: Jsp Translator Warnings
+Id:   jsp-category.translator-warnings
+     Tip for Translator Warnings
+----
+Rule: Jsp Translator Errors
+Id:   jsp-category.translator-errors
+     Tip for Translator Errors
+----
+Rule: Duplicate ID Attribute
+Id:   jsp-category.duplicate-id
+     Tip for Duplicate ID Attribute
+----
+Rule: Nested Form Tag
+Id:   jsp-category.nested-form-tags
+     Tip for Variable Name Verification
+----
+Rule: Verify Valid Parents
+Id:   jsp-category.check-valid-parent
+     Tip for Verify Valid Parents
+----
+Rule: Validate Children
+Id:   jsp-category.validate-children
+     Tip for Validate Children
+----
+Rule: Validate Forbidden Decendant
+Id:   jsp-category.validate-forbidden-descendant
+     Tip for Validate Forbidden Decendant
+----
+Rule: Validate Forbidden Ancestor
+Id:   jsp-category.validate-forbidden-ancestor
+     Tip for Validate Forbidden Ancestor
+----
+Rule: Mutually Exclusive Attributes
+Id:   jsp-category.mutually-exclusive-atributes
+     Tip for Mutually Exclusive Attributes
+----
+Rule: Mutually Required Attributes
+Id:   jsp-category.mutually-required-atributes
+     Tip for Mutually Required Attributes
+----
+Rule: Unused Tag Library in JSP Page
+Id:   jsp-category.prefix-declared-in-taglib-but-not-used
+     Tip for Variable Name Verification
+----
+Rule: Unused Tag Library in JSP Document
+Id:   jsp-category.prefix-declared-in-xmlns-but-not-used
+     Tip for Variable Name Verification
+----
+Rule: Tag Library Referenced, But Not Installed
+Id:   jsp-category.namespace-defined-but-not-installed
+     Tip for Variable Name Verification
+----
+Rule: Duplicate Faces Component ID
+Id:   jsp-category.duplicate-jsf-id
+     Tip for Duplicate Faces Component ID
+----
+Rule: Duplicate Facet
+Id:   jsp-category.duplicate-facet
+     Tip for Duplicate Facet
+----
+Rule: Empty Facet
+Id:   jsp-category.empty-facet
+     Tip for Empty Facet
+----
+Rule: Undefined Facet
+Id:   jsp-category.undefined-facet
+     Tip for Undefined Facet
+----
+Rule: Binding Method Missing
+Id:   jsp-category.no-method-binding-method
+     Tip for Variable Name Verification
+----
+Rule: Unnecessary Component Group
+Id:   jsp-category.unnecessary-component-group
+     Tip for Unnecessary Component Group
+----
+Rule: Empty Verbatim Tag
+Id:   jsp-category.empty-verbatim
+     Tip for Empty Verbatim Tag
+----
+Rule: Empty SubView Tag
+Id:   jsp-category.empty-subview
+     Tip for Empty SubView Tag
+----
+Rule: JSF Page Include Without Naming Container
+Id:   jsp-category.no-naming-container-include
+     Tip for JSF Page Include Without Naming Container
+----
+Rule: Syntax Error in EL Expression
+Id:   jsp-category.el-syntax
+     Tip for Syntax Error in EL Expression Verification
+----
+Rule: High Available Application compliance warning
+Id:   jsp-category.high-available-app
+     Tip for High Available Application compliance warning
+----
+Rule: Facelets Project Properly Configured warning
+Id:   jsp-category.check-facelets-configuration
+     Tip for Facelets Project Properly Configured warning
+----
+Rule: Unconventional Class Modifier Order
+Id:   declarations.unconventional-class-modifier-order
+     Unconventional modifier order.
+----
+Rule: Unconventional Method Modifier Order
+Id:   declarations.unconventional-method-modifier-order
+     Unconventional modifier order.
+----
+Rule: Unconventional Field Modifier Order
+Id:   declarations.unconventional-field-modifier-order
+     Unconventional modifier order.
+----
+Rule: Well-formedness Error
+Id:   oracle.jdevimpl.json.syntax-error
+----
+Rule: Bean in Scope Map is Modified
+Id:   oracle.adfdt.controller.adfc.source.audit.ScopeModifiedWithoutDirty
+----
+Rule: EL Bean is Modified
+Id:   oracle.adfdt.controller.adfc.source.audit.ELBeanModificationWithoutDirty
+----
+Rule: Unreachable code
+Id:   oracle.ide.javascript.jslint.unreachable-code
+----
+Rule: Usage of 'with' statements
+Id:   oracle.ide.javascript.jslint.unexpected-with-statement
+----
+Rule: Forbidden block
+Id:   oracle.ide.javascript.jslint.forbidden-block
+----
+Rule: Required block
+Id:   oracle.ide.javascript.jslint.required-block
+----
+Rule: Usage of labels
+Id:   oracle.ide.javascript.jslint.unexpected-label
+----
+Rule: Usage of 'void'
+Id:   oracle.ide.javascript.jslint.unexpected-void
+----
+Rule: Usage of ++ and -- operators
+Id:   oracle.ide.javascript.jslint.unexpected-inc-dec
+----
+Rule: Usage of 'eval'
+Id:   oracle.ide.javascript.jslint.unexpected-eval
+----
+Rule: Expression statement
+Id:   oracle.ide.javascript.jslint.expression-statement
+----
+Rule: Unexpected assignment expression
+Id:   oracle.ide.javascript.jslint.unexpected-assignment-expression
+----
+Rule: 'switch' fall-through
+Id:   oracle.ide.javascript.jslint.switch-fall-thru
+----
+Rule: Duplicate definition of variable/parameter
+Id:   oracle.ide.javascript.jslint.duplicate-definition
+----
+Rule: Nested re-definition of variable/parameter
+Id:   oracle.ide.javascript.jslint.nested-definition
+----
+Rule: Initial Caps for constructors
+Id:   oracle.ide.javascript.jslint.new-expression-case-mismatch
+----
+Rule: Usage of 'new' expression construct
+Id:   oracle.ide.javascript.jslint.unexpected-new-expression-construct
+----
+Rule: CSS Semantic error
+Id:   oracle.jdevimpl.css.audit.css-category.semantic-error
+----
+Rule: Check for invalid children of hierarchyViewer component
+Id:   dvt-category.dvthv-rule-compnotvalidhvchild
+     This component cannot be a child (direct or indirect) of a hierarchyViewer component.
+----
+Rule: Check for invalid attribute when component is inside of a hierarchyViewer component
+Id:   dvt-category.dvthv-rule-notvalidhvattr
+     This attribute is not supported when the component is inside (direct or indirect) of a hierarchyViewer component.
+----
+Rule: Check for required hierarchyViewer ancestor component
+Id:   dvt-category.dvthv-rule-compmustbeinsidehv
+     This component must have a hierarchyViewer component as its ancestor (direct or indirect).
+----
+Rule: Non-Serializable Field in Serializable Class
+Id:   serialization.field-not-serializable
+     Non-serializable field that is not marked as transient in serializable class
+----
+Rule: Missing Serialization UID
+Id:   serialization.serialversionuid-field-missing
+     Serializable class does not declare a serialVersionUID
+----
+Rule: Serialization Compatibility Changed
+Id:   serialization.serialversionuid-stale
+     Serializable class contains changes that may affect compatibility with previous versions
+----
+Rule: Serializable Non-Static Inner Class
+Id:   serialization.inner-class-serializable
+     Serializable non-static inner class
+----
+Rule: Transient field in non-serializable class
+Id:   serialization.field-transient-in-non-serializable-class
+----
+Rule: Serialization UID field with non-standard declaration
+Id:   serialization.serialversionuid-field-with-nonstandard-modifiers
+----
+Rule: serialPersistentFields field with non-standard declaration
+Id:   serialization.serialpersistentfields-field-with-nonstandard-modifiers
+----
+Rule: Serialization UID defined in non-serializable class
+Id:   serialization.serialversionuid-field-in-nonserializable-class
+     serialVersionUID field in non-serializable class
+----
+Rule: readObject or writeObject method defined in non-serializable class
+Id:   serialization.readObject-or-writeObject-in-nonserializable-class
+----
+Rule: readObject or writeObject method defined in externalizable class
+Id:   serialization.readObject-or-writeObject-in-externalizable-class
+----
+Rule: readObject or writeObject method not declared private
+Id:   serialization.readObject-or-writeObject-not-declared-private
+----
+Rule: readResolve or writeReplace method not declared protected
+Id:   serialization.readResolve-or-writeReplace-not-declared-protected
+----
+Rule: Unexpected Debugger statement
+Id:   oracle.ide.javascript.unexpected-debugger-statement
+----
+Rule: Usage of Continue statements
+Id:   oracle.ide.javascript.unexpected-continue-statement
+----
+Rule: Unescaped HTML end tag in String literal
+Id:   oracle.ide.javascript.unescaped-html-endtag-in-string-literal
+----
+Rule: Unused local identifier
+Id:   oracle.ide.javascript.unused-identifier
+----
+Rule: Usage of bitwise operators
+Id:   oracle.ide.javascript.unexpected-bitwise-operator
+----
+Rule: Syntax Error
+Id:   java-errors.syntax-error
+     {message}
+----
+Rule: Syntax Warning
+Id:   java-errors.syntax-warning
+     {message}
+----
+Rule: Syntax Advisory
+Id:   java-errors.syntax-advisory
+     {message}
+----
+Rule: Semantic Error
+Id:   java-errors.semantic-error
+     {message}
+----
+Rule: Semantic Warning
+Id:   java-errors.semantic-warning
+     {message}
+----
+Rule: Semantic Advisory
+Id:   java-errors.semantic-advisory
+     {message}
+----
+Rule: Type Not Found
+Id:   java-errors.type-not-found
+     Type not found
+----
+Rule: Name Not Found
+Id:   java-errors.name-not-found
+     Name not found
+----
+Rule: Member Not Found
+Id:   java-errors.member-not-found
+     Member not found
+----
+Rule: Method Not Found
+Id:   java-errors.method-not-found
+     Method not found
+----
+Rule: Constructor Not Found
+Id:   java-errors.constructor-not-found
+     Constructor not found
+----
+Rule: Constant Not Assignable
+Id:   java-errors.constant-unassignable
+     Constant '{value}' wider than type '{expectedType}'
+----
+Rule: Type Not Assignable
+Id:   java-errors.type-unassignable
+     Type '{expectedType}' expected                                                        
+----
+Rule: Type Incompatible
+Id:   java-errors.type-incompatible
+     Type 'expectedType' expected                                                        
+----
+Rule: Cast Incompatible
+Id:   java-errors.cast-incompatible
+     Type '{expectedType}' incompatible with '{actualType}'                                                        
+----
+Rule: Exceptions Unhandled
+Id:   java-errors.exceptions-unhandled
+     Exceptions not handled: {types}.
+----
+Rule: Methods Unimplemented
+Id:   java-errors.methods-unimplemented
+     Methods not implemented: {methods}.
+----
+Rule: Catch Unreachable
+Id:   java-errors.catch-unreachable
+     Catch block unreachable
+----
+Rule: Public Type Name Conflict
+Id:   java-errors.public-type-name-conflict
+     Name of public type should match file name
+----
+Rule: Secondary Type
+Id:   java-errors.secondary-type
+     Secondary top-level type should move to its own file or inside primary type
+----
+Rule: Invalid Modifier
+Id:   java-errors.invalid-modifier
+     Top-level types must be public or package private
+----
+Rule: Unnecessary Cast
+Id:   java-errors.unnecessary-cast
+     Cast unnecessary
+----
+Rule: Interface Duplicated
+Id:   java-errors.interface-duplicated
+     Duplicate supertype name.
+----
+Rule: Interface Conflicted
+Id:   java-errors.interface-conflicted
+     Two supertypes invoke same generic interface with different type parameters.
+----
+Rule: Wildcard Invalid
+Id:   java-errors.wildcard-invalid
+     Wildcard type not valid
+----
+Rule: Unchecked Conversion
+Id:   java-errors.unchecked-conversion
+     Unchecked conversion unsound but tolerated
+----
+Rule: Unchecked Cast
+Id:   java-errors.unchecked-cast
+     Cast unnecessary; unchecked conversion from {0} to {1} unsound but tolerated
+----
+Rule: Anonymous Class Extends Final Class
+Id:   java-errors.anonymous-extends-final
+----
+Rule: Return Missing
+Id:   java-errors.return-missing
+     Return statement missing
+----
+Rule: Return Value Missing
+Id:   java-errors.return-value-missing
+     Return value missing
+----
+Rule: Unsupported Browser property
+Id:   oracle.ide.javascript.unsupported-bom-property
+----
+Rule: Deprecated Browser property
+Id:   oracle.ide.javascript.deprecated-bom-property
+----
+Rule: Check for var variable in child nodes
+Id:   adffaces-category.adffaces-rule-varusage
+     The var variable cannot be used here, because it is a per-row EL variable.
+----
+Rule: Check for duplicate facetName
+Id:   adffaces-category.adffaces-rule-facetrefusage1
+     Duplicate facetName found, each facet can only be referenced once.
+----
+Rule: Check for facetRef usage
+Id:   adffaces-category.adffaces-rule-facetrefusage2
+     'facetRef' can only be used in 'pageTemplateDef' or 'componentDef'.
+----
+Rule: Check for actionListener attribute in commandButton node
+Id:   adffaces-category.adffaces-rule-commandbtnusage
+     'showPopupBehavior' causes 'commandButton' to ignore the actionListener attribute.
+----
+Rule: Check for long ids on naming containers.
+Id:   adffaces-category.adffaces-rule-aflongidsonnc
+     For better performance, it is highly recommended that ids on naming container be less than 7 characters in length.
+----
+Rule: Check for usage of HTML script tag.
+Id:   adffaces-category.adffaces-rule-verbatimScript
+     Using HTML script tag can result in subtle/hard to diagnose bugs, trh:script should be used instead.
+----
+Rule: Check for usage of f:verbatim tag.
+Id:   adffaces-category.adffaces-rule-verbatimUsage
+     Using f:verbatim tag can cause undesirable results when used with PPR navigation. For inlining styles or javascript, af:resource should be used instead.
+----
+Rule: Check for actionDelivery attr and popup facet in commandToolbarButton.
+Id:   adffaces-category.adffaces-rule-popupInCmdToolbarBtn
+     The toolbar button will be non-functional when there's no popup facet.
+----
+Rule: Check for actionDelivery attr and action listener in commandToolbarButton.
+Id:   adffaces-category.adffaces-rule-actionInCmdToolbarBtn
+     An action listener is used but the toolbar button will not fire an action event.
+----
+Rule: Check for usesUpload attr when a form contains inputFile.
+Id:   adffaces-category.adffaces-rule-usesuploadwithinputfile
+     Any form that contains inputFile must have usesUpload set to true.
+----
+Rule: Check for facet name conflict with toolboxLayout enumeration.
+Id:   adffaces-category.adffaces-rule-calendarFacetNameConflict
+     The facet name is in conflict with a built-in string in the toolboxLayout attribute.
+----
+Rule: Check for existence of custom facet name in toolboxLayout attribute.
+Id:   adffaces-category.adffaces-rule-calendarCustomFacetName
+     The custom facet name in toolboxLayout does not exist.
+----
+Rule: Check for usage of jsp:scriptlet.
+Id:   adffaces-category.adffaces-rule-jspScriptletUsage
+     JSP scriptlets will not work properly if using OJSP.
+----
+Rule: Reference Not Found Error
+Id:   oracle.ide.xml.brokenref-error
+----
+Rule: Reference Not Found Warning
+Id:   oracle.ide.xml.brokenref-warning
+----
+Rule: Reference Not Found Advisory
+Id:   oracle.ide.xml.brokenref-advisory
+----
+Rule: Remote Location Not Loaded Warning
+Id:   oracle.ide.xml.remoteref-warning
+----
+Rule: Remote Location Not Found Warning
+Id:   oracle.ide.xml.remoteref-reload-warning
+----
+Rule: Page Fragment Semantics Do Not Match (3)
+Id:   oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch3
+----
+Rule: Page Fragment Semantics Do Not Match (4)
+Id:   oracle.adfdt.controller.adfc.source.audit.PageFragmentSemanticsDoNotMatch4
+----
+Rule: Import Declaration
+Id:   assists.import-assist
+----
+Rule: Local Variable
+Id:   assists.local-variable-assist
+----
+Rule: If Statement
+Id:   assists.if-assist
+----
+Rule: For Statement
+Id:   assists.for-assist
+----
+Rule: Constructor Statement
+Id:   assists.ctor-assist
+----
+Rule: Boolean Expression
+Id:   assists.boolean-expression-assist
+----
+Rule: Constant Expression
+Id:   assists.constant-expression-assist
+----
+Rule: Outcome Not Found in Activity
+Id:   oracle.adfdt.controller.adfc.source.audit.OutcomeNotFoundInActivity
+----
+Rule: Equals Without HashCode
+Id:   api.equals-without-hashcode
+     Override hashCode() when overriding equals(Object)
+----
+Rule: HashCode Without Equals
+Id:   api.hashcode-without-equals
+     Override equals(Object) when overriding hashCode()
+----
+Rule: Boolean Constructor
+Id:   api.boolean-constructor
+     Boolean constructor should be replaced with valueOf method
+----
+Rule: String Constructor
+Id:   api.string-constructor
+     Superfluous string constructor should be removed
+----
+Rule: Classic ForName
+Id:   api.classic-forname
+     Replace forName(String) with forName(String,boolean,ClassLoader).
+----
+Rule: No ToString
+Id:   api.no-tostring
+     No toString()
+----
+Rule: Finalizer
+Id:   api.finalizer
+     Avoid finalizers
+----
+Rule: Null Array Return
+Id:   api.null-array-return
+     Null returned from array-valued method.
+----
+Rule: Null Collection Return
+Id:   api.null-collection-return
+     Null returned from Collection-valued method.
+----
+Rule: Null Map Return
+Id:   api.null-map-return
+     Null returned from Map-valued method.
+----
+Rule: Expression Equals String Constant
+Id:   api.swap-equals-param
+     equals(Object) dereferences potentially null expression instead of String contant
+----
+Rule: Bad Page Fragment Semantics in Binding
+Id:   oracle.adfdt.controller.adfc.source.audit.BadPageFragmentSemanticsInBinding
+----
+Rule: Unreferenced Task Flow Binding
+Id:   oracle.adfdt.controller.adfc.source.audit.UnreferencedTaskFlowBinding
+----
+Rule: Duplicate case label
+Id:   oracle.ide.javascript.duplicate-switch-case-label
+----
+Rule: Missing 'default' case
+Id:   oracle.ide.javascript.missing-switch-default
+----
+Rule: 'default' case not the last case
+Id:   oracle.ide.javascript.switch-default-not-last
+----
+Rule: Empty block
+Id:   oracle.ide.javascript.empty-block
+----
+Rule: Empty statement body
+Id:   oracle.ide.javascript.empty-body
+----
+Rule: Line too long
+Id:   oracle.ide.javascript.line-too-long
+----
+Rule: High Availability for ADF Scopes is not Enabled
+Id:   oracle.adfdt.controller.adfc.config.source.audit.AdfScopeHaSupportNotSet
+----
+Rule: JSR-181 constraints
+Id:   webservices.annotation-rule
+     Checks with the JSR-181 specification for the correct usage
+----
+Rule: Add library and deployment project to project
+Id:   webservices.broken-annotation
+     Checks that the project is correctly configured in the presence of a @WebService annotation
+----
+Rule: Add servlet entry for this webservice class
+Id:   webservices.broken-webxml
+     Checks that there is a serlvet entry for this web service
+----
+Rule: Fix method annnotations
+Id:   webservices.method-annotation
+     Checks for problems with the method annotations
+----
+Rule: null
+Id:   webservices.mismatch-annotation
+----
+Rule: Synchronize web service implementation and wsdl
+Id:   webservices.wsdl-impl-synchronization
+     Checks that the web service implementation matches its wsdl if it exists
+----
+Rule: null
+Id:   webservices.handler-chain-synchronization
+----
+Rule: Resolve the conflict between @Oneway and outbound policy
+Id:   webservices.oneway-outbound-conflict-resolver
+     Checks that an outbound (response level) policy is not attached to an @Oneway operation
+----
+Rule: Make the service implementaion class serializable
+Id:   webservices.stateful-conflict-resolver
+     Implement java.io.Serializable interface
+----
+Rule: Descriptor policies do not match annotation policies
+Id:   webservices.wlspolicy-descriptor-synchronization
+     Checks if descriptor policies match annotation policies
+----
+Rule: Both OWSM and WLS policies cannot be used in the same service
+Id:   webservices.mixed-up-policy-annotation-resolver
+     Configure either OWSM or WLS native policies in the service
+----
+Rule: Override properties do not belong to the selected policies
+Id:   webservices.jrf-security-policy-property-crosschecker
+----
+Rule: Provider interface requires to be implemented
+Id:   webservices.implement-provider
+     The class is decorated by @WebServiceProvider but does not implement a generic Provider interface 
+----
+Rule: Keep the Weblogic policies either in the WSDL document or as policy annotations in the service class
+Id:   webservices.wls-policy-in-wsdl-and-service-resolver
+----
+Rule: There are usage errors with @Transactional annotation
+Id:   webservices.transactional-conflict-resolver
+----
+Rule: Check for percentage heights used in inline styles.
+Id:   adffaces-category.adffaces-rule-endswithpercentagestyles
+     Heights specified as percentages are not supported for this component.
+----
+Rule: Check for percentage heights used in the panelGroupLayout component.
+Id:   adffaces-category.adffaces-rule-pglendswithpercentagestyles
+     Heights specified as percentages are not supported when the layout is not 'scroll' or 'vertical'.
+----
+Rule: Check for 'height', 'top' and 'bottom' all specified in an inline style.
+Id:   adffaces-category.adffaces-rule-heighttopbottomstyles
+     Having 'height', 'top', and 'bottom' styles set all at once is not supported for ADF Faces components.
+----
+Rule: Check for 'width', 'left' and 'right' all specified in an inline style.
+Id:   adffaces-category.adffaces-rule-widthleftrightstyles
+     Having 'width', 'left', and 'right' styles set all at once is not supported for ADF Faces components.
+----
+Rule: Check for 'position' specified in an inline style.
+Id:   adffaces-category.adffaces-rule-positionstyles
+     Having the 'position' style set is not supported for ADF Faces components.
+----
+Rule: Check for 'width' or 'height' specified for facet children in panelSplitter and panelStretchLayout.
+Id:   adffaces-category.adffaces-rule-facetwidthheightstyles
+     Having 'width' or 'height' specified is not supported for direct children of this facet.
+----
+Rule: No Default Activity is Defined
+Id:   oracle.adfdt.controller.adfc.source.audit.DefaultActivityNotDefined
+----
+Rule: No Task Flow Return Activities are Defined
+Id:   oracle.adfdt.controller.adfc.source.audit.TaskFlowReturnActivitiesNotDefined
+----
+Rule: Bind Missing Operations
+Id:   webservices.binding-missing-operations
+     Checks that the binding implements all operation for a portType
+----
+Rule: A wsdl:import appears to be used to import a schema by mistake
+Id:   webservices.xsd-import-with-wsdl-import
+     Checks that the schema import element is usnig the correct import element
+----
+Rule: Incorrect schema import location
+Id:   webservices.xsd-import-under-types
+     Checks that the schema import element is in the correct location
+----
+Rule: Incorrect schema location
+Id:   webservices.xsd-schema-not-under-types
+     Checks that the schema element is in the correct location
+----
+Rule: Check elementFormDefault
+Id:   webservices.xsd-schema-not-element-qualified
+     Checks that the schema elementFormDefault attribute is "qualified"
+----
+Rule: Swap the element and type attributes on a part
+Id:   webservices.swap-element-type
+     Checks that the schema import element is in the correct location
+----
+Rule: Add namespace to definition element
+Id:   webservices.definition-no-namespace
+     Checks that the definition element is in the correct namespace
+----
+Rule: Document/Encoded is not a valid combination
+Id:   webservices.document-encoded
+     Checks that document and encoded are not used together
+----
+Rule: Page Definition path incorrect.
+Id:   adfm-application.adfm-check-page-definition-extension
+----
+Rule: Duplicate CPX file name in classpath.
+Id:   adfm-application.adfm-check-page-duplicate-cpxnames
+----
+Rule: CSS Syntax error
+Id:   oracle.jdevimpl.css.audit.css-category.syntax-error
+----
+Rule: CSS unregistered font-family
+Id:   oracle.jdevimpl.css.audit.css-category.unregistered-font-family
+----
+Rule: Extended Color Keyword
+Id:   oracle.jdevimpl.css.audit.css-category.extended-color
+----
+Rule: Duplicate DCX file name in classpath.
+Id:   adfm-configuration.adfm-check-duplicate-dcxnames
+----
+Rule: Schema Validation Errors on Merged metadata document
+Id:   oracle.mdsdt.cust.role.audit.MDSTipCustValidationError
+----
+Rule: Check for ADF Faces attribute
+Id:   adffaces-category.adffaces-rule-afattrtofattr
+     The ADF Faces attribute tag has been removed.
+----
+Rule: Check for ADF Faces validator
+Id:   adffaces-category.adffaces-rule-afvalidatortofvalidator
+     The ADF Faces validator tag has been removed.
+----
+Rule: Use registerOutParameter to specify bind types and precisions
+Id:   oracle.jdeveloper.java.jdbc.register-out-parameter
+----
+Rule: @Override Violation
+Id:   oracle.jdeveloper.java.annotations.at-override-violation
+----
+Rule: Remove Annotation
+Id:   oracle.jdeveloper.java.annotations.remove-annotation-assist
+----
+Rule: Check for valid scoped id's on ADF components
+Id:   adffaces-category.adffaces-rule-invalidscopedid
+     The id referenced does not exist.
+----
+Rule: Check for deprecated scoped id's on ADF components
+Id:   adffaces-category.adffaces-rule-deprecatedscopedid
+     The id referenced is using a deprecated format.
+----
+Rule: Check to see that alignId on the ADF showPopupBehavior component points to an ADF Faces component
+Id:   adffaces-category.adffaces-rule-notscopedadffacescomponent
+     The id referenced by alignId does not point to an ADF Faces component.
+----
+Rule: Check to see that alignId on the ADF showPopupBehavior component points to an ADF Faces component that sends a client component
+Id:   adffaces-category.adffaces-rule-targetdoesnotsendclientcomponent
+     The id referenced by alignId does not point to an ADF Faces component that sends a client component.
+----
+Rule: Check to see that popupId on the ADF showPopupBehavior component points to an ADF Faces popup component
+Id:   adffaces-category.adffaces-rule-targetnotpopup
+     The id referenced by popupId does not point to an ADF Faces popup component.
+----
+Rule: Check to see that exportId on the ADF exportCollectionActionListener component points to an ADF Faces table, tree, or treeTable component
+Id:   adffaces-category.adffaces-rule-targetnotcollectioncomponent
+     The id referenced by exportId does not point to an ADF Faces table, tree, or treeTable component.
+----
+Rule: Managed Bean Class Not Serializable
+Id:   oracle.adfdt.controller.adfc.source.audit.ManagedBeanNotSerializable
+----
+Rule: Constructor Method Name
+Id:   names.constructor-method-name
+     Method named as constructor
+----
+Rule: Unconventional Constant Name
+Id:   names.unconventional-constant-name
+     Constant name should be all uppercase
+----
+Rule: Unconventional Class Name
+Id:   names.unconventional-class-name
+     Class name first letter should be capitalized
+----
+Rule: Unconventional Interface Name
+Id:   names.unconventional-interface-name
+     Interface name name first letter should be uppercase
+----
+Rule: Unconventional Field Name
+Id:   names.unconventional-field-name
+     Field name first letter should be lowercase
+----
+Rule: Unconventional Method Name
+Id:   names.unconventional-method-name
+     Method name first letter should be lowercase
+----
+Rule: Unconventional Parameter Name
+Id:   names.unconventional-parameter-name
+     Parameter name first letter should be lowercase
+----
+Rule: Unconventional Variable Name
+Id:   names.unconventional-variable-name
+     Variable name first letter should be lowercase
+----
+Rule: Object can not be passivated.
+Id:   oracle.jbo.am.java-passivate
+----
+Rule: Fixed range size for combobox
+Id:   oracle.jbo.view.lov-rangesize
+----
+Rule: List Binding has readonly attributes
+Id:   oracle.jbo.view.lov-readonly
+----
+Rule: List Binding is recursive
+Id:   oracle.jbo.view.lov-recursive
+----
+Rule: LOV switcher
+Id:   oracle.jbo.view.lov-switcher
+----
+Rule: View criteria quoted string literal.
+Id:   oracle.jbo.view-quoted-vcitem-string-literal
+----
+Rule: Validate names
+Id:   oracle.jbo.view-validate-names
+----
+Rule: Include search region criteria
+Id:   oracle.jbo.view.lov-displaycriteria
+----
+Rule: Configuration Name
+Id:   oracle.jbo.config-name
+----
+Rule: Lazy Loading
+Id:   oracle.jbo.config-lazyloading
+----
+Rule: Pool Size
+Id:   oracle.jbo.config-poolsize
+----
+Rule: Use JDBC DataSource
+Id:   oracle.jbo.config-datasource
+----
+Rule: Refresh setting is not SQL92 compliant.
+Id:   oracle.jbo.sql92.refresh
+----
+Rule: bindingstyle setting is not SQL92 compliant.
+Id:   oracle.jbo.sql92.bindingstyle
+----
+Rule: This attribute has an invalid value. 
+Id:   dvt-category.dvtgraph-rule-invalid-attr-value
+----
+Rule: Check for deprecated dvt:graph tag
+Id:   dvt-category.dvtgraph-graph-deprecated-tag-rule
+     The advanced dvt:graph tag is deprecated. Please use one of the type-specific simple graph tags.
+----
+Rule: Check for deprecated dvt:numberFormat tag
+Id:   dvt-category.dvtgraph-numberFormat-deprecated-tag-rule
+     The dvt:numberFormat tag is deprecated. Please use the standard af:convertNumber tag.
+----
+Rule: Check for deprecated imageFormat="AUTO"
+Id:   dvt-category.dvtgraph-imageFormat-deprecated-value-rule
+     The "AUTO" value for the imageFormat property has been deprecated. Developers are advised to switch to the default value for imageFormat, and then set the <flash-player-usage> parameter in adf-config.xml to control this behavior across the entire Application.
+----
+Rule: Duplicate name error
+Id:   oracle.ide.xml.duplicatename-error
+----
+Rule: Insufficient Catch Block
+Id:   exceptions.insufficient-catch-block
+     Catch block should rethrow or invoke handler.
+----
+Rule: Should not have both ServletADFFilter and ADFBindingFilter in the same web.xml
+Id:   oracle.adf.share.webapp-redundant-filters
+----
+Rule: Lowercase Long Literal
+Id:   expressions.lowercase-long-literal
+     Long literal uses lowercase L
+----
+Rule: Binding is using Placeholder data Control
+Id:   adfm-placeholder.adfm-bound-to-placeholder
+----
+Rule: EL Expression Not Expected
+Id:   oracle.adfdt.controller.adfc.source.audit.ELExpressionNotExpected
+----
+Rule: EL Syntax Error
+Id:   oracle.adfdt.controller.adfc.source.audit.ELSyntaxError
+----
+Rule: EL Unknown Token
+Id:   oracle.adfdt.controller.adfc.source.audit.ELUnknownToken
+----
+Rule: Trivial Assignment
+Id:   oracle.jdeveloper.java.statements.trivial-assignment
+----
+Rule: Nested Assignment
+Id:   oracle.jdeveloper.java.statements.nested-assignment
+----
+Rule: Multiple Assignment
+Id:   oracle.jdeveloper.java.statements.multiple-assignment
+----
+Rule: Check for Customization ID
+Id:   compid-customization-id-found
+----
+Rule: Check for Test ID
+Id:   compid-test-id-found
+----
+Rule: Check for Duplicate IDs When ADF Faces is Present
+Id:   duplicate-id-found
+----
+Rule: Check for ID When ADF Faces is Present
+Id:   no-id-found
+----
+Rule: Missing Comment
+Id:   javadoc.missing-comment
+----
+Rule: Missing Description
+Id:   javadoc.description-is-empty
+----
+Rule: Missing Tag Description
+Id:   javadoc.tag-description-missing
+----
+Rule: Misspelled Tag
+Id:   javadoc.tag-misspelled
+----
+Rule: Missing Required Tags
+Id:   javadoc.tag-is-missing
+----
+Rule: Misplaced Tag
+Id:   javadoc.tag-is-misplaced
+----
+Rule: Duplicate Tag
+Id:   javadoc.tag-is-duplicate
+----
+Rule: Unsorted Tags
+Id:   javadoc.tags-incorrectly-sorted
+----
+Rule: Unterminated First Sentence 
+Id:   javadoc.comment-period-missing
+----
+Rule: Invalid HTML
+Id:   javadoc.comment-html-is-unterminated
+----
+Rule: Verify that the component has a short description.
+Id:   dvtacc-category.dvtacc-rule-compreqshortdesc
+     The 'shortDesc' attribute should be set and non-empty.
+----
+Rule: Verify that the component has a 'summary'.
+Id:   dvtacc-category.dvtacc-rule-compreqsummary
+     The 'summary' attribute should be present and describe the purpose of the component.
+----
+Rule: Graph type LINE_SELECT_POINT is not supported in Screen Reader mode.
+Id:   dvtacc-category.dvtacc-rule-graphtypenoadasupport
+     Alternate functionality must be supplied by the application.
+----
+Rule: Marquee zoom is not supported in Screen Reader mode.
+Id:   dvtacc-category.dvtacc-rule-graphzoomdirectionnoadasupport
+     Alternate functionality must be supplied by the application.
+----
+Rule: Axis scrollbar functionality is limited in Screen Reader mode.
+Id:   dvtacc-category.dvtacc-rule-graphscrollbarnoadasupport
+     The application must supply UI or alternate functionality for moving and resizing the scroll thumb. 
+----
+Rule: The value RO_DISPLAY_AUTOMATIC is not supported in Screen Reader mode.
+Id:   dvtacc-category.dvtacc-rule-graphreferencelinenoadasupport
+     While unconditional rendering or hiding of reference objects is supported in Screen Reader mode, the application must supply alternate functionality for the conditional rendering of reference objects based on mouse-overs.
+----
+Rule: Series highlighting and fading rollover behaviors are not supported in Screen Reader mode.
+Id:   dvtacc-category.dvtacc-rule-graphseriesrollovernoadasupport
+     Alternate functionality must be supplied by the application.
+----
+Rule: Setting the timeSelector mode to EXPLICIT is not supported in Screen Reader mode.
+Id:   dvtacc-category.dvtacc-rule-graphtimeselectornoadasupport
+     The application must supply alternate functionality for selecting time periods.
+----
+Rule: Component is not accessible - also provide alternate representation of the same information.
+Id:   dvtacc-category.dvtacc-rule-geomapnoadasupport
+----
+Rule: Component is not accessible - also provide alternate representation of the same information.
+Id:   dvtacc-category.dvtacc-rule-hvnoadasupport
+----
+Rule: Verify that the component is labeled.
+Id:   adffacesacc-category.adffacesacc-rule-compnotlabelled
+     Component is not labeled, either by specifying the label attribute, or by being referred to by the 'for' attribute of a panelLabelAndMessage or outputLabel.
+----
+Rule: Verify that the 'for' attribute points to a component.
+Id:   adffacesacc-category.adffacesacc-rule-forpointsnowhere
+     The 'for' attribute should point to a component that is associated with this label.
+----
+Rule: Verify that the 'chooseId' attribute of an inputColor points to a chooseColor.
+Id:   adffacesacc-category.adffacesacc-rule-chooseidcolorpointsnowhere
+     The 'chooseId' attribute should point to a chooseColor.
+----
+Rule: Verify that the chooseColor is used in conjunction with an inputColor component.
+Id:   adffacesacc-category.adffacesacc-rule-choosecolornotreferred
+     The chooseColor should be used in conjunction with an inputColor component.
+----
+Rule: Verify that the 'chooseId' attribute of an inputDate points to a chooseDate.
+Id:   adffacesacc-category.adffacesacc-rule-chooseiddatepointsnowhere
+     The 'chooseId' attribute should point to a chooseDate.
+----
+Rule: Verify that the chooseDate is used in conjunction with an inputDate component.
+Id:   adffacesacc-category.adffacesacc-rule-choosedatenotreferred
+     The chooseDate should be used in conjunction with an inputDate component.
+----
+Rule: Verify that the component has text.
+Id:   adffacesacc-category.adffacesacc-rule-compreqtext
+     The 'text' attribute should be set and non-empty.
+----
+Rule: Verify that the component has text or shortDesc.
+Id:   adffacesacc-category.adffacesacc-rule-compreqtextorshortdesc
+     The 'text' or 'shortDesc' attribute should be set and non-empty.
+----
+Rule: Verify that the component has a title.
+Id:   adffacesacc-category.adffacesacc-rule-compreqtitle
+     The 'title' attribute should be set and non-empty.
+----
+Rule: Verify that images have a description.
+Id:   adffacesacc-category.adffacesacc-rule-imgshortdesc
+     The 'shortDesc' attribute should be specified. If the image is used for decorative purposes, it can be empty.
+----
+Rule: Verify that the component has a short description.
+Id:   adffacesacc-category.adffacesacc-rule-compreqshortdesc
+     The 'shortDesc' attribute should be set and non-empty.
+----
+Rule: Verify that the component has a search description.
+Id:   adffacesacc-category.adffacesacc-rule-compreqsearchdesc
+     The 'searchDesc' attribute should be set and non-empty.
+----
+Rule: Verify that the component has header text.
+Id:   adffacesacc-category.adffacesacc-rule-compreqnoncolheadertext
+     The 'headerText' attribute should be set and non-empty.
+----
+Rule: Verify that the component has a leading header.
+Id:   adffacesacc-category.adffacesacc-rule-compreqleadingheader
+     The 'leadingHeader' attribute should be set and non-empty.
+----
+Rule: Verify that the component has a trailing header.
+Id:   adffacesacc-category.adffacesacc-rule-compreqtrailingheader
+     The 'trailingHeader' attribute should be set and non-empty.
+----
+Rule: Verify that tables/trees has summaries.
+Id:   adffacesacc-category.adffacesacc-rule-compreqsummary
+     The 'summary' attribute should be present and describe the purpose of the table/tree.
+----
+Rule: Verify that table columns have headers.
+Id:   adffacesacc-category.adffacesacc-rule-tablecolneedsheaders
+     Table columns should have a header, either by the 'headerText' attribute or by using a 'header' facet.
+----
+Rule: Verify that tables have at least one row header column.
+Id:   adffacesacc-category.adffacesacc-rule-tableneedsrowheader
+     The table should have at least one column with rowHeader set to 'true' or 'unstyled', along with a child output component.
+----
+Rule: Check for 'height' percentages in inline style for ADF Faces components.
+Id:   adffaces-category.adffaces-rule-percentageheightrule
+     Height dimensions must not use percent units. A height that uses "%" units will not display consistently in all web browsers. If you want both the width and the height to stretch, configure the parent component to stretch its children.  Note that not all components can be stretched.
+----
+Rule: Check for 'width' percentages greater than 95% in inline style for ADF Faces components.
+Id:   adffaces-category.adffaces-rule-percentagewidthrule
+     Width dimensions must not use percent units to fill the screen horizontally. A width dimension with percent units may cause a horizontal scroll bar to appear in some older browsers. If you only want the width to stretch, use the styleClass selector named "AFStretchWidth".  If you want both the width and the height to stretch, configure the parent component to stretch its children.  Note that not all components can be stretched.
+----
+Rule: Non Default Size
+Id:   oracle.ide.html.non-default-size
+----
+Rule: Structure definition primary key check.
+Id:   adfm-structuredefinition.adfm-struturedef-primary-key-check
+     Structure definition doesn't have a primary key attribute.
+----
+

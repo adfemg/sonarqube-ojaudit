@@ -32,7 +32,7 @@ import org.sonar.api.rules.RulePriority;
  * Helper class for parsing a rule from the 'ojaudit -rulhelp' output.
  * @author Wilfred van der Deijl
  */
-public class ParsedRule12 {
+public class ParsedRule12 implements ParsedRule {
 
     // regular expressions to parse lines
     private static final Pattern PATTERN_RULE = Pattern.compile("Rule:\\s*(.*\\S)\\s*\\((\\S+)\\)");

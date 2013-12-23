@@ -121,11 +121,16 @@ public class RulesRepository extends RuleRepository {
     private List<Rule> parseRuleHelpLines(BufferedReader reader) throws IOException {
         // read file line-by-line and use ParsedRule to build rules
         List<Rule> retval = new ArrayList<Rule>();
-        ParsedRule12 rule = null;
+        boolean version11 = false;
+        ParsedRule rule = null;
         while (true) {
             String line = reader.readLine();
             if (line == null) {
                 break;
+            }
+            if ("Defined rules:".equals(line)) {
+                version11 = true;
+                continue;
             }
             if (line.startsWith("----") && (rule != null)) {
                 // process finished rule
@@ -133,14 +138,13 @@ public class RulesRepository extends RuleRepository {
                 rule = null;
             } else if (line.startsWith("Rule:")) {
                 // start new rule
-                rule = new ParsedRule12();
+                rule = version11 ? new ParsedRule11() : new ParsedRule12();
             }
             if (rule != null) {
                 rule.digest(line);
             }
         }
         return retval;
-
     }
 
 }
