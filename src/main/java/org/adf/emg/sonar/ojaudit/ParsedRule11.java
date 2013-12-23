@@ -22,9 +22,6 @@ package org.adf.emg.sonar.ojaudit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import org.sonar.api.rules.Rule;
 import org.sonar.api.rules.RulePriority;
 
@@ -45,8 +42,6 @@ public class ParsedRule11 implements ParsedRule {
     // state being built by parsing lines
     private String key;
     private String name;
-
-    private static final Logger LOG = LoggerFactory.getLogger(ParsedRule11.class);
 
     /**
      * Parsed a line that has been read from the 'ojaudit -rulehelp' output.

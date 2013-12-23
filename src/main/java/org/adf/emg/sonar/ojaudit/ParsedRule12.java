@@ -155,15 +155,15 @@ public class ParsedRule12 implements ParsedRule {
      * {@link #digest} hasn't been called yet on a line containing the rule defition
      */
     public String getFullName() {
-        String name = getName();
+        String shortName = getName();
         String catName = getCategoryName();
-        if (name == null) {
+        if (shortName == null) {
             return null;
         }
         if (catName != null && !catName.isEmpty()) {
-            return "[" + catName.trim() + "] " + name;
+            return "[" + catName.trim() + "] " + shortName;
         } else {
-            return name;
+            return shortName;
         }
     }
 

@@ -21,6 +21,10 @@ package org.adf.emg.sonar.ojaudit;
 
 import org.sonar.api.rules.Rule;
 
+/**
+ * Helper class for parsing a rule from the 'ojaudit -rulhelp' output.
+ * @author Wilfred van der Deijl
+ */
 public interface ParsedRule {
 
     /**
@@ -29,7 +33,7 @@ public interface ParsedRule {
      * @return <code>true</code> if the line could be processed by this ParsedRule, or <code>false</code> if it
      *         was ignored
      */
-    public boolean digest(String line);
+    boolean digest(String line);
 
     /**
      * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
@@ -37,6 +41,6 @@ public interface ParsedRule {
      * @param reposKey key of the sonar repository the created Rule should belong to
      * @return org.sonar.api.rules.Rule instance
      */
-    public Rule toRule(String reposKey);
+    Rule toRule(String reposKey);
 
 }

@@ -87,6 +87,7 @@ public class Analyzer implements Sensor {
 
     /**
      * Runs ojaudit and saves the output to the given file.
+     * @param project Project to analyse
      * @param output Location of the output (XML) file to generate
      */
     protected void executeAudit(Project project, File output) {
