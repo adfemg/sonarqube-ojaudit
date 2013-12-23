@@ -20,6 +20,10 @@ echo Running maven to build Sonar Plugin...
 mvn license:format install 
 
 echo
+echo Removing any previous version of our plugin from SonarQube...
+rm -f $SONAR_HOME/extensions/plugins/sonar-ojaudit*.jar
+
+echo
 echo Copying generated JAR to SonarQube...
 cp -a target/sonar-*.jar "$SONAR_HOME/extensions/plugins"
 
