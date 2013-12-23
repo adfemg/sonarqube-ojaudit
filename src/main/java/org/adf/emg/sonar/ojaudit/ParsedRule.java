@@ -125,7 +125,7 @@ public class ParsedRule {
      * @return org.sonar.api.rules.Rule instance
      */
     public Rule toRule(String reposKey) {
-        Rule retval = Rule.create(reposKey, getKey(), getName());
+        Rule retval = Rule.create(reposKey, getKey(), getFullName());
         retval.setSeverity(getPriority());
         retval.setDescription(getName());
         return retval;
@@ -147,6 +147,24 @@ public class ParsedRule {
      */
     public String getName() {
         return name;
+    }
+
+    /**
+     * Gets the full name of this parsed rule.
+     * @return name of the rule prefixed with the name of the category between square brackets, or <code>null</code> if
+     * {@link #digest} hasn't been called yet on a line containing the rule defition
+     */
+    public String getFullName() {
+        String name = getName();
+        String catName = getCategoryName();
+        if (name == null) {
+            return null;
+        }
+        if (catName != null && !catName.isEmpty()) {
+            return "[" + catName.trim() + "] " + name;
+        } else {
+            return name;
+        }
     }
 
     /**
