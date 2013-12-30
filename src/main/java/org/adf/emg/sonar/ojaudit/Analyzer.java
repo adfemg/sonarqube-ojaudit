@@ -33,7 +33,7 @@ import org.sonar.api.utils.command.CommandExecutor;
 
 /**
  * This Analyzer is invoked once during the analysis of a project. It invokes the command-line ojaudit tool
- * and parses the outcome to Sonar Measures which are reported back to Sonar.
+ * and parses the outcome to Sonar Measures which are reported back to Sonar as violationss.
  * @author Wilfred van der Deijl
  */
 public class Analyzer implements Sensor {
@@ -97,7 +97,11 @@ public class Analyzer implements Sensor {
             Command command = Command.create(config.getExecutable().getCanonicalPath());
             command = command.addArgument("-profile").addArgument(config.getProfile());
             command = command.addArgument("-output").addArgument(output.getCanonicalPath());
-            command = command.addArgument("-encoding").addArgument("UTF-8");
+            if (project != null && project.getFileSystem() != null &&
+                project.getFileSystem().getSourceCharset() != null) {
+                command =
+                    command.addArgument("-encoding").addArgument(project.getFileSystem().getSourceCharset().name());
+            }
             command = command.addArgument(config.getTargetFile().getCanonicalPath());
             command = command.setDirectory(project.getFileSystem().getBasedir());
             cmd = command.toCommandLine();
