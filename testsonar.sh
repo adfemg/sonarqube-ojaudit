@@ -36,7 +36,8 @@ echo Starting SonarQube...
 $SONAR_HOME/bin/macosx-universal-64/sonar.sh start
 
 echo Wait for SonarQube to fully start...
-sleep 30
+sleep 33
 
 echo starting Sonar-Runner...
+export SONAR_RUNNER_OPTS=-Xmx1024M
 $SONAR_HOME/bin/sonar-runner -e -X
