@@ -122,6 +122,10 @@
             <value n="id" v="org.slf4j:slf4j-api:1.5.6:jar"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="commons-io:commons-io:2.2:jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <hash n="internalDefinitions">
          <list n="libraryDefinitions">
@@ -141,6 +145,14 @@
                <value n="id" v="org.slf4j:slf4j-api:1.5.6:jar"/>
                <value n="locked" v="true"/>
             </hash>
+            <hash>
+               <list n="classPath">
+                  <url protocol="file" path="${maven:maven.local.repo}commons-io/commons-io/2.2/commons-io-2.2.jar"/>
+               </list>
+               <value n="description" v="commons-io:commons-io:2.2:jar"/>
+               <value n="id" v="commons-io:commons-io:2.2:jar"/>
+               <value n="locked" v="true"/>
+            </hash>
          </list>
       </hash>
       <list n="libraryReferences">
@@ -150,6 +162,10 @@
          </hash>
          <hash>
             <value n="id" v="org.slf4j:slf4j-api:1.5.6:jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="commons-io:commons-io:2.2:jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

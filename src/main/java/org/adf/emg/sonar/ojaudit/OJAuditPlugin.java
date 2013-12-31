@@ -90,6 +90,8 @@ public final class OJAuditPlugin extends SonarPlugin {
         retval.add(Analyzer.class); // do the actual analysis by invoking ojaudit
         retval.add(DefaultProfile.class); // default profile enabling all rules
         retval.add(RulesRepository.class); // repository parsing rulehelp.txt and exposing all ojaudit rules to sonar
+        retval.add(XmlMetricsDecorator.class); // collect basic metrics about xml files
+        retval.add(JavaMetricsDecorator.class); // collect basic metrics about xml files
         return Collections.unmodifiableList(retval);
     }
 
