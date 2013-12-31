@@ -54,7 +54,6 @@ public class XmlMetricsDecorator implements Decorator {
 
         try {
             if (readFirstByte(file) != '<') {
-                LOG.debug("{} ignoring non-XML file {}", this.getClass().getName(), file);
                 return;
             }
         } catch (IOException e) {
@@ -66,7 +65,6 @@ public class XmlMetricsDecorator implements Decorator {
         try {
             numCommentLines = commentCounter.countLinesOfComment(FileUtils.openInputStream(file));
             if (numCommentLines == -1) {
-                LOG.debug("{} ignoring non-XML file {}", this.getClass().getName(), file);
                 return;
             }
         } catch (IOException e) {
