@@ -96,6 +96,7 @@ public class ResultsParser {
             }
             return (Audit) obj;
         } catch (Exception e) {
+            LOG.error(e.toString());
             throw new OJAuditException("error parsing ojaudit output at " + file, e);
         }
     }
