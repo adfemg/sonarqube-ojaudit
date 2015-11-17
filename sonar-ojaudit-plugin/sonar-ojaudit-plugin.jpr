@@ -5,6 +5,8 @@
       <value n="oracle.adfdt.controller.common.migrator.ProjectMigrator" v="11.1.1.1.0"/>
       <value n="oracle.adfdt.controller.jsf2.diagram.migrate.JsfNodeMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.adfdt.controller.migrate.TrinidadDatabindingsProjectMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.db.ADFStrutsProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.StrutsProjectMigrator" v="11.1.1.1.0"/>
       <value n="oracle.adfdtinternal.dvt.datapresdt.migration.DVTDataMapMigrator" v="11.1.1.1.0.3"/>
       <value n="oracle.adfdtinternal.dvt.datapresdt.migration.DVTWebAppConfigurationMigrator" v="12.1.3.0.0"/>
       <value n="oracle.adfdtinternal.model.ide.migration.ProjectMigrator" v="11.1.1.1.0.11.1.1"/>
@@ -17,6 +19,9 @@
       <value n="oracle.adfdtinternal.view.rich.binding.migration.JarResourceMigrator" v="11.1.1.1.0"/>
       <value n="oracle.adfdtinternal.view.rich.migration.ComponentIdNodeMigratorHelper" v="11.1.1.1.0.01"/>
       <value n="oracle.adfdtinternal.view.rich.migration.FacesLibraryVersionMigrator" v="11.1.1.1.0.1"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.LibraryVersionMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.bm.commonIde.ProjectUpgrader" v="11.1.1.1.0"/>
+      <value n="oracle.bm.migration.project.MigratorRegistryProjectUpgradeAdapter" v="11.1.1.1.0"/>
       <value n="oracle.ide.model.Project" v="12.1.2.0.0;12.1.3.0.0"/>
       <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
       <value n="oracle.ideimpl.model.TechnologyScopeUpdateMigrator" v="11.1.2.0.0.4;11.1.2.0.0.5"/>
@@ -24,28 +29,36 @@
       <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.2.0.0"/>
       <value n="oracle.jbo.dt.jdevx.ui.appnav.APAdfConfigMigrator" v="11.1.2.0.0"/>
       <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="11.1.1.0.1.5"/>
-      <value n="oracle.jbo.dt.migrate.ResourceBundlePathMigrator" v="11.1.1.0.1.5"/>
+      <value n="oracle.jbo.dt.migrate.ResourceBundlePathMigrator" v="11.1.1.0.1.5;11.1.1.1.0.5"/>
       <value n="oracle.jbo.dt.migration.ServiceInterfaceMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jdeveloper.dbmodeler.Migration" v="12.1.1.0.0"/>
       <value n="oracle.jdeveloper.ejb.EjbMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.DeploymentProfilesMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jdevimpl.deploy.jps.JpsDataMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jdevimpl.deploy.migrators.DeploymentMigrator" v="12.1.2.0.1"/>
       <value n="oracle.jdevimpl.jsp.JspMigrator" v="11.1.1"/>
       <value n="oracle.jdevimpl.offlinedb.migration.OfflineDBProjectMigrator" v="12.1.1.0.0"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.OfflineTransferMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jdevimpl.resourcebundle.XliffAddin$XliffMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.jdevimpl.webapp.jsp.libraries.JspLibraryMigrator" v="11.1.1.1.4"/>
       <value n="oracle.jdevimpl.webapp.jsp.taglibraries.trinidad.migration.TrinidadLibraryVersionMigrator" v="11.1.1.1.0.1"/>
       <value n="oracle.jdevimpl.webapp.WebAppContentSetNodeMigratorHelper" v="11.1.1"/>
+      <value n="oracle.jdevimpl.webapp.WebAppNodeMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.jdevimpl.webapp.WebAppProjectNodeMigratorHelper" v="12.1.2.0.0"/>
       <value n="oracle.jdevimpl.webservices.rest.migration.RestLibraryMigrator" v="12.1.1.0.0"/>
       <value n="oracle.jdevimpl.webservices.rest.migration.RestPathMigrator" v="11.1.2.0.0"/>
       <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.jdevimpl.xml.wl.WeblogicMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.modeler.bmmigrate.management.Migration" v="11.1.1.1.0"/>
-      <value n="oracle.toplink.workbench.addin.migration.PersistenceProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.bpel.v1.designer.addin.migrator.BPELProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.fabric.addin.SCAProjectMigrator" v="11.1.1.1.0.06"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.TaskFormMigratorAddin" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.WorkflowProjectMigrator" v="11.1.1.1.0.10"/>
+      <value n="oracle.toplink.workbench.addin.migration.PersistenceProjectMigrator" v="11.1.1.1.0;11.1.1.1.1"/>
       <value n="oracle.toplink.workbench.addin.migration.TopLinkProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.webcenter.internal.dt.migration.WebCenterProjectMigrator" v="11.1.1.4.0.101019.0800"/>
    </hash>
    <list n="contentSets">
       <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
@@ -57,6 +70,8 @@
       <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
+      <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
+      <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
    </list>
    <value n="defaultPackage" v="sonarojaudit"/>
    <hash n="oracle.ide.model.ResourcePaths">
@@ -106,6 +121,9 @@
       <value n="goalToRun" v="install"/>
       <url n="pomfileURL" path="../pom.xml"/>
    </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenRunConfiguration">
+      <url n="pomfileURL" path="../pom.xml"/>
+   </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
          <list n="pattern-filters">
@@ -140,6 +158,414 @@
             <value n="id" v="commons-io:commons-io:2.2:jar"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Commons-io-1.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-beanutils-1.7.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jfreechart-1.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence-1.0.2.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Staxmate-2.0.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-plugin-api-3.0-tests1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-settings-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Derbyclient-10.7.1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xstream-1.3.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-utils-1.5.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-core-0.9.15"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-core-0.9.301"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-artifact-manager-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sslr-core-1.20"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sslr-squid-bridge-2.4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-dbcp-1.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-utils-1.0.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mockito-all-1.8.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-core-3.3.0.SP11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-core-3.0-tests1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations-3.4.0.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcl-over-slf4j-1.5.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.6.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Fest-util-1.1.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Antlr-2.7.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Derbynet-10.7.1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-classworlds-2.2.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hamcrest-all-1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-3.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Stax-api-1.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-check-api-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Stax2-api-3.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis-1.0.b21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-core-3.3.2.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsr305-1.3.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-digester-1.81"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcl-over-slf4j-1.6.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Geronimo-spec-jta-1.0-M11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxen-1.1.4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hamcrest-core-1.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-4.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations-3.1.0.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Serializer-2.7.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis-1.3.031"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-model-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-profile-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-4.111"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Classworlds-1.1-alpha-21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-project-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Fest-assert-1.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.4.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-artifact-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.5.81"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-squid-1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcommon-1.0.121"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Woodstox-core-lgpl-4.0.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mockito-all-1.9.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-squid-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javassist-3.4.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-testing-harness-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="XercesImpl-2.8.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-duplications-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.5.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-colorizer-3.7"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Derby-10.7.1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-plugin-registry-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-ehcache-3.3.2.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-update-center-common-1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mybatis-3.0.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-3.8.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Dbunit-2.4.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-colorizer-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis-1.3.041"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-3.8.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-configuration-1.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-classic-0.9.15"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xmlunit-1.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Picocontainer-2.14.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xalan-2.7.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-container-default-1.0-alpha-9-stable-11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-pool-1.5.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-3.2.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sslr-xpath-1.20"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-graph-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-2.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Wagon-provider-api-1.0-beta-21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Guava-10.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Log4j-over-slf4j-1.6.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-classic-0.9.301"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ehcache-1.2.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xpp3-1.1.3.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-repository-metadata-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Dom4j-1.6.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-entitymanager-3.4.0.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-plugin-api-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-codec-1.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-channel-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <hash n="internalDefinitions">
          <list n="libraryDefinitions">
@@ -170,6 +596,1770 @@
                <value n="id" v="commons-io:commons-io:2.2:jar"/>
                <value n="locked" v="true"/>
             </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-beanutils-1.7.0"/>
+               <value n="id" v="Commons-beanutils-1.7.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-1.4"/>
+               <value n="id" v="Commons-io-1.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/jfree/jfreechart/1.0.9/jfreechart-1.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jfreechart-1.0.9"/>
+               <value n="id" v="Jfreechart-1.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/woodstox/woodstox-core-lgpl/4.0.4/woodstox-core-lgpl-4.0.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Woodstox-core-lgpl-4.0.4"/>
+               <value n="id" v="Woodstox-core-lgpl-4.0.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mockito-all-1.9.5"/>
+               <value n="id" v="Mockito-all-1.9.5"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/ejb3-persistence/1.0.2.GA/ejb3-persistence-1.0.2.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence-1.0.2.GA"/>
+               <value n="id" v="Ejb3-persistence-1.0.2.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-squid/3.0/sonar-squid-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-squid-3.0"/>
+               <value n="id" v="Sonar-squid-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Javassist-3.4.GA"/>
+               <value n="id" v="Javassist-3.4.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/staxmate/staxmate/2.0.0/staxmate-2.0.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Staxmate-2.0.0"/>
+               <value n="id" v="Staxmate-2.0.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-settings-2.0.9"/>
+               <value n="id" v="Maven-settings-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-testing-harness/3.0/sonar-testing-harness-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-testing-harness-3.0"/>
+               <value n="id" v="Sonar-testing-harness-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-plugin-api/3.0/sonar-plugin-api-3.0-tests.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-plugin-api-3.0-tests"/>
+               <value n="id" v="Sonar-plugin-api-3.0-tests"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="XercesImpl-2.8.1"/>
+               <value n="id" v="XercesImpl-2.8.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-duplications/3.0/sonar-duplications-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-duplications-3.0"/>
+               <value n="id" v="Sonar-duplications-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.5.6"/>
+               <value n="id" v="Slf4j-api-1.5.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xstream-1.3.1"/>
+               <value n="id" v="Xstream-1.3.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/derby/derbyclient/10.7.1.1/derbyclient-10.7.1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Derbyclient-10.7.1.1"/>
+               <value n="id" v="Derbyclient-10.7.1.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-utils-1.5.1"/>
+               <value n="id" v="Plexus-utils-1.5.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/derby/derby/10.7.1.1/derby-10.7.1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Derby-10.7.1.1"/>
+               <value n="id" v="Derby-10.7.1.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/ch/qos/logback/logback-core/0.9.30/logback-core-0.9.30.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Logback-core-0.9.30"/>
+               <value n="id" v="Logback-core-0.9.30"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-plugin-registry-2.0.9"/>
+               <value n="id" v="Maven-plugin-registry-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-artifact-manager-2.0.9"/>
+               <value n="id" v="Maven-artifact-manager-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-ehcache/3.3.2.GA/hibernate-ehcache-3.3.2.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-ehcache-3.3.2.GA"/>
+               <value n="id" v="Hibernate-ehcache-3.3.2.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-dbcp-1.3"/>
+               <value n="id" v="Commons-dbcp-1.3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-update-center-common/1.1/sonar-update-center-common-1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-update-center-common-1.1"/>
+               <value n="id" v="Sonar-update-center-common-1.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/mybatis/mybatis/3.0.6/mybatis-3.0.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mybatis-3.0.6"/>
+               <value n="id" v="Mybatis-3.0.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-utils-1.0.4"/>
+               <value n="id" v="Plexus-utils-1.0.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-3.8.2"/>
+               <value n="id" v="Junit-3.8.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-colorizer/3.0/sonar-colorizer-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-colorizer-3.0"/>
+               <value n="id" v="Sonar-colorizer-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/dbunit/dbunit/2.4.5/dbunit-2.4.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Dbunit-2.4.5"/>
+               <value n="id" v="Dbunit-2.4.5"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis-1.3.04"/>
+               <value n="id" v="Xml-apis-1.3.04"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-3.8.1"/>
+               <value n="id" v="Junit-3.8.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-configuration-1.6"/>
+               <value n="id" v="Commons-configuration-1.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mockito-all-1.8.5"/>
+               <value n="id" v="Mockito-all-1.8.5"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-core/3.3.0.SP1/hibernate-core-3.3.0.SP1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-core-3.3.0.SP1"/>
+               <value n="id" v="Hibernate-core-3.3.0.SP1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xmlunit/xmlunit/1.2/xmlunit-1.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xmlunit-1.2"/>
+               <value n="id" v="Xmlunit-1.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/picocontainer/picocontainer/2.14.1/picocontainer-2.14.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Picocontainer-2.14.1"/>
+               <value n="id" v="Picocontainer-2.14.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-core/3.0/sonar-core-3.0-tests.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-core-3.0-tests"/>
+               <value n="id" v="Sonar-core-3.0-tests"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-annotations/3.4.0.GA/hibernate-annotations-3.4.0.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-annotations-3.4.0.GA"/>
+               <value n="id" v="Hibernate-annotations-3.4.0.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xalan-2.7.1"/>
+               <value n="id" v="Xalan-2.7.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcl-over-slf4j-1.5.6"/>
+               <value n="id" v="Jcl-over-slf4j-1.5.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-container-default-1.0-alpha-9-stable-1"/>
+               <value n="id" v="Plexus-container-default-1.0-alpha-9-stable-1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.6.2"/>
+               <value n="id" v="Slf4j-api-1.6.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-pool-1.5.4"/>
+               <value n="id" v="Commons-pool-1.5.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Fest-util-1.1.6"/>
+               <value n="id" v="Fest-util-1.1.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Antlr-2.7.6"/>
+               <value n="id" v="Antlr-2.7.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-3.2.1"/>
+               <value n="id" v="Commons-collections-3.2.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/derby/derbynet/10.7.1.1/derbynet-10.7.1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Derbynet-10.7.1.1"/>
+               <value n="id" v="Derbynet-10.7.1.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hamcrest-all-1.1"/>
+               <value n="id" v="Hamcrest-all-1.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-classworlds-2.2.3"/>
+               <value n="id" v="Plexus-classworlds-2.2.3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-3.1"/>
+               <value n="id" v="Commons-collections-3.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Stax-api-1.0.1"/>
+               <value n="id" v="Stax-api-1.0.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-check-api/3.0/sonar-check-api-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-check-api-3.0"/>
+               <value n="id" v="Sonar-check-api-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-2.2"/>
+               <value n="id" v="Commons-io-2.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/woodstox/stax2-api/3.0.1/stax2-api-3.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Stax2-api-3.0.1"/>
+               <value n="id" v="Stax2-api-3.0.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-graph/3.0/sonar-graph-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-graph-3.0"/>
+               <value n="id" v="Sonar-graph-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-collections/commons-collections/2.1/commons-collections-2.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-2.1"/>
+               <value n="id" v="Commons-collections-2.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Guava-10.0.1"/>
+               <value n="id" v="Guava-10.0.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Wagon-provider-api-1.0-beta-2"/>
+               <value n="id" v="Wagon-provider-api-1.0-beta-2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis-1.0.b2"/>
+               <value n="id" v="Xml-apis-1.0.b2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/log4j-over-slf4j/1.6.2/log4j-over-slf4j-1.6.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Log4j-over-slf4j-1.6.2"/>
+               <value n="id" v="Log4j-over-slf4j-1.6.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-core/3.3.2.GA/hibernate-core-3.3.2.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-core-3.3.2.GA"/>
+               <value n="id" v="Hibernate-core-3.3.2.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsr305-1.3.9"/>
+               <value n="id" v="Jsr305-1.3.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-2.0.1"/>
+               <value n="id" v="Commons-io-2.0.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-digester-1.8"/>
+               <value n="id" v="Commons-digester-1.8"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.2/jcl-over-slf4j-1.6.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcl-over-slf4j-1.6.2"/>
+               <value n="id" v="Jcl-over-slf4j-1.6.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/ch/qos/logback/logback-classic/0.9.30/logback-classic-0.9.30.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Logback-classic-0.9.30"/>
+               <value n="id" v="Logback-classic-0.9.30"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ehcache-1.2.3"/>
+               <value n="id" v="Ehcache-1.2.3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xpp3/xpp3/1.1.3.3/xpp3-1.1.3.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xpp3-1.1.3.3"/>
+               <value n="id" v="Xpp3-1.1.3.3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/geronimo-spec/geronimo-spec-jta/1.0-M1/geronimo-spec-jta-1.0-M1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Geronimo-spec-jta-1.0-M1"/>
+               <value n="id" v="Geronimo-spec-jta-1.0-M1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-repository-metadata-2.0.9"/>
+               <value n="id" v="Maven-repository-metadata-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/4.9/junit-4.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-4.9"/>
+               <value n="id" v="Junit-4.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hamcrest-core-1.3"/>
+               <value n="id" v="Hamcrest-core-1.3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Serializer-2.7.1"/>
+               <value n="id" v="Serializer-2.7.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-commons-annotations-3.1.0.GA"/>
+               <value n="id" v="Hibernate-commons-annotations-3.1.0.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis-1.3.03"/>
+               <value n="id" v="Xml-apis-1.3.03"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-entitymanager/3.4.0.GA/hibernate-entitymanager-3.4.0.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-entitymanager-3.4.0.GA"/>
+               <value n="id" v="Hibernate-entitymanager-3.4.0.GA"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Dom4j-1.6.1"/>
+               <value n="id" v="Dom4j-1.6.1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-profile-2.0.9"/>
+               <value n="id" v="Maven-profile-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-model-2.0.9"/>
+               <value n="id" v="Maven-model-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.4"/>
+               <value n="id" v="Commons-lang-2.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-project-2.0.9"/>
+               <value n="id" v="Maven-project-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Classworlds-1.1-alpha-2"/>
+               <value n="id" v="Classworlds-1.1-alpha-2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-4.11"/>
+               <value n="id" v="Junit-4.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-plugin-api/3.0/sonar-plugin-api-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-plugin-api-3.0"/>
+               <value n="id" v="Sonar-plugin-api-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.5"/>
+               <value n="id" v="Commons-lang-2.5"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.4.2/slf4j-api-1.4.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.4.2"/>
+               <value n="id" v="Slf4j-api-1.4.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/easytesting/fest-assert/1.4/fest-assert-1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Fest-assert-1.4"/>
+               <value n="id" v="Fest-assert-1.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.6"/>
+               <value n="id" v="Commons-lang-2.6"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.5.8"/>
+               <value n="id" v="Slf4j-api-1.5.8"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-artifact-2.0.9"/>
+               <value n="id" v="Maven-artifact-2.0.9"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-channel/3.0/sonar-channel-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-channel-3.0"/>
+               <value n="id" v="Sonar-channel-3.0"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/jfree/jcommon/1.0.12/jcommon-1.0.12.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcommon-1.0.12"/>
+               <value n="id" v="Jcommon-1.0.12"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-codec-1.4"/>
+               <value n="id" v="Commons-codec-1.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-1.41"/>
+               <value n="id" v="Commons-io-1.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-beanutils-1.7.01"/>
+               <value n="id" v="Commons-beanutils-1.7.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/jfree/jfreechart/1.0.9/jfreechart-1.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jfreechart-1.0.91"/>
+               <value n="id" v="Jfreechart-1.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/ejb3-persistence/1.0.2.GA/ejb3-persistence-1.0.2.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence-1.0.2.GA1"/>
+               <value n="id" v="Ejb3-persistence-1.0.2.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/staxmate/staxmate/2.0.0/staxmate-2.0.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Staxmate-2.0.01"/>
+               <value n="id" v="Staxmate-2.0.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-plugin-api/3.0/sonar-plugin-api-3.0-tests.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-plugin-api-3.0-tests1"/>
+               <value n="id" v="Sonar-plugin-api-3.0-tests1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-settings-2.0.91"/>
+               <value n="id" v="Maven-settings-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/derby/derbyclient/10.7.1.1/derbyclient-10.7.1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Derbyclient-10.7.1.11"/>
+               <value n="id" v="Derbyclient-10.7.1.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xstream-1.3.11"/>
+               <value n="id" v="Xstream-1.3.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-utils-1.5.11"/>
+               <value n="id" v="Plexus-utils-1.5.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/ch/qos/logback/logback-core/0.9.15/logback-core-0.9.15.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Logback-core-0.9.15"/>
+               <value n="id" v="Logback-core-0.9.15"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/ch/qos/logback/logback-core/0.9.30/logback-core-0.9.30.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Logback-core-0.9.301"/>
+               <value n="id" v="Logback-core-0.9.301"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-artifact-manager-2.0.91"/>
+               <value n="id" v="Maven-artifact-manager-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sslr/sslr-core/1.20/sslr-core-1.20.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sslr-core-1.20"/>
+               <value n="id" v="Sslr-core-1.20"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sslr-squid-bridge/sslr-squid-bridge/2.4/sslr-squid-bridge-2.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sslr-squid-bridge-2.4"/>
+               <value n="id" v="Sslr-squid-bridge-2.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-dbcp-1.31"/>
+               <value n="id" v="Commons-dbcp-1.31"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-utils-1.0.41"/>
+               <value n="id" v="Plexus-utils-1.0.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mockito-all-1.8.51"/>
+               <value n="id" v="Mockito-all-1.8.51"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-core/3.3.0.SP1/hibernate-core-3.3.0.SP1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-core-3.3.0.SP11"/>
+               <value n="id" v="Hibernate-core-3.3.0.SP11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-core/3.0/sonar-core-3.0-tests.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-core-3.0-tests1"/>
+               <value n="id" v="Sonar-core-3.0-tests1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-annotations/3.4.0.GA/hibernate-annotations-3.4.0.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-annotations-3.4.0.GA1"/>
+               <value n="id" v="Hibernate-annotations-3.4.0.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcl-over-slf4j-1.5.61"/>
+               <value n="id" v="Jcl-over-slf4j-1.5.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.6.21"/>
+               <value n="id" v="Slf4j-api-1.6.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Fest-util-1.1.61"/>
+               <value n="id" v="Fest-util-1.1.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Antlr-2.7.61"/>
+               <value n="id" v="Antlr-2.7.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/derby/derbynet/10.7.1.1/derbynet-10.7.1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Derbynet-10.7.1.11"/>
+               <value n="id" v="Derbynet-10.7.1.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-classworlds-2.2.31"/>
+               <value n="id" v="Plexus-classworlds-2.2.31"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hamcrest-all-1.11"/>
+               <value n="id" v="Hamcrest-all-1.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-3.11"/>
+               <value n="id" v="Commons-collections-3.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Stax-api-1.0.11"/>
+               <value n="id" v="Stax-api-1.0.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-check-api/3.0/sonar-check-api-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-check-api-3.01"/>
+               <value n="id" v="Sonar-check-api-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-2.21"/>
+               <value n="id" v="Commons-io-2.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/woodstox/stax2-api/3.0.1/stax2-api-3.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Stax2-api-3.0.11"/>
+               <value n="id" v="Stax2-api-3.0.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis-1.0.b21"/>
+               <value n="id" v="Xml-apis-1.0.b21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-core/3.3.2.GA/hibernate-core-3.3.2.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-core-3.3.2.GA1"/>
+               <value n="id" v="Hibernate-core-3.3.2.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsr305-1.3.91"/>
+               <value n="id" v="Jsr305-1.3.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-digester-1.81"/>
+               <value n="id" v="Commons-digester-1.81"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.2/jcl-over-slf4j-1.6.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcl-over-slf4j-1.6.21"/>
+               <value n="id" v="Jcl-over-slf4j-1.6.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/geronimo-spec/geronimo-spec-jta/1.0-M1/geronimo-spec-jta-1.0-M1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Geronimo-spec-jta-1.0-M11"/>
+               <value n="id" v="Geronimo-spec-jta-1.0-M11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jaxen-1.1.4"/>
+               <value n="id" v="Jaxen-1.1.4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hamcrest-core-1.31"/>
+               <value n="id" v="Hamcrest-core-1.31"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/4.9/junit-4.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-4.91"/>
+               <value n="id" v="Junit-4.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-commons-annotations-3.1.0.GA1"/>
+               <value n="id" v="Hibernate-commons-annotations-3.1.0.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Serializer-2.7.11"/>
+               <value n="id" v="Serializer-2.7.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis-1.3.031"/>
+               <value n="id" v="Xml-apis-1.3.031"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-model-2.0.91"/>
+               <value n="id" v="Maven-model-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-profile-2.0.91"/>
+               <value n="id" v="Maven-profile-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.41"/>
+               <value n="id" v="Commons-lang-2.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-4.111"/>
+               <value n="id" v="Junit-4.111"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Classworlds-1.1-alpha-21"/>
+               <value n="id" v="Classworlds-1.1-alpha-21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-project-2.0.91"/>
+               <value n="id" v="Maven-project-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/easytesting/fest-assert/1.4/fest-assert-1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Fest-assert-1.41"/>
+               <value n="id" v="Fest-assert-1.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.4.2/slf4j-api-1.4.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.4.21"/>
+               <value n="id" v="Slf4j-api-1.4.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-artifact-2.0.91"/>
+               <value n="id" v="Maven-artifact-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.5.81"/>
+               <value n="id" v="Slf4j-api-1.5.81"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar-plugins/xml/xml-squid/1.2/xml-squid-1.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-squid-1.2"/>
+               <value n="id" v="Xml-squid-1.2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/jfree/jcommon/1.0.12/jcommon-1.0.12.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcommon-1.0.121"/>
+               <value n="id" v="Jcommon-1.0.121"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/woodstox/woodstox-core-lgpl/4.0.4/woodstox-core-lgpl-4.0.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Woodstox-core-lgpl-4.0.41"/>
+               <value n="id" v="Woodstox-core-lgpl-4.0.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mockito-all-1.9.51"/>
+               <value n="id" v="Mockito-all-1.9.51"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-squid/3.0/sonar-squid-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-squid-3.01"/>
+               <value n="id" v="Sonar-squid-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Javassist-3.4.GA1"/>
+               <value n="id" v="Javassist-3.4.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-testing-harness/3.0/sonar-testing-harness-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-testing-harness-3.01"/>
+               <value n="id" v="Sonar-testing-harness-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="XercesImpl-2.8.11"/>
+               <value n="id" v="XercesImpl-2.8.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-duplications/3.0/sonar-duplications-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-duplications-3.01"/>
+               <value n="id" v="Sonar-duplications-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.5.61"/>
+               <value n="id" v="Slf4j-api-1.5.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-colorizer/3.7/sonar-colorizer-3.7.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-colorizer-3.7"/>
+               <value n="id" v="Sonar-colorizer-3.7"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/derby/derby/10.7.1.1/derby-10.7.1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Derby-10.7.1.11"/>
+               <value n="id" v="Derby-10.7.1.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-plugin-registry-2.0.91"/>
+               <value n="id" v="Maven-plugin-registry-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-ehcache/3.3.2.GA/hibernate-ehcache-3.3.2.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-ehcache-3.3.2.GA1"/>
+               <value n="id" v="Hibernate-ehcache-3.3.2.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-update-center-common/1.1/sonar-update-center-common-1.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-update-center-common-1.11"/>
+               <value n="id" v="Sonar-update-center-common-1.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/mybatis/mybatis/3.0.6/mybatis-3.0.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mybatis-3.0.61"/>
+               <value n="id" v="Mybatis-3.0.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-3.8.21"/>
+               <value n="id" v="Junit-3.8.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/dbunit/dbunit/2.4.5/dbunit-2.4.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Dbunit-2.4.51"/>
+               <value n="id" v="Dbunit-2.4.51"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-colorizer/3.0/sonar-colorizer-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-colorizer-3.01"/>
+               <value n="id" v="Sonar-colorizer-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis-1.3.041"/>
+               <value n="id" v="Xml-apis-1.3.041"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-3.8.11"/>
+               <value n="id" v="Junit-3.8.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-configuration-1.61"/>
+               <value n="id" v="Commons-configuration-1.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/ch/qos/logback/logback-classic/0.9.15/logback-classic-0.9.15.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Logback-classic-0.9.15"/>
+               <value n="id" v="Logback-classic-0.9.15"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xmlunit/xmlunit/1.2/xmlunit-1.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xmlunit-1.21"/>
+               <value n="id" v="Xmlunit-1.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/picocontainer/picocontainer/2.14.1/picocontainer-2.14.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Picocontainer-2.14.11"/>
+               <value n="id" v="Picocontainer-2.14.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xalan-2.7.11"/>
+               <value n="id" v="Xalan-2.7.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plexus-container-default-1.0-alpha-9-stable-11"/>
+               <value n="id" v="Plexus-container-default-1.0-alpha-9-stable-11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-pool-1.5.41"/>
+               <value n="id" v="Commons-pool-1.5.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-3.2.11"/>
+               <value n="id" v="Commons-collections-3.2.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sslr/sslr-xpath/1.20/sslr-xpath-1.20.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sslr-xpath-1.20"/>
+               <value n="id" v="Sslr-xpath-1.20"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-graph/3.0/sonar-graph-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-graph-3.01"/>
+               <value n="id" v="Sonar-graph-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-collections/commons-collections/2.1/commons-collections-2.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-2.11"/>
+               <value n="id" v="Commons-collections-2.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Wagon-provider-api-1.0-beta-21"/>
+               <value n="id" v="Wagon-provider-api-1.0-beta-21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Guava-10.0.11"/>
+               <value n="id" v="Guava-10.0.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/slf4j/log4j-over-slf4j/1.6.2/log4j-over-slf4j-1.6.2.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Log4j-over-slf4j-1.6.21"/>
+               <value n="id" v="Log4j-over-slf4j-1.6.21"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-2.0.11"/>
+               <value n="id" v="Commons-io-2.0.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/ch/qos/logback/logback-classic/0.9.30/logback-classic-0.9.30.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Logback-classic-0.9.301"/>
+               <value n="id" v="Logback-classic-0.9.301"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ehcache-1.2.31"/>
+               <value n="id" v="Ehcache-1.2.31"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/xpp3/xpp3/1.1.3.3/xpp3-1.1.3.3.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xpp3-1.1.3.31"/>
+               <value n="id" v="Xpp3-1.1.3.31"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Maven-repository-metadata-2.0.91"/>
+               <value n="id" v="Maven-repository-metadata-2.0.91"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Dom4j-1.6.11"/>
+               <value n="id" v="Dom4j-1.6.11"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/hibernate/hibernate-entitymanager/3.4.0.GA/hibernate-entitymanager-3.4.0.GA.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-entitymanager-3.4.0.GA1"/>
+               <value n="id" v="Hibernate-entitymanager-3.4.0.GA1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-plugin-api/3.0/sonar-plugin-api-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-plugin-api-3.01"/>
+               <value n="id" v="Sonar-plugin-api-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.51"/>
+               <value n="id" v="Commons-lang-2.51"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.61"/>
+               <value n="id" v="Commons-lang-2.61"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-codec-1.41"/>
+               <value n="id" v="Commons-codec-1.41"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../Users/rcats.WH/.m2/repository/org/codehaus/sonar/sonar-channel/3.0/sonar-channel-3.0.jar"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Sonar-channel-3.01"/>
+               <value n="id" v="Sonar-channel-3.01"/>
+               <value n="locked" v="true"/>
+            </hash>
          </list>
       </hash>
       <list n="libraryReferences">
@@ -185,9 +2375,430 @@
             <value n="id" v="commons-io:commons-io:2.2:jar"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Commons-io-1.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-beanutils-1.7.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jfreechart-1.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence-1.0.2.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Staxmate-2.0.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-plugin-api-3.0-tests1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-settings-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Derbyclient-10.7.1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xstream-1.3.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-utils-1.5.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-core-0.9.15"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-core-0.9.301"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-artifact-manager-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sslr-core-1.20"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sslr-squid-bridge-2.4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-dbcp-1.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-utils-1.0.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mockito-all-1.8.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-core-3.3.0.SP11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-core-3.0-tests1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations-3.4.0.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcl-over-slf4j-1.5.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.6.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Fest-util-1.1.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Antlr-2.7.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Derbynet-10.7.1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-classworlds-2.2.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hamcrest-all-1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-3.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Stax-api-1.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-check-api-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Stax2-api-3.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis-1.0.b21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-core-3.3.2.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsr305-1.3.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-digester-1.81"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcl-over-slf4j-1.6.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Geronimo-spec-jta-1.0-M11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxen-1.1.4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hamcrest-core-1.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-4.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations-3.1.0.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Serializer-2.7.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis-1.3.031"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-model-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-profile-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-4.111"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Classworlds-1.1-alpha-21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-project-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Fest-assert-1.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.4.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-artifact-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.5.81"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-squid-1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcommon-1.0.121"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Woodstox-core-lgpl-4.0.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mockito-all-1.9.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-squid-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javassist-3.4.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-testing-harness-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="XercesImpl-2.8.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-duplications-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.5.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-colorizer-3.7"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Derby-10.7.1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-plugin-registry-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-ehcache-3.3.2.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-update-center-common-1.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mybatis-3.0.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-3.8.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Dbunit-2.4.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-colorizer-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis-1.3.041"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-3.8.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-configuration-1.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-classic-0.9.15"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xmlunit-1.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Picocontainer-2.14.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xalan-2.7.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plexus-container-default-1.0-alpha-9-stable-11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-pool-1.5.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-3.2.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sslr-xpath-1.20"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-graph-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-2.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Wagon-provider-api-1.0-beta-21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Guava-10.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Log4j-over-slf4j-1.6.21"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.0.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Logback-classic-0.9.301"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ehcache-1.2.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xpp3-1.1.3.31"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Maven-repository-metadata-2.0.91"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Dom4j-1.6.11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-entitymanager-3.4.0.GA1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-plugin-api-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.51"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.61"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-codec-1.41"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Sonar-channel-3.01"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="../target/classes/"/>
+   </hash>
+   <hash n="oracle.toplink.workbench.addin">
+      <hash n="toplinkContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="toplink/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="ResourceBundleOptions">
+      <list n="RegisteredResourceBundles"/>
    </hash>
 </jpr:project>

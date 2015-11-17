@@ -134,35 +134,41 @@ public class ResultsParser {
         // get File with violation
         Location loc = violation.getLocation();
         Model model = (Model) loc.getModel();
-        File f = new File(model.getFile().getPath());
-        if (!f.canRead()) {
-            LOG.warn("file {} no longer exists, ignoring violation '{}'", f, violation.getMessage());
-            return;
-        }
-        // lookup sonar Resource for the violating file
-        Resource resource = project.getFileSystem().toResource(f);
-        if (resource == null) {
-            LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
-                     violation.getMessage());
-            return;
-        }
-        // find ActiveRule for violation
-        String ruleKey = ((Rule) violation.getRule()).getName();
-        ActiveRule activeRule = getActiveRule(profile, ruleKey);
-        if (activeRule == null) {
-            LOG.warn("no active sonar Rule with key {} found in language {}, profile {}. Ignoring violation for {}", new Object[] {
-                     ruleKey, profile.getLanguage(), profile.getName(), f
-            });
-            return;
-        }
-        // reporting sonar violation
-        LOG.info("creating violation for rule {} in {}", new Object[] { activeRule.getRuleKey(), resource });
-        Violation v = Violation.create(activeRule, resource);
-        v = v.setMessage(violation.getMessage());
-        if (violation.getLocation() != null && violation.getLocation().getLineNumber() != null) {
-            v.setLineId(Integer.parseInt(violation.getLocation().getLineNumber()));
-        }
-        context.saveViolation(v);
+		if(model != null ) {
+			LOG.debug("model id: {}", model.getId());
+			LOG.debug("file: {}", model.getFile());
+			LOG.debug("path: {}", model.getFile().getPath());
+			
+			File f = new File(model.getFile().getPath());
+			if (!f.canRead()) {
+				LOG.warn("file {} no longer exists, ignoring violation '{}'", f, violation.getMessage());
+				return;
+			}
+			// lookup sonar Resource for the violating file
+			Resource resource = project.getFileSystem().toResource(f);
+			if (resource == null) {
+				LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
+						 violation.getMessage());
+				return;
+			}
+			// find ActiveRule for violation
+			String ruleKey = ((Rule) violation.getRule()).getName();
+			ActiveRule activeRule = getActiveRule(profile, ruleKey);
+			if (activeRule == null) {
+				LOG.warn("no active sonar Rule with key {} found in language {}, profile {}. Ignoring violation for {}", new Object[] {
+						 ruleKey, profile.getLanguage(), profile.getName(), f
+				});
+				return;
+			}
+			// reporting sonar violation
+			LOG.info("creating violation for rule {} in {}", new Object[] { activeRule.getRuleKey(), resource });
+			Violation v = Violation.create(activeRule, resource);
+			v = v.setMessage(violation.getMessage());
+			if (violation.getLocation() != null && violation.getLocation().getLineNumber() != null) {
+				v.setLineId(Integer.parseInt(violation.getLocation().getLineNumber()));
+			}
+			context.saveViolation(v);
+		}
     }
 
     private ActiveRule getActiveRule(RulesProfile profile, String key) {

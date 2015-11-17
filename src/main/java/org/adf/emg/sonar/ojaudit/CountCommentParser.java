@@ -36,7 +36,7 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.ext.DefaultHandler2;
 
 public class CountCommentParser {
-
+	
     private static final SAXParserFactory SAX_FACTORY;
 
     public int countLinesOfComment(InputStream input) {

@@ -42,6 +42,10 @@
       <id>rolrichs</id>
       <name>Richard Olrichs</name>
     </developer>
+    <developer>
+        <id>rcats</id>
+        <name>Remco Cats</name>
+    </developer>
   </developers>
 
   <scm>
@@ -120,6 +124,11 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+	<groupId>org.codehaus.sonar-plugins.xml</groupId>
+	<artifactId>xml-squid</artifactId>
+	<version>1.2</version>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.5.6</version>
@@ -160,7 +169,7 @@
             <configuration>
               <rules>
                 <requireFilesSize>
-                  <maxsize>200000</maxsize>
+                  <maxsize>400000</maxsize>
                   <minsize>20000</minsize>
                   <files>
                     <file>${project.build.directory}/${project.build.finalName}.jar</file>

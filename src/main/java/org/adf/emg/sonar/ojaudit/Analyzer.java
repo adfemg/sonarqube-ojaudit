@@ -81,8 +81,9 @@ public class Analyzer implements Sensor {
     public void analyse(Project project, SensorContext context) {
         File output = new File(project.getFileSystem().getSonarWorkingDirectory(), "ojaudit.xml");
         LOG.info("ojaudit output will be written to {}", output.getAbsolutePath());
-        executeAudit(project, output);
-        collectMeasures(output, project, context);
+        if(executeAudit(project, output)) {
+			collectMeasures(output, project, context);
+		}
     }
 
     /**
@@ -90,8 +91,9 @@ public class Analyzer implements Sensor {
      * @param project Project to analyse
      * @param output Location of the output (XML) file to generate
      */
-    protected void executeAudit(Project project, File output) {
+    protected boolean executeAudit(Project project, File output) {
         String cmd = null;
+		boolean result = true;
         try {
             long start = System.currentTimeMillis();
             Command command = Command.create(config.getExecutable().getCanonicalPath());
@@ -114,8 +116,10 @@ public class Analyzer implements Sensor {
             }
             LOG.info("ojaudit completed in {} ms", System.currentTimeMillis() - start);
         } catch (Exception e) {
-            throw new OJAuditException("error running ojaudit" + (cmd == null ? "" : " (" + cmd + ")"), e);
+            LOG.error("error running ojaudit" + (cmd == null ? "" : " (" + cmd + ")"));
+			result = false;
         }
+		return result;
     }
 
     /**
