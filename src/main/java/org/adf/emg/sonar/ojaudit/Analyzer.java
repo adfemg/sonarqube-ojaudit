@@ -21,15 +21,16 @@ package org.adf.emg.sonar.ojaudit;
 
 import java.io.File;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import org.sonar.api.batch.Sensor;
-import org.sonar.api.batch.SensorContext;
+import org.sonar.api.batch.fs.InputModule;
+import org.sonar.api.batch.sensor.Sensor;
+import org.sonar.api.batch.sensor.SensorContext;
+import org.sonar.api.batch.sensor.SensorDescriptor;
 import org.sonar.api.profiles.RulesProfile;
-import org.sonar.api.resources.Project;
 import org.sonar.api.utils.command.Command;
 import org.sonar.api.utils.command.CommandExecutor;
+import org.sonar.api.utils.log.Logger;
+import org.sonar.api.utils.log.Loggers;
+
 
 /**
  * This Analyzer is invoked once during the analysis of a project. It invokes the command-line ojaudit tool
@@ -38,51 +39,67 @@ import org.sonar.api.utils.command.CommandExecutor;
  */
 public class Analyzer implements Sensor {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Analyzer.class);
+    private static final Logger LOG = Loggers.get(Analyzer.class);
 
     private static final Long MSECS_PER_SEC = 1000L;
 
     // plugin classes received by dependency injection through constructor
     private final Configuration config;
-    private final RulesProfile profile;
-
+//    private final RulesProfile profile;
+//
     /**
      * Constructor.
      * @param config Plugin configuration
      * @param profile Profile being used for this analysis
      */
-    public Analyzer(Configuration config, RulesProfile profile) {
+    public Analyzer(Configuration config/*, RulesProfile profile*/) {
         this.config = config;
-        this.profile = profile;
+//        this.profile = profile;
+    }
+//
+//    /**
+//     * Determines if this Sensor should run for a given project.
+//     * @param project Project
+//     * @return <code>true</code> if the supplied project uses ojaudit as language, otherwise <code>false</code>
+//     * @see OJAuditPlugin#LANGUAGE_KEY
+//     */
+//    @Override
+//    public boolean shouldExecuteOnProject(Project project) {
+//        boolean retval = OJAuditPlugin.LANGUAGE_KEY.equals(project.getLanguageKey());
+//        if (!retval) {
+//            LOG.debug(this.getClass().getName() + " not executing on project with language " +
+//                      project.getLanguageKey());
+//        }
+//        return retval;
+//    }
+    @Override
+    public void describe(SensorDescriptor descriptor) {
+        System.out.println("********************* Analyzer.describe");
+        descriptor.name("ojaudit").createIssuesForRuleRepository(OJAuditPlugin.SONAR_REPOS_KEY);
+        // TODO Implement this method
     }
 
-    /**
-     * Determines if this Sensor should run for a given project.
-     * @param project Project
-     * @return <code>true</code> if the supplied project uses ojaudit as language, otherwise <code>false</code>
-     * @see OJAuditPlugin#LANGUAGE_KEY
-     */
+//
+//    /**
+//     * Performs analysis on a given project and reports measures (violations) to the given context.
+//     * @param project Project to analyse
+//     * @param context SensorContext where measures (violations) should be reported to
+//     */
+//    @Override
+//    public void analyse(Project project, SensorContext context) {
+//        File output = new File(project.getFileSystem().getSonarWorkingDirectory(), "ojaudit.xml");
+//        LOG.info("ojaudit output will be written to {}", output.getAbsolutePath());
+//        executeAudit(project, output);
+//        collectMeasures(output, project, context);
+//    }
     @Override
-    public boolean shouldExecuteOnProject(Project project) {
-        boolean retval = OJAuditPlugin.LANGUAGE_KEY.equals(project.getLanguageKey());
-        if (!retval) {
-            LOG.debug(this.getClass().getName() + " not executing on project with language " +
-                      project.getLanguageKey());
-        }
-        return retval;
-    }
-
-    /**
-     * Performs analysis on a given project and reports measures (violations) to the given context.
-     * @param project Project to analyse
-     * @param context SensorContext where measures (violations) should be reported to
-     */
-    @Override
-    public void analyse(Project project, SensorContext context) {
-        File output = new File(project.getFileSystem().getSonarWorkingDirectory(), "ojaudit.xml");
-        LOG.info("ojaudit output will be written to {}", output.getAbsolutePath());
-        executeAudit(project, output);
-        collectMeasures(output, project, context);
+    public void execute(SensorContext context) {
+        System.out.println("********************* Analyzer.execute");
+        System.out.println(context);
+                File output = new File(context.fileSystem().workDir(), "ojaudit.xml");
+                LOG.info("ojaudit output will be written to {}", output.getAbsolutePath());
+                executeAudit(context, output);
+                collectMeasures(output, context);
     }
 
     /**
@@ -90,20 +107,20 @@ public class Analyzer implements Sensor {
      * @param project Project to analyse
      * @param output Location of the output (XML) file to generate
      */
-    protected void executeAudit(Project project, File output) {
+//    protected void executeAudit(Project project, File output) {
+    protected void executeAudit(SensorContext context, File output) {
         String cmd = null;
         try {
             long start = System.currentTimeMillis();
             Command command = Command.create(config.getExecutable().getCanonicalPath());
             command = command.addArgument("-profile").addArgument(config.getProfile());
             command = command.addArgument("-output").addArgument(output.getCanonicalPath());
-            if (project != null && project.getFileSystem() != null &&
-                project.getFileSystem().getSourceCharset() != null) {
+            if (context.fileSystem() != null && context.fileSystem().encoding() != null) {
                 command =
-                    command.addArgument("-encoding").addArgument(project.getFileSystem().getSourceCharset().name());
+                    command.addArgument("-encoding").addArgument(context.fileSystem().encoding().name());
             }
-            command = command.addArgument(config.getTargetFile().getCanonicalPath());
-            command = command.setDirectory(project.getFileSystem().getBasedir());
+            command = command.addArgument(config.getTargetFile(context.fileSystem()).getCanonicalPath());
+            command = command.setDirectory(context.fileSystem().baseDir());
             cmd = command.toCommandLine();
             LOG.info("executing {}", cmd);
             CommandExecutor executor = CommandExecutor.create();
@@ -125,11 +142,10 @@ public class Analyzer implements Sensor {
      * @param context SensorContext where measures/violations should be reported to
      * @see ResultsParser
      */
-    protected void collectMeasures(File output, Project project, SensorContext context) {
+    protected void collectMeasures(File output, SensorContext context) {
         long start = System.currentTimeMillis();
-        ResultsParser parser = new ResultsParser(project, profile, context);
+        ResultsParser parser = new ResultsParser(/*project, profile,*/ context);
         parser.parse(output);
         LOG.info("ojaudit results analysed in {} ms", System.currentTimeMillis() - start);
     }
-
 }

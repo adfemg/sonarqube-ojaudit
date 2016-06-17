@@ -21,55 +21,57 @@ package org.adf.emg.sonar.ojaudit;
 
 import java.io.File;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import org.sonar.api.BatchExtension;
-import org.sonar.api.ServerExtension;
+import org.sonar.api.batch.BatchSide;
+import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.config.Settings;
 import org.sonar.api.platform.ServerFileSystem;
-import org.sonar.api.resources.Project;
+import org.sonar.api.server.ServerSide;
+import org.sonar.api.utils.log.Logger;
+import org.sonar.api.utils.log.Loggers;
+
 
 /**
  * Helper class for interpreting the ojaudit plugin settings.
  * @author Wilfred van der Deijl
  */
-public class Configuration implements ServerExtension, BatchExtension {
+@ServerSide
+@BatchSide
+public class Configuration /*implements ServerExtension, BatchExtension*/ {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Configuration.class);
+    private static final Logger LOG = Loggers.get(Configuration.class);
 
     private final Settings settings;
-    private final Project project;
-    private final ServerFileSystem serverFileSystem;
-
-    /**
-     * Constructor when running the sonar server.
-     * @param settings Global plugin settings at server
-     * @param serverFileSystem ServerFileSystem
-     */
-    public Configuration(Settings settings, ServerFileSystem serverFileSystem) {
-        this(settings, serverFileSystem, null);
-    }
-
-    /**
-     * Constructor when running analysis through sonar-runner, ant, or maven.
-     * @param settings Project settings
-     * @param project Project being processed
-     */
-    public Configuration(Settings settings, Project project) {
-        this(settings, null, project);
-    }
-
+//    private final Project project;
+//    private final ServerFileSystem serverFileSystem;
+//
+//    /**
+//     * Constructor when running the sonar server.
+//     * @param settings Global plugin settings at server
+//     * @param serverFileSystem ServerFileSystem
+//     */
+//    public Configuration(Settings settings, ServerFileSystem serverFileSystem) {
+//        this(settings, serverFileSystem, null);
+//    }
+//
+//    /**
+//     * Constructor when running analysis through sonar-runner, ant, or maven.
+//     * @param settings Project settings
+//     * @param project Project being processed
+//     */
+//    public Configuration(Settings settings, Project project) {
+//        this(settings, null, project);
+//    }
+//
     /**
      * Private constructor used by the two public constructors.
      * @param settings Global or project-specific plugin settings
      * @param serverFileSystem ServerFileSystem (when running at server)
      * @param project Project being processed (when running analysis)
      */
-    private Configuration(Settings settings, ServerFileSystem serverFileSystem, Project project) {
+    public Configuration(Settings settings/*, ServerFileSystem serverFileSystem, Project project*/) {
         this.settings = settings;
-        this.project = project;
-        this.serverFileSystem = serverFileSystem;
+//        this.project = project;
+//        this.serverFileSystem = serverFileSystem;
     }
 
     /**
@@ -78,9 +80,9 @@ public class Configuration implements ServerExtension, BatchExtension {
      * @throws IllegalArgumentException if sonar plugin property not set
      * @see OJAuditPlugin#TARGET_FILE_KEY
      */
-    public File getTargetFile() {
+    public File getTargetFile(FileSystem fileSystem) {
         checkKeyExists(OJAuditPlugin.TARGET_FILE_KEY);
-        File file = project.getFileSystem().resolvePath(settings.getString(OJAuditPlugin.TARGET_FILE_KEY));
+        File file = fileSystem.resolvePath(settings.getString(OJAuditPlugin.TARGET_FILE_KEY));
 
         checkCanRead(file, "workspace or project file");
         return file;
@@ -142,7 +144,7 @@ public class Configuration implements ServerExtension, BatchExtension {
      * @return File object pointing to the 'ojaudit -rulehelp' executable
      * @see OJAuditPlugin#OJAUDIT_RULEHELP_KEY
      */
-    public File getRuleHelp() {
+    public File getRuleHelp(ServerFileSystem serverFileSystem) {
         String ruleHelp = settings.getString(OJAuditPlugin.OJAUDIT_RULEHELP_KEY);
         File file;
         if (ruleHelp == null || ruleHelp.trim().isEmpty()) {

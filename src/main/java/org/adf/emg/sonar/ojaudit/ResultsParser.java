@@ -34,15 +34,16 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.sonar.api.batch.fs.FilePredicate;
+import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.batch.fs.TextRange;
+import org.sonar.api.batch.rule.ActiveRule;
+import org.sonar.api.batch.sensor.SensorContext;
+import org.sonar.api.batch.sensor.issue.NewIssue;
+import org.sonar.api.batch.sensor.issue.NewIssueLocation;
+import org.sonar.api.utils.log.Logger;
+import org.sonar.api.utils.log.Loggers;
 
-import org.sonar.api.batch.SensorContext;
-import org.sonar.api.profiles.RulesProfile;
-import org.sonar.api.resources.Project;
-import org.sonar.api.resources.Resource;
-import org.sonar.api.rules.ActiveRule;
-import org.sonar.api.rules.Violation;
 
 /**
  * Helper class for parsing an ojaudit output file and reporting any violation to a SensorContext.
@@ -51,22 +52,22 @@ import org.sonar.api.rules.Violation;
  */
 public class ResultsParser {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ResultsParser.class);
+    private static final Logger LOG = Loggers.get(ResultsParser.class);
 
-    // xsd can be found in JDEV_HOME/jdev/extensions/oracle.ide.audit.jar!oracle/jdevimpl/audit/report/audit.xsd
-    private final Project project;
-    private final RulesProfile profile;
+//    // xsd can be found in JDEV_HOME/jdev/extensions/oracle.ide.audit.jar!oracle/jdevimpl/audit/report/audit.xsd
+//    private final Project project;
+//    private final RulesProfile profile;
     private final SensorContext context;
-
+//
     /**
      * Constructor.
      * @param project Project being analyzed by sonar
      * @param profile Active rule profile for the current sonar analysis
      * @param context SensorContext where vioilations should be reported to
      */
-    public ResultsParser(Project project, RulesProfile profile, SensorContext context) {
-        this.project = project;
-        this.profile = profile;
+    public ResultsParser(/*Project project, RulesProfile profile,*/ SensorContext context) {
+//        this.project = project;
+//        this.profile = profile;
         this.context = context;
     }
 
@@ -140,33 +141,63 @@ public class ResultsParser {
             return;
         }
         // lookup sonar Resource for the violating file
-        Resource resource = project.getFileSystem().toResource(f);
-        if (resource == null) {
+        System.out.println("***** FINDING " + f);
+        FilePredicate finder = new FilePredicate(){
+            @Override
+            public boolean apply(InputFile inputFile) {
+                System.out.println("************** SCANNING " + inputFile.absolutePath() + " *** " + inputFile.relativePath());
+                return false;
+            }
+        };
+        InputFile inputFile = context.fileSystem().inputFile(finder);
+        if (inputFile == null) {
             LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
                      violation.getMessage());
             return;
         }
+//        Resource resource = project.getFileSystem().toResource(f);
+//        if (resource == null) {
+//            LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
+//                     violation.getMessage());
+//            return;
+//        }
         // find ActiveRule for violation
         String ruleKey = ((Rule) violation.getRule()).getName();
-        ActiveRule activeRule = getActiveRule(profile, ruleKey);
+        ActiveRule activeRule = getActiveRule(/*profile,*/ ruleKey);
         if (activeRule == null) {
             LOG.warn("no active sonar Rule with key {} found in language {}, profile {}. Ignoring violation for {}", new Object[] {
-                     ruleKey, profile.getLanguage(), profile.getName(), f
+                     ruleKey/*, profile.getLanguage(), profile.getName()*/, f
             });
             return;
         }
+        // Set location information
+        // TODO: are these linenumbers and offsets correct?
+        TextRange textLocation = inputFile.selectLine(parseInt(loc.getLineNumber()));
+//        TextPointer start = new DefaultTextPointer(parseInt(loc.getLineNumber()), parseInt(loc.getColumnOffset()));
+//           TextPointer end = new DefaultTextPointer(parseInt(loc.getLineNumber()), parseInt(loc.getColumnOffset()) + parseInt(loc.getLength()));
+//           TextRange textLocation = new DefaultTextRange(start, end);
+//           NewIssueLocation location = new DefaultIssueLocation().on(inputFile).at(textLocation).message(violation.getMessage());
+
         // reporting sonar violation
-        LOG.info("creating violation for rule {} in {}", new Object[] { activeRule.getRuleKey(), resource });
-        Violation v = Violation.create(activeRule, resource);
-        v = v.setMessage(violation.getMessage());
-        if (violation.getLocation() != null && violation.getLocation().getLineNumber() != null) {
-            v.setLineId(Integer.parseInt(violation.getLocation().getLineNumber()));
-        }
-        context.saveViolation(v);
+        LOG.info("creating violation for rule {} in {}", new Object[] { activeRule.ruleKey()/*, resource*/ });
+        NewIssue issue = context.newIssue().forRule(activeRule.ruleKey());
+        NewIssueLocation issueLocation = issue.newLocation().on(inputFile).at(textLocation).message(violation.getMessage());
+        issue.at(issueLocation).save();
+//        Violation v = Violation.create(activeRule, resource);
+//        v = v.setMessage(violation.getMessage());
+//        if (violation.getLocation() != null && violation.getLocation().getLineNumber() != null) {
+//            v.setLineId(Integer.parseInt(violation.getLocation().getLineNumber()));
+//        }
+//        context.saveViolation(v);
     }
 
-    private ActiveRule getActiveRule(RulesProfile profile, String key) {
-        ActiveRule retval = profile.getActiveRule(OJAuditPlugin.SONAR_REPOS_KEY, key);
+    private int parseInt(String s) {
+        return s == null ? 0 : Integer.parseInt(s);
+    }
+
+    private ActiveRule getActiveRule(/*RulesProfile profile,*/ String key) {
+        ActiveRule retval = this.context.activeRules().findByInternalKey(OJAuditPlugin.SONAR_REPOS_KEY, key);
+//        ActiveRule retval = profile.getActiveRule(OJAuditPlugin.SONAR_REPOS_KEY, key);
         if (retval != null) {
             return retval;
         }

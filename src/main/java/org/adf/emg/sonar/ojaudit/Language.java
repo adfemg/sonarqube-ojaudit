@@ -21,6 +21,7 @@ package org.adf.emg.sonar.ojaudit;
 
 import org.sonar.api.resources.AbstractLanguage;
 
+
 /**
  * ojaudit analysis requires its own language so all files are processed.
  * @author Wilfred van der Deijl

@@ -19,11 +19,10 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import java.util.List;
-
 import org.sonar.api.profiles.ProfileDefinition;
 import org.sonar.api.profiles.RulesProfile;
 import org.sonar.api.rules.Rule;
+import org.sonar.api.rules.RuleFinder;
 import org.sonar.api.utils.ValidationMessages;
 
 /**
@@ -32,14 +31,20 @@ import org.sonar.api.utils.ValidationMessages;
  */
 public final class DefaultProfile extends ProfileDefinition {
 
-    private final RulesRepository repos;
+//    private final RulesDefinition.Context rulesContext;
+//    private final ActiveRules activeRules;
+    private final RulesDefinition rulesDefinition;
+    private final RuleFinder ruleFinder;
 
     /**
      * Constructor.
      * @param repos Our RulesRepository which contains all rules to activate
      */
-    public DefaultProfile(RulesRepository repos) {
-        this.repos = repos;
+    public DefaultProfile(/*org.sonar.api.server.rule.RulesDefinition.Context rulesContext, ActiveRules activeRules, */RulesDefinition rulesDefinition, RuleFinder ruleFinder) {
+//        this.rulesContext = rulesContext;
+//        this.activeRules = activeRules;
+        this.rulesDefinition = rulesDefinition;
+        this.ruleFinder = ruleFinder;
     }
 
     /**
@@ -50,11 +55,16 @@ public final class DefaultProfile extends ProfileDefinition {
     @Override
     public RulesProfile createProfile(ValidationMessages validationMessages) {
         RulesProfile retval = RulesProfile.create(OJAuditPlugin.SONAR_PROFILE_KEY, OJAuditPlugin.LANGUAGE_KEY);
+
+
         // activate all rules from our Repository for our Profile
-        List<Rule> rules = repos.createRules();
-        for (Rule rule : rules) {
+        for (ParsedRule parsedRule : this.rulesDefinition.parseRuleHelp(null)) {
+            Rule rule = this.ruleFinder.findByKey(OJAuditPlugin.SONAR_REPOS_KEY, parsedRule.getKey());
             retval.activateRule(rule, null /* use default priority */);
         }
+//        for (RulesDefinition.Rule ruleDef : repos.rules()) {
+//            retval.activateRule(rule, null /* use default priority */);
+//        }
         return retval;
     }
 

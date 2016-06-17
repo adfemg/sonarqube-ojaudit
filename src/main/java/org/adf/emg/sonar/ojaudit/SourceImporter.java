@@ -19,21 +19,20 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import org.sonar.api.batch.AbstractSourceImporter;
 
 /**
  * Extension responsible for importing source files. Since we want to import each and every file in a
  * JDeveloper workspace (and projects), this doesn't impose any restrictions on which files to import.
  * @author Wilfred van der Deijl
  */
-public class SourceImporter extends AbstractSourceImporter {
+public class SourceImporter /*extends AbstractSourceImporter*/ {
 
-    /**
-     * Constructor.
-     * @param language sonar language
-     */
-    public SourceImporter(Language language) {
-        super(language);
-    }
+//    /**
+//     * Constructor.
+//     * @param language sonar language
+//     */
+//    public SourceImporter(Language language) {
+//        super(language);
+//    }
 
 }

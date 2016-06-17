@@ -19,23 +19,22 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import org.sonar.api.rules.RulePriority;
 
 /**
  * Severity as reported by JDeveloper/ojaudit.
  * @author Wilfred van der Deijl
  */
 public enum Severity {
-    ERROR("error", RulePriority.BLOCKER),
-    WARNING("warning", RulePriority.CRITICAL),
-    INCOMPLETE("incomplete", RulePriority.MAJOR),
-    ADVISORY("advisory", RulePriority.MINOR),
-    ASSIST("assist", RulePriority.INFO);
+    ERROR("error", org.sonar.api.rule.Severity.BLOCKER),
+    WARNING("warning", org.sonar.api.rule.Severity.CRITICAL),
+    INCOMPLETE("incomplete", org.sonar.api.rule.Severity.MAJOR),
+    ADVISORY("advisory", org.sonar.api.rule.Severity.MINOR),
+    ASSIST("assist", org.sonar.api.rule.Severity.INFO);
 
     private String jdeveloper;
-    private RulePriority sonar;
+    private String sonar;
 
-    Severity(String jdeveloper, RulePriority sonar) {
+    Severity(String jdeveloper, String sonar) {
         this.jdeveloper = jdeveloper;
         this.sonar = sonar;
     }
@@ -52,7 +51,7 @@ public enum Severity {
      * Returns the Sonar RulePriority that represents this JDeveloper/ojaudit severity.
      * @return Sonar RulePriority
      */
-    public RulePriority sonarSeverity() {
+    public String sonarSeverity() {
         return sonar;
     }
 

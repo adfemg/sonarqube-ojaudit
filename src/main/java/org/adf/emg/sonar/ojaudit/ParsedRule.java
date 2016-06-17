@@ -19,7 +19,7 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import org.sonar.api.rules.Rule;
+import org.sonar.api.server.rule.RulesDefinition;
 
 /**
  * Helper class for parsing a rule from the 'ojaudit -rulhelp' output.
@@ -35,12 +35,15 @@ public interface ParsedRule {
      */
     boolean digest(String line);
 
-    /**
-     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
-     * Sonar Rule.
-     * @param reposKey key of the sonar repository the created Rule should belong to
-     * @return org.sonar.api.rules.Rule instance
-     */
-    Rule toRule(String reposKey);
+    String getKey();
+//
+//    /**
+//     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
+//     * Sonar Rule.
+//     * @param reposKey key of the sonar repository the created Rule should belong to
+//     * @return org.sonar.api.rules.Rule instance
+//     */
+//    Rule toRule(String reposKey);
+    void toRule(RulesDefinition.NewExtendedRepository repos);
 
 }

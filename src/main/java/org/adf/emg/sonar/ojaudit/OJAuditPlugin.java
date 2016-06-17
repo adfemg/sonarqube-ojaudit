@@ -19,53 +19,47 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import org.sonar.api.Extension;
-import org.sonar.api.Properties;
-import org.sonar.api.Property;
+import org.sonar.api.Plugin;
 import org.sonar.api.PropertyType;
-import org.sonar.api.SonarPlugin;
-import org.sonar.api.profiles.RulesProfile;
+import org.sonar.api.config.PropertyDefinition;
+import org.sonar.api.resources.Qualifiers;
 
-@Properties({
-            @Property(key = OJAuditPlugin.TARGET_FILE_KEY,
-                      name = "Relative path to .jws or .jpr file from sonar project home",
-                      description = "Relative path to .jws or .jpr file from sonar project home", project = true,
-                      global = false),
-            @Property(key = OJAuditPlugin.JDEV_HOME_KEY, name = "JDeveloper home directory",
-                      description = "JDeveloper home directory (that has jdev/bin as subdirectory)", project = true,
-                      global = true),
-            @Property(key = OJAuditPlugin.OJAUDIT_EXEC_KEY, defaultValue = "", name = "OJAudit executable",
-                      description =
-                      "ojaudit executable within JDEV_HOME/jdev/bin directory, typically ojaudit.exe on windows or ojaudit on linux. When not specified the default depends on the operating system",
-                      project = true, global = true),
-            @Property(key = OJAuditPlugin.OJAUDIT_PROFILE_KEY, defaultValue = "All Rules", name = "OJAudit profile",
-                      description =
-                      "Name of the audit profile to execute. Run 'jdev/bin/ojaudit -profilehelp' to list available profiles",
-                      project = true, global = true),
-            @Property(key = OJAuditPlugin.OJAUDIT_TIMEOUT_SECS_KEY, defaultValue = "300", name = "Timeout (secs)",
-                      description = "Maximum number of seconds to wait for ojaudit to complete", project = true,
-                      global = true, type = PropertyType.INTEGER),
-            @Property(key = OJAuditPlugin.OJAUDIT_RULEHELP_KEY, defaultValue = "", name = "ojaudit -rulehelp output",
-                      description =
-                      "Path to the output of 'ojaudit -rulehelp'. Can be relative to SONAR_HOME or an absolute path. If not specified SONAR_HOME/conf/ojaudit-rulehelp.txt will be used.",
-                      project = false, global = true)
-    })
+//@Properties({
+//            @Property(key = OJAuditPlugin.TARGET_FILE_KEY,
+//                      name = "Relative path to .jws or .jpr file from sonar project home",
+//                      description = "Relative path to .jws or .jpr file from sonar project home", project = true,
+//                      global = false),
+//            @Property(key = OJAuditPlugin.JDEV_HOME_KEY, name = "JDeveloper home directory",
+//                      description = "JDeveloper home directory (that has jdev/bin as subdirectory)", project = true,
+//                      global = true),
+//            @Property(key = OJAuditPlugin.OJAUDIT_EXEC_KEY, defaultValue = "", name = "OJAudit executable",
+//                      description =
+//                      "ojaudit executable within JDEV_HOME/jdev/bin directory, typically ojaudit.exe on windows or ojaudit on linux. When not specified the default depends on the operating system",
+//                      project = true, global = true),
+//            @Property(key = OJAuditPlugin.OJAUDIT_PROFILE_KEY, defaultValue = "All Rules", name = "OJAudit profile",
+//                      description =
+//                      "Name of the audit profile to execute. Run 'jdev/bin/ojaudit -profilehelp' to list available profiles",
+//                      project = true, global = true),
+//            @Property(key = OJAuditPlugin.OJAUDIT_TIMEOUT_SECS_KEY, defaultValue = "300", name = "Timeout (secs)",
+//                      description = "Maximum number of seconds to wait for ojaudit to complete", project = true,
+//                      global = true, type = PropertyType.INTEGER),
+//            @Property(key = OJAuditPlugin.OJAUDIT_RULEHELP_KEY, defaultValue = "", name = "ojaudit -rulehelp output",
+//                      description =
+//                      "Path to the output of 'ojaudit -rulehelp'. Can be relative to SONAR_HOME or an absolute path. If not specified SONAR_HOME/conf/ojaudit-rulehelp.txt will be used.",
+//                      project = false, global = true)
+//    })
 /**
  * Main ojaudit plugin class.
  * @author Wilfred van der Deijl
  * @see <a href="http://docs.sonarsource.org/latest/apidocs">Sonar API Documentation</a>
  */
 // http://docs.sonarsource.org/latest/apidocs/index.html
-public final class OJAuditPlugin extends SonarPlugin {
+public final class OJAuditPlugin implements Plugin {
 
     public static final String LANGUAGE_KEY = "ojaudit";
     public static final String LANGUAGE_NAME = "OJAudit";
 
-    public static final String SONAR_PROFILE_KEY = RulesProfile.SONAR_WAY_NAME;
+        public static final String SONAR_PROFILE_KEY = "Sonar Way";
     public static final String SONAR_REPOS_KEY = "ojaudit";
     public static final String SONAR_REPOS_NAME = "ojaudit";
 
@@ -76,23 +70,33 @@ public final class OJAuditPlugin extends SonarPlugin {
     public static final String OJAUDIT_PROFILE_KEY = "sonar.ojaudit.profile";
     public static final String OJAUDIT_TIMEOUT_SECS_KEY = "sonar.ojaudit.timeoutsecs";
     public static final String OJAUDIT_RULEHELP_KEY = "sonar.ojaudit.rulehelp";
-
-    /**
-     * Returns list of extension classes for this plugin.
-     * @return list of extension classes
-     */
+    //
     @Override
-    public List<Class<? extends Extension>> getExtensions() {
-        List<Class<? extends Extension>> retval = new ArrayList<Class<? extends Extension>>();
-        retval.add(Language.class); // language definition so we can accept all files
-        retval.add(SourceImporter.class); // import all raw files
-        retval.add(Configuration.class); // parse sonar plugin settings
-        retval.add(Analyzer.class); // do the actual analysis by invoking ojaudit
-        retval.add(DefaultProfile.class); // default profile enabling all rules
-        retval.add(RulesRepository.class); // repository parsing rulehelp.txt and exposing all ojaudit rules to sonar
-        retval.add(XmlMetricsDecorator.class); // collect basic metrics about xml files
-        retval.add(JavaMetricsDecorator.class); // collect basic metrics about xml files
-        return Collections.unmodifiableList(retval);
-    }
+    public void define(Plugin.Context context) {
+        context.addExtension(Language.class); // language definition so we can accept all files
+        //        context.addExtension(SourceImporter.class); // import all raw files
+                context.addExtension(Configuration.class); // parse sonar plugin settings
+        context.addExtension(Analyzer.class); // do the actual analysis by invoking ojaudit
+                context.addExtension(DefaultProfile.class); // default profile enabling all rules
+        context.addExtension(RulesDefinition.class); // repository parsing rulehelp.txt and exposing all ojaudit rules to sonar
+        //        context.addExtension(XmlMetricsDecorator.class); // collect basic metrics about xml files
+        //        context.addExtension(JavaMetricsDecorator.class); // collect basic metrics about xml files
 
+        // TODO: should we include Qualifiers.MODULE ??
+        context.addExtension(PropertyDefinition.builder(OJAuditPlugin.TARGET_FILE_KEY).onlyOnQualifiers(Qualifiers.PROJECT,
+                                                                                                        Qualifiers.MODULE).name("Relative path to .jws or .jpr file from sonar project home").description("Relative path to .jws or .jpr file from sonar project home").build());
+        // TODO: should we include Qualifiers.MODULE ??
+        context.addExtension(PropertyDefinition.builder(OJAuditPlugin.JDEV_HOME_KEY).onQualifiers(Qualifiers.PROJECT,
+                                                                                                  Qualifiers.MODULE).name("JDeveloper home directory").description("JDeveloper home directory (that has jdev/bin as subdirectory").build());
+        // TODO: should we include Qualifiers.MODULE ??
+        context.addExtension(PropertyDefinition.builder(OJAuditPlugin.OJAUDIT_EXEC_KEY).defaultValue("").onQualifiers(Qualifiers.PROJECT,
+                                                                                                                      Qualifiers.MODULE).name("OJAudit executable").description("ojaudit executable within JDEV_HOME/jdev/bin directory, typically ojaudit.exe on windows or ojaudit on linux. When not specified the default depends on the operating system").build());
+        // TODO: should we include Qualifiers.MODULE ??
+        context.addExtension(PropertyDefinition.builder(OJAuditPlugin.OJAUDIT_PROFILE_KEY).defaultValue("All Rules").onQualifiers(Qualifiers.PROJECT,
+                                                                                                                                  Qualifiers.MODULE).name("OJAudit profile").description("Name of the audit profile to execute. Run 'jdev/bin/ojaudit -profilehelp' to list available profiles").build());
+        // TODO: should we include Qualifiers.MODULE ??
+        context.addExtension(PropertyDefinition.builder(OJAuditPlugin.OJAUDIT_TIMEOUT_SECS_KEY).defaultValue("300").type(PropertyType.INTEGER).onQualifiers(Qualifiers.PROJECT,
+                                                                                                                                                            Qualifiers.MODULE).name("Timeout (secs)").description("Maximum number of seconds to wait for ojaudit to complete").build());
+        context.addExtension(PropertyDefinition.builder(OJAuditPlugin.OJAUDIT_RULEHELP_KEY).defaultValue("").name("ojaudit -rulehelp output").description("\"Path to the output of 'ojaudit -rulehelp'. Can be relative to SONAR_HOME or an absolute path. If not specified SONAR_HOME/conf/ojaudit-rulehelp.txt will be used.").build());
+    }
 }

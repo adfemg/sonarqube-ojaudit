@@ -22,8 +22,8 @@ package org.adf.emg.sonar.ojaudit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.sonar.api.rules.Rule;
-import org.sonar.api.rules.RulePriority;
+import org.sonar.api.rule.Severity;
+import org.sonar.api.server.rule.RulesDefinition;
 
 /**
  * Helper class for parsing a rule from the 'ojaudit -rulhelp' output.
@@ -49,6 +49,7 @@ public class ParsedRule11 implements ParsedRule {
      * @return <code>true</code> if the line could be processed by this ParsedRule, or <code>false</code> if it
      *         was ignored
      */
+    @Override
     public boolean digest(String line) {
         return digestRule(line) || digestId(line);
     }
@@ -73,17 +74,21 @@ public class ParsedRule11 implements ParsedRule {
         }
     }
 
-    /**
-     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
-     * Sonar Rule.
-     * @param reposKey key of the sonar repository the created Rule should belong to
-     * @return org.sonar.api.rules.Rule instance
-     */
-    public Rule toRule(String reposKey) {
-        Rule retval = Rule.create(reposKey, getKey(), getFullName());
-        retval.setSeverity(getPriority());
-        retval.setDescription(getName());
-        return retval;
+//    /**
+//     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
+//     * Sonar Rule.
+//     * @param reposKey key of the sonar repository the created Rule should belong to
+//     * @return org.sonar.api.rules.Rule instance
+//     */
+//    public Rule toRule(String reposKey) {
+//        Rule retval = Rule.create(reposKey, getKey(), getFullName());
+//        retval.setSeverity(getPriority());
+//        retval.setDescription(getName());
+//        return retval;
+//    }
+    @Override
+    public void toRule(RulesDefinition.NewExtendedRepository repos) {
+        repos.createRule(getKey()).setName(getFullName()).setSeverity(getPriority()).setHtmlDescription(getName());
     }
 
     /**
@@ -115,10 +120,10 @@ public class ParsedRule11 implements ParsedRule {
 
     /**
      * Gets the sonar Priority that represents the priority as defined in JDeveloper.
-     * @return always RulePriority.MAJOR since version 11 rulehelp files don't contain a severity
+     * @return always Severity.MAJOR since version 11 rulehelp files don't contain a severity
      */
-    public RulePriority getPriority() {
-        return RulePriority.MAJOR;
+    public String getPriority() {
+        return Severity.MAJOR;
     }
 
 }

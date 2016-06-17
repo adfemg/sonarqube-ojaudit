@@ -19,17 +19,15 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import org.sonar.api.utils.SonarException;
-
 
 /**
  * Simple RuntimeException used in the ojaudit sonar plugin.
  * @author Wilfred van der Deijl
  */
-public class OJAuditException extends SonarException {
+public class OJAuditException extends RuntimeException {
 
-    @SuppressWarnings("compatibility:1251977755862706243")
-    private static final long serialVersionUID = 2L;
+    @SuppressWarnings("compatibility:-288391578662576620")
+    private static final long serialVersionUID = 3L;
 
     /**
      * Creates an exception with a message and wrapping another exception.

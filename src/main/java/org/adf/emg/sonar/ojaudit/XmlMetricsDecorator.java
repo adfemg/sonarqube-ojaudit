@@ -19,106 +19,86 @@
  */
 package org.adf.emg.sonar.ojaudit;
 
-import java.io.File;
-import java.io.IOException;
 
-import java.nio.charset.Charset;
+public class XmlMetricsDecorator /*implements Decorator*/ {
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.io.LineIterator;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import org.sonar.api.batch.Decorator;
-import org.sonar.api.batch.DecoratorContext;
-import org.sonar.api.measures.CoreMetrics;
-import org.sonar.api.resources.Project;
-import org.sonar.api.resources.ProjectFileSystem;
-import org.sonar.api.resources.Qualifiers;
-import org.sonar.api.resources.Resource;
-import org.sonar.api.utils.SonarException;
-
-public class XmlMetricsDecorator implements Decorator {
-
-    private static final Logger LOG = LoggerFactory.getLogger(XmlMetricsDecorator.class);
-
-    @Override
-    public void decorate(Resource resource, DecoratorContext context) {
-        if (!Qualifiers.isFile(resource)) {
-            return;
-        }
-        ProjectFileSystem fileSystem = context.getProject().getFileSystem();
-        File file = lookup(resource, fileSystem);
-
-        try {
-            if (readFirstByte(file) != '<') {
-                return;
-            }
-        } catch (IOException e) {
-            throw new SonarException(e);
-        }
-
-        int numCommentLines;
-        CountCommentParser commentCounter = new CountCommentParser();
-        try {
-            numCommentLines = commentCounter.countLinesOfComment(FileUtils.openInputStream(file));
-            if (numCommentLines == -1) {
-                return;
-            }
-        } catch (IOException e) {
-            throw new SonarException(e);
-        }
-
-        LineIterator iterator = null;
-        int numLines = 0;
-        int numBlankLines = 0;
-        try {
-            Charset charset = fileSystem.getSourceCharset();
-            iterator = charset == null ? FileUtils.lineIterator(file) : FileUtils.lineIterator(file, charset.name());
-            while (iterator.hasNext()) {
-                String line = iterator.nextLine();
-                numLines++;
-                if (line.trim().isEmpty()) {
-                    numBlankLines++;
-                }
-            }
-        } catch (IOException e) {
-            LOG.warn("error reading " + file + " to collect metrics", e);
-        } finally {
-            LineIterator.closeQuietly(iterator);
-        }
-
-        context.saveMeasure(CoreMetrics.LINES, (double) numLines); // Lines
-        context.saveMeasure(CoreMetrics.COMMENT_LINES, (double) numCommentLines); // Non Commenting Lines of Code
-        context.saveMeasure(CoreMetrics.NCLOC, (double) numLines - numBlankLines - numCommentLines); // Comment Lines
-    }
-
-    private File lookup(Resource resource, ProjectFileSystem filesys) {
-        return filesys.resolvePath(resource.getLongName());
-    }
-
-    private byte readFirstByte(File file) throws IOException {
-        byte[] buffer = new byte[1];
-        int len = IOUtils.read(FileUtils.openInputStream(file), buffer);
-        return len == 1 ? buffer[0] : null;
-    }
-
-    /**
-     * Determines if this Sensor should run for a given project.
-     * @param project Project
-     * @return <code>true</code> if the supplied project uses ojaudit as language, otherwise <code>false</code>
-     * @see OJAuditPlugin#LANGUAGE_KEY
-     */
-    @Override
-    public boolean shouldExecuteOnProject(Project project) {
-        boolean retval = OJAuditPlugin.LANGUAGE_KEY.equals(project.getLanguageKey());
-        if (!retval) {
-            LOG.debug(this.getClass().getName() + " not executing on project with language " +
-                      project.getLanguageKey());
-        }
-        return retval;
-    }
+//    private static final Logger LOG = Loggers.get(XmlMetricsDecorator.class);
+//
+//    @Override
+//    public void decorate(Resource resource, DecoratorContext context) {
+//        if (!Qualifiers.isFile(resource)) {
+//            return;
+//        }
+//        ProjectFileSystem fileSystem = context.getProject().getFileSystem();
+//        File file = lookup(resource, fileSystem);
+//
+//        try {
+//            if (readFirstByte(file) != '<') {
+//                return;
+//            }
+//        } catch (IOException e) {
+//            throw new SonarException(e);
+//        }
+//
+//        int numCommentLines;
+//        CountCommentParser commentCounter = new CountCommentParser();
+//        try {
+//            numCommentLines = commentCounter.countLinesOfComment(FileUtils.openInputStream(file));
+//            if (numCommentLines == -1) {
+//                return;
+//            }
+//        } catch (IOException e) {
+//            throw new SonarException(e);
+//        }
+//
+//        LineIterator iterator = null;
+//        int numLines = 0;
+//        int numBlankLines = 0;
+//        try {
+//            Charset charset = fileSystem.getSourceCharset();
+//            iterator = charset == null ? FileUtils.lineIterator(file) : FileUtils.lineIterator(file, charset.name());
+//            while (iterator.hasNext()) {
+//                String line = iterator.nextLine();
+//                numLines++;
+//                if (line.trim().isEmpty()) {
+//                    numBlankLines++;
+//                }
+//            }
+//        } catch (IOException e) {
+//            LOG.warn("error reading " + file + " to collect metrics", e);
+//        } finally {
+//            LineIterator.closeQuietly(iterator);
+//        }
+//
+//        context.saveMeasure(CoreMetrics.LINES, (double) numLines); // Lines
+//        context.saveMeasure(CoreMetrics.COMMENT_LINES, (double) numCommentLines); // Non Commenting Lines of Code
+//        context.saveMeasure(CoreMetrics.NCLOC, (double) numLines - numBlankLines - numCommentLines); // Comment Lines
+//    }
+//
+//    private File lookup(Resource resource, ProjectFileSystem filesys) {
+//        return filesys.resolvePath(resource.getLongName());
+//    }
+//
+//    private byte readFirstByte(File file) throws IOException {
+//        byte[] buffer = new byte[1];
+//        int len = IOUtils.read(FileUtils.openInputStream(file), buffer);
+//        return len == 1 ? buffer[0] : null;
+//    }
+//
+//    /**
+//     * Determines if this Sensor should run for a given project.
+//     * @param project Project
+//     * @return <code>true</code> if the supplied project uses ojaudit as language, otherwise <code>false</code>
+//     * @see OJAuditPlugin#LANGUAGE_KEY
+//     */
+//    @Override
+//    public boolean shouldExecuteOnProject(Project project) {
+//        boolean retval = OJAuditPlugin.LANGUAGE_KEY.equals(project.getLanguageKey());
+//        if (!retval) {
+//            LOG.debug(this.getClass().getName() + " not executing on project with language " +
+//                      project.getLanguageKey());
+//        }
+//        return retval;
+//    }
 
 }
