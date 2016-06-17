@@ -88,6 +88,7 @@ To Do...
 If you want to build your own version of the SonarQube plugin from sources this is the page for you. This is also the place to be if you want to contribute to the project by adding new functionality or fixing bugs. If you're just interested in downloading the finished product and using it in your SonarQube installation simply read the instructions above.
 
 Here are the few simple steps if you want to develop the plugin yourself:
+
 1. clone (or fork) `https://github.com/adfemg/sonarqube-ojaudit.git`
 1. open the ojauditSonar workspace from that checkout in JDeveloper and browse around
 1. run `mvn clean install` to build the plugin with maven, although you can also run this from within JDeveloper by right clicking the `pom.xml`
