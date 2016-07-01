@@ -35,15 +35,18 @@ public interface ParsedRule {
      */
     boolean digest(String line);
 
+    /**
+     * Gets the key of this parsed rule.
+     * @return key of the rule, or <code>null</code> if {@link #digest} hasn't been called yet on a line
+     *         containing the rule defition
+     */
     String getKey();
-//
-//    /**
-//     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
-//     * Sonar Rule.
-//     * @param reposKey key of the sonar repository the created Rule should belong to
-//     * @return org.sonar.api.rules.Rule instance
-//     */
-//    Rule toRule(String reposKey);
+
+    /**
+     * Can be invoked after parsing all lines of a certain rule with {@link #digest} to register the rule
+     * with the given repository.
+     * @param repos The repository to register this rule with
+     */
     void toRule(RulesDefinition.NewExtendedRepository repos);
 
 }

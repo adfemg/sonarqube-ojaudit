@@ -118,18 +118,11 @@ public class ParsedRule12 implements ParsedRule {
         }
     }
 
-//    /**
-//     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
-//     * Sonar Rule.
-//     * @param reposKey key of the sonar repository the created Rule should belong to
-//     * @return org.sonar.api.rules.Rule instance
-//     */
-//    public Rule toRule(String reposKey) {
-//        Rule retval = Rule.create(reposKey, getKey(), getFullName());
-//        retval.setSeverity(getPriority());
-//        retval.setDescription(getName());
-//        return retval;
-//    }
+    /**
+     * Can be invoked after parsing all lines of a certain rule with {@link #digest} to register the rule
+     * with the given repository.
+     * @param repos The repository to register this rule with
+     */
     @Override
     public void toRule(RulesDefinition.NewExtendedRepository repos) {
         repos.createRule(getKey()).setName(getFullName()).setSeverity(getPriority()).setHtmlDescription(getName());
@@ -140,6 +133,7 @@ public class ParsedRule12 implements ParsedRule {
      * @return key of the rule, or <code>null</code> if {@link #digest} hasn't been called yet on a line
      *         containing the rule defition
      */
+    @Override
     public String getKey() {
         return key;
     }
@@ -171,14 +165,14 @@ public class ParsedRule12 implements ParsedRule {
         }
     }
 
-//    /**
-//     * Gets the key of the category for this parsed rule.
-//     * @return key of the category, or <code>null</code> if {@link #digest} hasn't been called yet on a line
-//     *         containing the category defition
-//     */
-//    public String getCategoryKey() {
-//        return categoryKey;
-//    }
+    //    /**
+    //     * Gets the key of the category for this parsed rule.
+    //     * @return key of the category, or <code>null</code> if {@link #digest} hasn't been called yet on a line
+    //     *         containing the category defition
+    //     */
+    //    public String getCategoryKey() {
+    //        return categoryKey;
+    //    }
 
     /**
      * Gets the name of the category of this parsed rule.
@@ -198,42 +192,43 @@ public class ParsedRule12 implements ParsedRule {
         return properties == null ? Collections.<String>emptyList() : Collections.unmodifiableCollection(properties);
     }
 
-//    /**
-//     * Gets the key of the JDeveloper extension of this parsed rule.
-//     * @return key of the jdev-extension, or <code>null</code> if {@link #digest} hasn't been called yet on a line
-//     *         containing the extension definition
-//     */
-//    public String getExtensionKey() {
-//        return extensionKey;
-//    }
-//
-//    /**
-//     * Gets the filename of the JDeveloper extension of this parsed rule.
-//     * @return filename of the jdev-extension, or <code>null</code> if {@link #digest} hasn't been called yet on a line
-//     *         containing the extension definition
-//     */
-//    public String getExtensionFile() {
-//        return extensionFile;
-//    }
-//
-//    /**
-//     * Gets the line number of the rule in the JDeveloper extension file.
-//     * @return line number of the rule in the jdev-extension file, or <code>-1</code> if {@link #digest} hasn't
-//     *         been called yet on a line containing the extension definition
-//     */
-//    public int getExtensionLine() {
-//        return extensionLine;
-//    }
-//
-//    /**
-//     * Indicates if the rule is enabled in the JDeveloper profile.
-//     * @return <code>false</code> if the line containing the properties has been digested and it indicated the
-//     *         rule is disabled, <code>true</code> otherwise
-//     */
-//    public boolean isEnabled() {
-//        return !getProperties().contains("disabled");
-//    }
-//
+    //    /**
+    //     * Gets the key of the JDeveloper extension of this parsed rule.
+    //     * @return key of the jdev-extension, or <code>null</code> if {@link #digest} hasn't been called yet on a line
+    //     *         containing the extension definition
+    //     */
+    //    public String getExtensionKey() {
+    //        return extensionKey;
+    //    }
+    //
+    //    /**
+    //     * Gets the filename of the JDeveloper extension of this parsed rule.
+    //     * @return filename of the jdev-extension, or <code>null</code> if {@link #digest} hasn't been called yet on a line
+    //     *         containing the extension definition
+    //     */
+    //    public String getExtensionFile() {
+    //        return extensionFile;
+    //    }
+    //
+    //    /**
+    //     * Gets the line number of the rule in the JDeveloper extension file.
+    //     * @return line number of the rule in the jdev-extension file, or <code>-1</code> if {@link #digest} hasn't
+    //     *         been called yet on a line containing the extension definition
+    //     */
+    //    public int getExtensionLine() {
+    //        return extensionLine;
+    //    }
+    //
+    //    /**
+    //     * Indicates if the rule is enabled in the JDeveloper profile.
+    //     * @return <code>false</code> if the line containing the properties has been digested and it indicated the
+    //     *         rule is disabled, <code>true</code> otherwise
+    //     */
+    //    public boolean isEnabled() {
+    //        return !getProperties().contains("disabled");
+    //    }
+    //
+
     /**
      * Gets the severity of the rule as defined in JDeveloper.
      * @return severy of the rule or <code>null</code> if the line containing the properties hasn't been

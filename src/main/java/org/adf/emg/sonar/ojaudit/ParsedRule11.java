@@ -74,18 +74,11 @@ public class ParsedRule11 implements ParsedRule {
         }
     }
 
-//    /**
-//     * Can be invoked after parsing all lines of a certain rule with {@link #digest} and returns a
-//     * Sonar Rule.
-//     * @param reposKey key of the sonar repository the created Rule should belong to
-//     * @return org.sonar.api.rules.Rule instance
-//     */
-//    public Rule toRule(String reposKey) {
-//        Rule retval = Rule.create(reposKey, getKey(), getFullName());
-//        retval.setSeverity(getPriority());
-//        retval.setDescription(getName());
-//        return retval;
-//    }
+    /**
+     * Can be invoked after parsing all lines of a certain rule with {@link #digest} to register the rule
+     * with the given repository.
+     * @param repos The repository to register this rule with
+     */
     @Override
     public void toRule(RulesDefinition.NewExtendedRepository repos) {
         repos.createRule(getKey()).setName(getFullName()).setSeverity(getPriority()).setHtmlDescription(getName());
@@ -96,6 +89,7 @@ public class ParsedRule11 implements ParsedRule {
      * @return key of the rule, or <code>null</code> if {@link #digest} hasn't been called yet on a line
      *         containing the rule defition
      */
+    @Override
     public String getKey() {
         return key;
     }

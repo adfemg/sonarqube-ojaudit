@@ -41,7 +41,8 @@ public class Language extends AbstractLanguage {
      */
     @Override
     public String[] getFileSuffixes() {
-        // empty array means to consider all files as sources
-        return new String[0];
+        // consider all files as sources
+        String[] allFiles = { "*" };
+        return allFiles;
     }
 }

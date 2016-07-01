@@ -31,18 +31,15 @@ import org.sonar.api.utils.ValidationMessages;
  */
 public final class DefaultProfile extends ProfileDefinition {
 
-//    private final RulesDefinition.Context rulesContext;
-//    private final ActiveRules activeRules;
     private final RulesDefinition rulesDefinition;
     private final RuleFinder ruleFinder;
 
     /**
      * Constructor.
-     * @param repos Our RulesRepository which contains all rules to activate
+     * @param rulesDefinition our RulesDefinition that can parse rulehelp files
+     * @param ruleFinder used to find Rule objects
      */
-    public DefaultProfile(/*org.sonar.api.server.rule.RulesDefinition.Context rulesContext, ActiveRules activeRules, */RulesDefinition rulesDefinition, RuleFinder ruleFinder) {
-//        this.rulesContext = rulesContext;
-//        this.activeRules = activeRules;
+    public DefaultProfile(RulesDefinition rulesDefinition, RuleFinder ruleFinder) {
         this.rulesDefinition = rulesDefinition;
         this.ruleFinder = ruleFinder;
     }
@@ -56,15 +53,11 @@ public final class DefaultProfile extends ProfileDefinition {
     public RulesProfile createProfile(ValidationMessages validationMessages) {
         RulesProfile retval = RulesProfile.create(OJAuditPlugin.SONAR_PROFILE_KEY, OJAuditPlugin.LANGUAGE_KEY);
 
-
         // activate all rules from our Repository for our Profile
         for (ParsedRule parsedRule : this.rulesDefinition.parseRuleHelp(null)) {
             Rule rule = this.ruleFinder.findByKey(OJAuditPlugin.SONAR_REPOS_KEY, parsedRule.getKey());
             retval.activateRule(rule, null /* use default priority */);
         }
-//        for (RulesDefinition.Rule ruleDef : repos.rules()) {
-//            retval.activateRule(rule, null /* use default priority */);
-//        }
         return retval;
     }
 

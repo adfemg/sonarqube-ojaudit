@@ -40,34 +40,29 @@ import org.sonar.api.batch.fs.TextRange;
 import org.sonar.api.batch.rule.ActiveRule;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.issue.NewIssue;
-import org.sonar.api.batch.sensor.issue.NewIssueLocation;
+import org.sonar.api.rule.RuleKey;
 import org.sonar.api.utils.log.Logger;
 import org.sonar.api.utils.log.Loggers;
 
 
 /**
  * Helper class for parsing an ojaudit output file and reporting any violation to a SensorContext.
+ * XSD for the parsed rule report can be found at
+ * JDEV_HOME/jdev/extensions/oracle.ide.audit.jar!oracle/jdevimpl/audit/report/audit.xsd
  * @author Wilfred van der Deijl
  * @see Analyzer
  */
 public class ResultsParser {
 
-    private static final Logger LOG = Loggers.get(ResultsParser.class);
+    private final Logger log = Loggers.get(ResultsParser.class);
 
-//    // xsd can be found in JDEV_HOME/jdev/extensions/oracle.ide.audit.jar!oracle/jdevimpl/audit/report/audit.xsd
-//    private final Project project;
-//    private final RulesProfile profile;
     private final SensorContext context;
-//
+
     /**
      * Constructor.
-     * @param project Project being analyzed by sonar
-     * @param profile Active rule profile for the current sonar analysis
      * @param context SensorContext where vioilations should be reported to
      */
-    public ResultsParser(/*Project project, RulesProfile profile,*/ SensorContext context) {
-//        this.project = project;
-//        this.profile = profile;
+    public ResultsParser(SensorContext context) {
         this.context = context;
     }
 
@@ -77,7 +72,7 @@ public class ResultsParser {
      * @param output ojaudit output file
      */
     public void parse(File output) {
-        LOG.info("parsing ojaudit's result XML file {}...", output.getAbsolutePath());
+        log.info("parsing ojaudit's result XML file {}...", output.getAbsolutePath());
         Audit audit = unmarshall(output);
         processConstruct(audit.getConstruct());
     }
@@ -97,7 +92,7 @@ public class ResultsParser {
             }
             return (Audit) obj;
         } catch (Exception e) {
-            LOG.error(e.toString());
+            log.error(e.toString());
             throw new OJAuditException("error parsing ojaudit output at " + file, e);
         }
     }
@@ -108,7 +103,7 @@ public class ResultsParser {
      * @param construct ojaudit Construct being processed
      */
     private void processConstruct(Construct construct) {
-        LOG.debug("processing construct {} {}", new Object[] { construct.getKind(), construct.getLabel() });
+        log.debug("processing construct {} {}", new Object[] { construct.getKind(), construct.getLabel() });
         Children children = construct.getChildren();
         if (children == null) {
             return;
@@ -131,77 +126,62 @@ public class ResultsParser {
      * @param violation ojaudit Violation
      */
     private void processViolation(com.oracle.xmlns.jdeveloper._1013.audit.Violation violation) {
-        LOG.debug("processing violation {}", violation.getMessage());
+        log.debug("processing violation {}", violation.getMessage());
         // get File with violation
         Location loc = violation.getLocation();
         Model model = (Model) loc.getModel();
         File f = new File(model.getFile().getPath());
         if (!f.canRead()) {
-            LOG.warn("file {} no longer exists, ignoring violation '{}'", f, violation.getMessage());
+            log.warn("file {} no longer exists, ignoring violation '{}'", f, violation.getMessage());
             return;
         }
         // lookup sonar Resource for the violating file
-        System.out.println("***** FINDING " + f);
-        FilePredicate finder = new FilePredicate(){
-            @Override
-            public boolean apply(InputFile inputFile) {
-                System.out.println("************** SCANNING " + inputFile.absolutePath() + " *** " + inputFile.relativePath());
-                return false;
-            }
-        };
-        InputFile inputFile = context.fileSystem().inputFile(finder);
+        InputFile inputFile = context.fileSystem().inputFile(new FileFinder(f));
         if (inputFile == null) {
-            LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
+            log.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
                      violation.getMessage());
             return;
         }
-//        Resource resource = project.getFileSystem().toResource(f);
-//        if (resource == null) {
-//            LOG.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
-//                     violation.getMessage());
-//            return;
-//        }
         // find ActiveRule for violation
         String ruleKey = ((Rule) violation.getRule()).getName();
-        ActiveRule activeRule = getActiveRule(/*profile,*/ ruleKey);
+        ActiveRule activeRule = getActiveRule(ruleKey);
         if (activeRule == null) {
-            LOG.warn("no active sonar Rule with key {} found in language {}, profile {}. Ignoring violation for {}", new Object[] {
-                     ruleKey/*, profile.getLanguage(), profile.getName()*/, f
-            });
+            log.warn("no active sonar Rule with key {} found. Ignoring violation for {}", ruleKey, f);
             return;
         }
         // Set location information
-        // TODO: are these linenumbers and offsets correct?
-        TextRange textLocation = inputFile.selectLine(parseInt(loc.getLineNumber()));
-//        TextPointer start = new DefaultTextPointer(parseInt(loc.getLineNumber()), parseInt(loc.getColumnOffset()));
-//           TextPointer end = new DefaultTextPointer(parseInt(loc.getLineNumber()), parseInt(loc.getColumnOffset()) + parseInt(loc.getLength()));
-//           TextRange textLocation = new DefaultTextRange(start, end);
-//           NewIssueLocation location = new DefaultIssueLocation().on(inputFile).at(textLocation).message(violation.getMessage());
-
+        int lineNum = parseInt(loc.getLineNumber());
+        int column = parseInt(loc.getColumnOffset());
+        int length = parseInt(loc.getLength());
+        TextRange line = inputFile.selectLine(lineNum);
+        TextRange issueLocation =
+            inputFile.newRange(lineNum, column, lineNum, Math.min(column + length, line.end().lineOffset()));
         // reporting sonar violation
-        LOG.info("creating violation for rule {} in {}", new Object[] { activeRule.ruleKey()/*, resource*/ });
+        log.info("creating violation for rule {} in {}", new Object[] { activeRule.ruleKey() /*, resource*/ });
         NewIssue issue = context.newIssue().forRule(activeRule.ruleKey());
-        NewIssueLocation issueLocation = issue.newLocation().on(inputFile).at(textLocation).message(violation.getMessage());
-        issue.at(issueLocation).save();
-//        Violation v = Violation.create(activeRule, resource);
-//        v = v.setMessage(violation.getMessage());
-//        if (violation.getLocation() != null && violation.getLocation().getLineNumber() != null) {
-//            v.setLineId(Integer.parseInt(violation.getLocation().getLineNumber()));
-//        }
-//        context.saveViolation(v);
+        issue.at(issue.newLocation().on(inputFile).at(issueLocation).message(violation.getMessage())).save();
     }
 
     private int parseInt(String s) {
         return s == null ? 0 : Integer.parseInt(s);
     }
 
-    private ActiveRule getActiveRule(/*RulesProfile profile,*/ String key) {
-        ActiveRule retval = this.context.activeRules().findByInternalKey(OJAuditPlugin.SONAR_REPOS_KEY, key);
-//        ActiveRule retval = profile.getActiveRule(OJAuditPlugin.SONAR_REPOS_KEY, key);
-        if (retval != null) {
-            return retval;
-        }
-        return null;
+    private ActiveRule getActiveRule(String key) {
+        return this.context.activeRules().find(RuleKey.of(OJAuditPlugin.SONAR_REPOS_KEY, key));
     }
+
+    private static class FileFinder implements FilePredicate {
+        private File file;
+
+        private FileFinder(File file) {
+            this.file = file;
+        }
+
+        @Override
+        public boolean apply(InputFile inputFile) {
+            return this.file.equals(inputFile.file());
+        }
+    }
+
 
 }

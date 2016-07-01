@@ -36,46 +36,23 @@ import org.sonar.api.utils.log.Loggers;
  */
 @ServerSide
 @BatchSide
-public class Configuration /*implements ServerExtension, BatchExtension*/ {
+public class Configuration {
 
-    private static final Logger LOG = Loggers.get(Configuration.class);
+    private final Logger log = Loggers.get(Configuration.class);
 
     private final Settings settings;
-//    private final Project project;
-//    private final ServerFileSystem serverFileSystem;
-//
-//    /**
-//     * Constructor when running the sonar server.
-//     * @param settings Global plugin settings at server
-//     * @param serverFileSystem ServerFileSystem
-//     */
-//    public Configuration(Settings settings, ServerFileSystem serverFileSystem) {
-//        this(settings, serverFileSystem, null);
-//    }
-//
-//    /**
-//     * Constructor when running analysis through sonar-runner, ant, or maven.
-//     * @param settings Project settings
-//     * @param project Project being processed
-//     */
-//    public Configuration(Settings settings, Project project) {
-//        this(settings, null, project);
-//    }
-//
+
     /**
-     * Private constructor used by the two public constructors.
+     * Constructor for dependency injection.
      * @param settings Global or project-specific plugin settings
-     * @param serverFileSystem ServerFileSystem (when running at server)
-     * @param project Project being processed (when running analysis)
      */
-    public Configuration(Settings settings/*, ServerFileSystem serverFileSystem, Project project*/) {
+    public Configuration(Settings settings) {
         this.settings = settings;
-//        this.project = project;
-//        this.serverFileSystem = serverFileSystem;
     }
 
     /**
      * Gets the workspace (.jws) or project (.jpr) file for the current project.
+     * @param fileSystem project fileSystem so we can locate target file
      * @return File object pointing to the jws or jpr file.
      * @throws IllegalArgumentException if sonar plugin property not set
      * @see OJAuditPlugin#TARGET_FILE_KEY
@@ -141,6 +118,7 @@ public class Configuration /*implements ServerExtension, BatchExtension*/ {
 
     /**
      * Gets the location of the 'ojaudit -rulehelp' output, which may be the default value if not explicitly set.
+     * @param serverFileSystem ServerFileSystem so we can locate target file
      * @return File object pointing to the 'ojaudit -rulehelp' executable
      * @see OJAuditPlugin#OJAUDIT_RULEHELP_KEY
      */
@@ -150,15 +128,15 @@ public class Configuration /*implements ServerExtension, BatchExtension*/ {
         if (ruleHelp == null || ruleHelp.trim().isEmpty()) {
             // use default location of rulehelp
             file = new File(new File(serverFileSystem.getHomeDir(), "conf"), "rulehelp.txt");
-            LOG.debug("{} not set, using default location of rulehelp at {}", OJAuditPlugin.OJAUDIT_RULEHELP_KEY, file);
+            log.debug("{} not set, using default location of rulehelp at {}", OJAuditPlugin.OJAUDIT_RULEHELP_KEY, file);
         } else {
             file = new File(ruleHelp);
             if (!file.isAbsolute()) {
-                LOG.debug("{} set to {}, relative to {}", new Object[] {
-                          OJAuditPlugin.OJAUDIT_RULEHELP_KEY, ruleHelp, serverFileSystem.getHomeDir() });
+                log.debug("{} set to {}, relative to {}",
+                          new Object[] { OJAuditPlugin.OJAUDIT_RULEHELP_KEY, ruleHelp, serverFileSystem.getHomeDir() });
                 file = new File(serverFileSystem.getHomeDir(), file.toString());
             } else {
-                LOG.debug("{} set to absolute path {}", OJAuditPlugin.OJAUDIT_RULEHELP_KEY, ruleHelp);
+                log.debug("{} set to absolute path {}", OJAuditPlugin.OJAUDIT_RULEHELP_KEY, ruleHelp);
             }
         }
         checkCanRead(file, "rulehelp output");
@@ -173,7 +151,7 @@ public class Configuration /*implements ServerExtension, BatchExtension*/ {
 
     private boolean checkCanRead(File file, String fileType) {
         if (!file.canRead()) {
-            LOG.warn("unable to read " + fileType + " " + file);
+            log.warn("unable to read " + fileType + " " + file);
             return false;
         }
         return true;
@@ -181,7 +159,7 @@ public class Configuration /*implements ServerExtension, BatchExtension*/ {
 
     private boolean checkIsDirectory(File dir, String dirType) {
         if (!dir.isDirectory()) {
-            LOG.warn("unable to read " + dirType + " " + dir);
+            log.warn("unable to read " + dirType + " " + dir);
             return false;
         }
         return true;
