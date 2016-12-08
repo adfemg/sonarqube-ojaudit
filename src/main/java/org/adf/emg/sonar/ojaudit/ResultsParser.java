@@ -132,10 +132,12 @@ public class ResultsParser {
         Model model = (Model) loc.getModel();
         File f = new File(model.getFile().getPath());
         if (!f.canRead()) {
-            log.warn("file {} no longer exists, ignoring violation '{}'", f, violation.getMessage());
+            //Sonar hasn't read the file (source), ignore the violation.
+            log.warn("file {} does not exists in sonar, only in the sources, ignoring violation '{}'", f,
+                     violation.getMessage());
             return;
         }
-        // lookup sonar Resource for the violating file
+        // lookup sonar Resource for the violating file (parsed sonar source, to report violation on inline)
         InputFile inputFile = context.fileSystem().inputFile(new FileFinder(f));
         if (inputFile == null) {
             log.warn("could not find resource {} in sonar project sources, ignoring violation '{}'", f,
@@ -149,17 +151,41 @@ public class ResultsParser {
             log.warn("no active sonar Rule with key {} found. Ignoring violation for {}", ruleKey, f);
             return;
         }
-        // Set location information
-        int lineNum = parseInt(loc.getLineNumber());
-        int column = parseInt(loc.getColumnOffset());
-        int length = parseInt(loc.getLength());
+        // get location information of the ojaudit.xml file
+        int lineNum = parseInt(loc.getLineNumber()); //line in the file
+        int column = parseInt(loc.getColumnOffset()); //Start of the violation within the line.
+        int length = parseInt(loc.getLength()); //Amount of characters of violation.
+
+        //The line of the resource in sonar on which to report the violation.
         TextRange line = inputFile.selectLine(lineNum);
-        TextRange issueLocation =
-            inputFile.newRange(lineNum, column, lineNum, Math.min(column + length, line.end().lineOffset()));
+
+        //We do not want to report over multiple lines, so find the minimum length to report the violation on.
+        //Either the start (column) plus the length of the violation or the lineEnd.
+        int lineEnd = Math.min(column + length, line.end().lineOffset());
+
+        TextRange issueLocation;
+        if (lineEnd == column) {
+            //Apparently the lineEnd is the same as the start, plus the length.
+            //Could be a violation on an empty line.
+            log.info("Found an issue location without a lenght, on rule {}.", ruleKey);
+            log.debug("min: " + lineEnd + " - column: " + column + " - lineOffset: " + line.end().lineOffset() +
+                      " - length: " + length);
+            log.debug(ruleKey);
+            log.debug(inputFile.absolutePath());
+            log.debug(violation.getMessage());
+            log.info("We are manipulating the issue location to be reported to the linenum till linenum +1.");
+            issueLocation = inputFile.newRange(lineNum, column, (lineNum + 1), lineEnd);
+        } else {
+            issueLocation = inputFile.newRange(lineNum, column, lineNum, lineEnd);
+        }
+
         // reporting sonar violation
         log.info("creating violation for rule {} in {}", new Object[] { activeRule.ruleKey() /*, resource*/ });
         NewIssue issue = context.newIssue().forRule(activeRule.ruleKey());
-        issue.at(issue.newLocation().on(inputFile).at(issueLocation).message(violation.getMessage())).save();
+        issue.at(issue.newLocation()
+                      .on(inputFile)
+                      .at(issueLocation)
+                      .message(violation.getMessage())).save();
     }
 
     private int parseInt(String s) {
@@ -167,7 +193,9 @@ public class ResultsParser {
     }
 
     private ActiveRule getActiveRule(String key) {
-        return this.context.activeRules().find(RuleKey.of(OJAuditPlugin.SONAR_REPOS_KEY, key));
+        return this.context
+                   .activeRules()
+                   .find(RuleKey.of(OJAuditPlugin.SONAR_REPOS_KEY, key));
     }
 
     private static class FileFinder implements FilePredicate {
@@ -182,6 +210,4 @@ public class ResultsParser {
             return this.file.equals(inputFile.file());
         }
     }
-
-
 }
