@@ -6,7 +6,7 @@ JDeveloper 11g or 12c project, whether it is SOA, plain java, WebCenter, ADF or 
 ## Download and Installation
 1. before you install the plugin, run `JDEV_HOME/jdev/bin/ojaudit -rulehelp -output SONAR_HOME/conf/ojaudit-rulehelp.txt` to generate a text file with all the audit rules in your JDeveloper installation. This is needed by the SonarQube plugin to discover all the rules that are available. Unfortunately, JDeveloper version 11.x does not include the severity for all rules in this file so all will be imported in SonarQube with severity Major. You can change these afterwards if you like.
 1. ~~if you decide to name the file something else or put it in another directory then edit `SONAR_HOME/conf/sonar.properties` and add a line `sonar.ojaudit.rulehelp=conf/ojaudit-rulehelp.txt` to point to the location of the created text file. This path is relative to SONAR_HOME or can be an absolute path~~ (version 1.0 only works when rulehelp.txt file is placed in conf directory in sonar home directory)
-1. download the latest version of the plugin from https://java.net/projects/sonarqube-ojaudit/downloads 
+1. download the latest version of the plugin from https://github.com/adfemg/sonarqube-ojaudit/releases
   you don't need to download the sources to use the plugin, although you are welcome to do so and have a look how the thing really works
 1. put the downloaded JAR into `SONAR_HOME/extensions/plugins/`
 1. (re)start SonarQube
